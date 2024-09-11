@@ -2,6 +2,11 @@
 * {
     box-sizing: border-box;
   }
+body {
+    margin: 0; /* Reset margin to avoid default browser margin */
+    padding: 0; /* Reset padding to avoid default browser padding */
+    font-family: 'Open Sans', sans-serif; /* Use your preferred font family */
+}
 
 .header{
     background-color: #beccb4;
@@ -61,94 +66,77 @@ a:hover{
     color:white;
 }
 
-.container{
-    font-family: "Open Sans", system-ui;
-    /* font-size:18px; */
-    text-align: justify;
-    margin-right:50px !important;
-}
-.container img{
-    /* display:block; */
-    margin: 20px !important;
-    /* margin-top: 80px; */
-    width: 45%;
-    /* margin-left: 1px; */
-    
-}
-.first-para h3{
-    font-size:23px;
-    margin-top: 80px;
-    margin-right: 80px;
-    padding:10px;
-    font-weight: 500 !important;
+/* home page */
+
+.container {
+    max-width: 1200px; /* Adjust max-width for better responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
     text-align: justify;
 }
 
-.container p{
-    font-weight:450 !important;
-    margin-right: 80px;
-    
+.container img {
+    display: block; /* Ensures image is a block element */
+    margin: 55px 0; /* Vertical spacing for the image */
+    width: 50%; /* Ensure responsive width */
+    float: left; /* Align the image to the left */
+    margin-right: 30px; /* Space between the image and text */
 }
 
-.fa-external-link{
-    font-size: 0.5em !important;
+.first-para h3 {
+    font-size: 23px;
+    margin-top: 20px; /* Reduced top margin */
+    margin-bottom: 20px; /* Added bottom margin */
+    padding: 10px;
+    font-weight: 500;
+}
+
+.container p {
+    font-weight: 450;
+    margin-bottom: 20px; /* Added bottom margin for spacing between paragraphs */
+}
+
+.fa-external-link {
+    font-size: 0.75em; /* Adjusted font size */
     vertical-align: top;
     padding-right: 5px;
     padding-top: 3px;
 }
-/* 
-.wpel-icon-right i.wpel-icon {
-    margin-left: 0.3em;
-}
 
-.fa{
-    font-weight: 900;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-} */
-
-
-.timeline{
-    padding: 40px 40px 40px 40px;
+.timeline {
+    padding: 20px; /* Adjusted padding */
     background-color: #DA3C10;
-    color:white;
+    color: white;
     font-weight: 300;
     margin-top: 30px;
     margin-bottom: 50px;
-    margin-right: 65px;
-    font-size: 34px;
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Added border radius for styling */
+    font-size: 24px; /* Adjusted font size for better readability */
 }
 
+
 /* Publication section */
-.publication-cls h3{
-    margin:20px;
-}
-.pub-container {
-    width: 90%;
-    max-width: 1200px;
+
+.publications-container {
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.publication {
-    border: 1px solid #ddd;
-    padding: 20px;
+.publication-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 28px;
     margin-bottom: 20px;
-    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.publication h2 {
-    margin-top: 0;
-}
 
-.publication .date {
-    font-size: 0.9em;
-    color: #777;
-}
 /* end of publication section */
 
 
@@ -202,14 +190,15 @@ a:hover{
     padding: 5px;
     font-weight: 400;
     font-size: 20px; /* Added px unit */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .research-team {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers items horizontally */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .research-member {
@@ -240,11 +229,70 @@ a:hover{
 
 /* Contact section */
 
-.contact{
-    margin-top:10px !important;
-    padding:100px;
+/* Main contact container */
+.contact-container {
+    display: flex; /* Flexbox to align items side by side */
+    justify-content: space-between; /* Space between contact info and map */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 20px auto; /* Center container horizontally */
+    padding: 20px; /* Padding around the content */
+    gap: 20px; /* Gap between the contact info and map */
+    font-family: "Open Sans", system-ui; /* Font family for text */
+}
+
+/* Contact information styling */
+.contact-info {
+    flex: 1; /* Take up available space */
+    max-width: 30%; /* Limit width to half the container */
+
+}
+
+/* Contact header styling */
+.contact-info h2 {
+    margin-top:90px;
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Paragraph styling in contact info */
+.contact-info p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Map container styling */
+.contact-map {
+    flex: 1; /* Take up available space */
+    max-width: 50%; /* Limit width to half the container */
+}
+
+/* Map header styling */
+.contact-map h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Responsive map iframe styling */
+.contact-map iframe {
+    width: 100%; /* Responsive width */
+    height: 350px; /* Fixed height */
+    border: 0; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Adjust padding for the entire contact section */
+.contact {
+    margin-top: 20px !important;
+    padding: 50px;  /* Reduced padding for better alignment */
     font-family: "Open Sans", system-ui;
 }
+
+
+/* End of contact section */
+
 
 /* footer */
 footer{

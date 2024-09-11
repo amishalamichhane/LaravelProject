@@ -12,11 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('publications', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->text('content');
-            $table->date('published_date');
-            $table->timestamps();
+            $table->id(); // Primary key: unique ID for each publication
+            $table->string('title'); // Title of the publication
+            $table->string('authors'); // Authors of the publication
+            $table->string('journal'); // Name of the journal where it's published
+            $table->integer('year'); // Year of publication
+            $table->text('citation')->nullable(); // Full citation text (optional)
+            $table->timestamps(); // Timestamps for created_at and updated_at
         });
     }
 
