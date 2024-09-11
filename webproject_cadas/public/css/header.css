@@ -1,0 +1,172 @@
+.header{
+    background-color: #1F5C72;
+    /* padding:70px; */
+}
+
+.header img{
+    width: 7%;
+    margin-left:60px !important;
+    margin:10px;
+}
+
+.custom-nav{
+    background-color: #DA3C10;
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Sans;
+    font-weight: 400;
+    padding: 10px;
+    /* height:5%; */
+    
+}
+
+.navbar-nav{
+    margin-left: auto;
+    padding-right: 80px;
+    
+}
+.navbar-nav a{
+    color:#fff !important;
+    text-decoration: none !important;
+    /* margin:3px; */
+}
+
+/* .navbar-nav a:active{
+    color:#fff !important;
+    background-color: #AC262C;
+} */
+
+.navbar-nav a:hover{
+    /* color:#fff !important; */
+    background-color: #AC262C;
+    /* transform: scale(1.2); */
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+    cursor:pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:white;
+}
+
+.container{
+    font-size:18px;
+    /* text-align: justify; */
+}
+.container img{
+    /* display:block; */
+    margin: 18px;
+    /* margin-top: 80px; */
+    width: 40%;
+    margin-left: 15px;
+}
+.first-para{
+    font-size:30px;
+    margin-top: 80px;
+    font-weight: 1000 !important;
+    /* text-align: justify; */
+}
+.fa-external-link{
+    font-size: 0.5em !important;
+    vertical-align: top;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+/* 
+.wpel-icon-right i.wpel-icon {
+    margin-left: 0.3em;
+}
+
+.fa{
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+} */
+
+
+.timeline{
+    padding: 50px 50px 50px 100px;
+    background-color: #DA3C10;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin: 40px;
+    font-size: 34px;
+}
+
+/* Publication section */
+.publication-cls h3{
+    margin:20px;
+}
+.pub-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.publication {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.publication h2 {
+    margin-top: 0;
+}
+
+.publication .date {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Contact section */
+
+.contact{
+    margin-top:10px !important;
+    padding:100px;
+}
+
+/* footer */
+footer{
+    background-color: #1F5C72;
+    padding-top: 30px;
+}
+.logo img{
+    width: 6%;
+}
+
+.container-footer{
+    background-color: #4A4A4A ;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    /* margin-top: 40px; */
+    padding-top: 40px;
+    padding-left: 30px;
+    letter-spacing: 0.5px;
+}
+
+.left-side{
+    padding-bottom: 10px;
+}
+
+.right_side{
+    padding-right:30px;
+    padding-bottom: 50px;
+}
+
+.mid {
+    padding-bottom: 15px;
+}

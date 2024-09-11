@@ -1,27 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicationController;
 
 Route::get('/', function () {
     return view('layout');
 });
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/home', function () {
+    return view('pages.home');
 });
 
-Route::get('/', function () {
-    return view('contact');
+Route::get('/contact', function () {
+    return view('pages.contact');
 });
 
-Route::get('/', function () {
-    return view('investigators');
+Route::get('/about', function () {
+    return view('pages.about');
 });
 
-Route::get('/', function () {
-    return view('links');
-});
-
-Route::get('/', function () {
-    return view('publications');
-});
+Route::get('/publications', [PublicationController::class, 'publications']);

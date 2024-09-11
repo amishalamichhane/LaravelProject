@@ -1,8 +1,7 @@
 {{-- header --}}
 @include('header_footer.header')
 
-{{-- home page --}}
-@include('pages.home')
+@yield('content')
 
 {{-- footer --}}
 @include('header_footer.footer')
