@@ -18,5 +18,8 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('pages.about');
 });
+Route::get('/researcher', function () {
+    return view('pages.researcher');
+});
 
 Route::get('/publications', [PublicationController::class, 'publications']);

@@ -29,6 +29,7 @@
                 <a class="nav-link active" aria-current="page" href="/home">HOME</a>
                 <a class="nav-link" href="/publications">PUBLICATIONS</a>
                 <a class="nav-link" href="/about">ABOUT</a>
+                <a class="nav-link" href="/researcher">Researcher</a>
                 <a class="nav-link" href="/contact">CONTACT</a>
               </div>
             </div>

@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
 .header{
-    background-color: #1F5C72;
+    background-color: #beccb4;
     /* padding:70px; */
+
 }
 
 .header img{
@@ -10,11 +16,11 @@
 }
 
 .custom-nav{
-    background-color: #DA3C10;
+    background-color: #396b1b;
     color: white !important;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: Sans;
+    font-family: "Open Sans", system-ui;
     font-weight: 400;
     padding: 10px;
     /* height:5%; */
@@ -39,7 +45,7 @@
 
 .navbar-nav a:hover{
     /* color:#fff !important; */
-    background-color: #AC262C;
+    background-color: #27530e;
     /* transform: scale(1.2); */
 }
 
@@ -56,22 +62,34 @@ a:hover{
 }
 
 .container{
-    font-size:18px;
-    /* text-align: justify; */
+    font-family: "Open Sans", system-ui;
+    /* font-size:18px; */
+    text-align: justify;
+    margin-right:50px !important;
 }
 .container img{
     /* display:block; */
-    margin: 18px;
+    margin: 20px !important;
     /* margin-top: 80px; */
-    width: 40%;
-    margin-left: 15px;
+    width: 45%;
+    /* margin-left: 1px; */
+    
 }
-.first-para{
-    font-size:30px;
+.first-para h3{
+    font-size:23px;
     margin-top: 80px;
-    font-weight: 1000 !important;
-    /* text-align: justify; */
+    margin-right: 80px;
+    padding:10px;
+    font-weight: 500 !important;
+    text-align: justify;
 }
+
+.container p{
+    font-weight:450 !important;
+    margin-right: 80px;
+    
+}
+
 .fa-external-link{
     font-size: 0.5em !important;
     vertical-align: top;
@@ -95,12 +113,13 @@ a:hover{
 
 
 .timeline{
-    padding: 50px 50px 50px 100px;
+    padding: 40px 40px 40px 40px;
     background-color: #DA3C10;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
-    margin: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 65px;
     font-size: 34px;
 }
 
@@ -130,18 +149,108 @@ a:hover{
     font-size: 0.9em;
     color: #777;
 }
+/* end of publication section */
+
+
+/* About Section */
+.abt-container{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "Open Sans", system-ui;
+    font-weight: 400;
+    font-size: large;
+    
+    /* font-style: normal; */
+}
+/* .abt-img img{
+    width:100%
+} */
+.img_slider{
+    margin-top: 0px !important;
+}
+
+.carousel-inner img {
+    width: 100% !important;
+    height: 80% !important;
+}
+
+.intro{
+    margin:40px;
+    padding:40px;
+}
+
+/* end of About section */
+
+
+/* start Researchers section */
+.research-body {
+    margin: 40px;
+    font-family: "Open Sans", system-ui;
+}
+
+.research-body h1 {
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 40px; /* Added px unit */
+    margin-bottom: 20px;
+}
+
+.research-team h2 {
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 20px; /* Added px unit */
+    margin-bottom: 10px;
+}
+
+.research-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    margin-bottom: 40px;
+}
+
+.research-member {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 20px; /* Adds space between elements */
+}
+
+.polaroid {
+    text-align: center; /* Center-aligns text under the image */
+    margin-bottom: 25px;
+}
+
+.polaroid img {
+    border-radius: 50%;
+    padding: 10px; /* Adjusted padding */
+}
+
+.container-txt {
+    text-align: center; /* Ensures text is centered */
+    padding: 10px;
+}
+
+/* end Researcher section */
+
+
 
 /* Contact section */
 
 .contact{
     margin-top:10px !important;
     padding:100px;
+    font-family: "Open Sans", system-ui;
 }
 
 /* footer */
 footer{
     background-color: #1F5C72;
     padding-top: 30px;
+    
 }
 .logo img{
     width: 6%;
@@ -150,7 +259,7 @@ footer{
 .container-footer{
     background-color: #4A4A4A ;
     color:#fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", system-ui;
     font-size: small;
     /* margin-top: 40px; */
     padding-top: 40px;

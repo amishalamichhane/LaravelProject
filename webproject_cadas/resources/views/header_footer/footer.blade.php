@@ -26,8 +26,8 @@
         </div>
 
         <div class="mid" align="middle">
-            <p>Copyright 2024 UC Regents. | <a href="https://davidkerrdesign.com/">website: David Kerr Design</a><i
-                    class="fa fa-external-link" aria-hidden="true"></i></p>
+             <p>Copyright 2024 UC Regents.{{-- | <a href="https://davidkerrdesign.com/">website: David Kerr Design</a><i
+                    class="fa fa-external-link" aria-hidden="true"></i>--}}</p> 
         </div>
 
     </div>
