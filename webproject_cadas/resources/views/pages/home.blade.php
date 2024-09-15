@@ -1,47 +1,106 @@
 @extends('layout')
-@section('content')
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <div class="container">
-        <img src="/img/last_one.png" align="left" />
-        <div class="first-para">
-            <h3>
-                <b><br>FAMELO</b> examines how family migration impacts children’s socio-psychological development.
-                Using a model that blends migration and child development perspectives, the study explores how migration
-                affects left-behind children’s social skills and psychological well-being, and how different environments
-                influence their outcomes. The goal is to help families adapt and guide policymakers in supporting mental
-                health and addressing issues like depression, anxiety, aggression, and substance use.
-            </h3>
+
+<!-- Include Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Include jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<body>
+    @section('content')
+        {{-- ----------------------------------------------------- --}}
+        <div class="container-fluid mt-5 img_slider"> <!-- Use container-fluid to allow full width -->
+            <!-- Image Slider -->
+            <div id="imageSlider" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#imageSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#imageSlider" data-slide-to="1"></li>
+                    <li data-target="#imageSlider" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ asset('/img/famelo-abt.png') }}" class="d-block w-100" alt="Image 1"
+                            style="width: 100%; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                            {{-- <h5>First Slide Title</h5> --}}
+                            {{-- <p>First Slide Description.</p> --}}
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('/img/group.jpg') }}" class="d-block w-100" alt="Image 2"
+                            style="width: 100%; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                            {{-- <h5>Second Slide Title</h5> --}}
+                            {{-- <p>Second Slide Description.</p> --}}
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('/img/header_original.jpg') }}" class="d-block w-100" alt="Image 3"
+                            style="width: 100%; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                            {{-- <h5>Third Slide Title</h5> --}}
+                            {{-- <p>Third Slide Description.</p> --}}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
-        <p>
-            We initially designed the study to span five years (2015-2020), but it was delayed until 2022 due to the
-            COVID-19 pandemic. In Wave 1, we began data collection on July 5, 2017, and completed it on July 9, 2018.
-            Similarly, in Wave 2, we started data collection on April 8, 2021, and completed it on December 23, 2021.
-        </p>
-        <p>
-            {{-- We build on previous research by the 10/66 Dementia Research Group
-            <i class="fa fa-external-link" aria-hidden="true"></i> that indicates a remarkably high dementia
-            prevalence of 10-12% among metro-dwelling adults aged 65+ in Puerto Rico, Dominican Republic and Cuba, whose
-            similar histories but richly varying societal structures over the past century offer great promise for better
-            understanding AD/ADRD. These Hispanic Caribbean sites are also the origin of the vast majority of Caribbean
-            immigrants to the U.S., and we will also compare experiences in sending countries with experiences among U.S.
-            immigrants. Our surveys are designed for cross-harmonization with both past 10/66 surveys as well as the global
-            network of recent surveys using the Harmonized Cognitive Assessment Protocol <i class="fa fa-external-link"
-                aria-hidden="true"></i>, including the U.S. Health and
-            Retirement Study <i class="fa fa-external-link" aria-hidden="true"></i>. --}}
+        {{-- ----------------------------------------------------- --}}
 
-            We covered 12 Village Development Committees and one Municipality in Western Chitwan, Nepal. Out of the total
-            wards present in the study area, we randomly selected 54 sample sub-wards. Based on a listing of households,
-            these 54 wards were divided into 119 sub-wards, with approximately 250 households in each sub-ward. From this
-            listing and household count, we chose 54 sub-wards for our study. In Wave 1, we initially selected a sample of
-            2268 households (42 households per sub-ward). Later, to increase the number of children aged 14 to 17 years, we
-            sampled an additional 378 households (7 households in each of the 54 sub-wards). In total, we sampled 2646
-            households for the Wave 1 survey.
+        <div class="abt-container">
+            <div class="abt-img">
+                {{-- <img src="/img/famelo-abt.png"> --}}
 
+            </div>
+            <div class="intro">
+                {{-- <h2>About</h2> --}}
+                <p>
+                    Guided by a novel model combining migration and child development perspectives, this project explores
+                    how family migration affects left-behind children's social competence and psychological adjustment. By
+                    understanding migration's impacts, we aim to support families and inform policies addressing mental
+                    health challenges like depression, anxiety, and aggression.
+                </p>
+                <p>
+                <ul>
+                    <li>Reciprocal effects of caregivers' practices and children's socio-emotional development.</li>
+                    <li>Impact of family migration on socio-emotional outcomes and moderating factors.</li>
+                    <li>Fathers' roles in children's socio-emotional outcomes and comparison of migrating vs. non-migrating
+                        fathers' practices.</li>
+                </ul>
 
-        </p>
-        <div class="timeline">
-            Project Timeline: Survey data collection has been delayed due to COVID-19.
+                </p>
+
+                <p>
+                    The Survey Research Center at the University of Michigan developed the FAMELO sampling plan for Nepal,
+                    targeting households with children aged 5-17 years. We used a multi-stage sampling approach and
+                    collected data from 2,341 diverse households.
+                </p>
+
+                <p>
+                    Data collection will be managed by ISER-N, led by Dr. Ghimire, with in-home interviews for children,
+                    caregivers, and fathers (if present). Migrating fathers will be interviewed by phone. Interviews will be
+                    short, verbal, and use visual aids for clarity. Data will be recorded directly into software to minimize
+                    errors. Special measures will ensure privacy and confidentiality, with follow-up interviews to manage
+                    attrition. Interviews will be adapted for age and include both self-reports and other-reports to capture
+                    accurate information.
+                </p>
+
+            </div>
         </div>
-    </div>
-@endsection
+    @endsection
+</body>

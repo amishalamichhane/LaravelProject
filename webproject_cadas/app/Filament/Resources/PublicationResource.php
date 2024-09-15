@@ -42,11 +42,11 @@ class PublicationResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make(name:'title'),
-                Tables\Columns\TextColumn::make(name:'authors'),
-                Tables\Columns\TextColumn::make(name:'journal'),
-                Tables\Columns\TextColumn::make(name:'year'),
-                Tables\Columns\TextColumn::make(name:'citation')
+                Tables\Columns\TextColumn::make(name:'title')
+                // Tables\Columns\TextColumn::make(name:'authors'),
+                // Tables\Columns\TextColumn::make(name:'journal'),
+                // Tables\Columns\TextColumn::make(name:'year'),
+                // Tables\Columns\TextColumn::make(name:'citation')
             ])
             ->filters([
                 //

@@ -6,7 +6,7 @@
         <h1>Research Team</h1>
 
         <div class="research-team">
-            <h2>Members</h2>
+            <h2>Principal Investigators </h2>
             <div class="research-member">
                 {{-- 1st  --}}
                 <div class="polaroid">
