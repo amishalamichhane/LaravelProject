@@ -16,7 +16,7 @@
         </div>
 
         <div class="right_side" align="right">
-            <img src="/img/isernepal-at.png">
+            {{-- <img src="/img/isernepal-at.png"> --}}
             <br>
             FAMELO | University of Michigan<br>
             Michigan MI 94720-2120<br>

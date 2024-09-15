@@ -17,7 +17,8 @@
 <body>
     <header>
         <div class="header">
-            <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid">
+            {{-- <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid"> --}}
+            <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
         </div>
         <nav class="navbar navbar-expand-lg custom-nav">
             <div class="container-fluid">
@@ -29,7 +30,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="/home">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="/">HOME</a>
                         <a class="nav-link" href="/publications">PUBLICATION</a>
                         <a class="nav-link" href="/about">ABOUT</a>
                         <a class="nav-link" href="/researcher">RESEARCHER</a>

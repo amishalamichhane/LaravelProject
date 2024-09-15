@@ -3,11 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicationController;
 
-Route::get('/', function () {
-    return view('layout');
-});
 
-Route::get('/home', function () {
+
+Route::get('/', function () {
     return view('pages.home');
 });
 
