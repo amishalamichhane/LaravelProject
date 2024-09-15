@@ -9,5 +9,9 @@ class Publication extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'authors', 'journal', 'year', 'citation'];
+    protected $fillable = [
+        'title', 'authors', 'journal', 'year', 'citation'
+    
+    ];
+    
 }

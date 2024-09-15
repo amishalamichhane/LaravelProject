@@ -19,7 +19,8 @@ class PublicationsTableSeeder extends Seeder
             'authors' => 'Melissa Alcaraz, Hayley Pierce, Natalie D. Eggum, Bertha Lidia Nuño-Gutiérrez, Dirgha Ghimire',
             'journal' => 'Child Abuse & Neglect',
             'year' => 2024,
-            'citation' => 'Alcaraz, M., Pierce, H., Eggum, N. D., Nuño-Gutiérrez, B. L., & Ghimire, D. (2024). A cross-cultural examination...'
+            'citation' => 'Alcaraz, M., Pierce, H., Eggum, N. D., Nuño-Gutiérrez, B. L., & Ghimire, D. (2024). A cross-cultural examination...',
+            // 'url' => 'https://www.sciencedirect.com/science/article/abs/pii/S014521342400139X?via%3Dihub'
         ]);
 
         // Add more publications as needed
