@@ -22,19 +22,26 @@ class PublicationResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationLabel ='Research Paper';
-    protected static ?string $navigationGroup ='Publications';
+    protected static ?string $navigationLabel = 'Research Paper';
+    protected static ?string $navigationGroup = 'Publications';
 
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make(name:'title'),
-                Forms\Components\TextInput::make(name:'authors'),
-                Forms\Components\TextInput::make(name:'journal'),
-                Forms\Components\TextInput::make(name:'year'),
-                Forms\Components\TextInput::make(name:'citation'),
+                Forms\Components\Group::make()
+                    ->schema([
+                        Forms\Components\Section::make()
+                            ->schema([
+                                Forms\Components\TextInput::make(name: 'title'),
+                                Forms\Components\TextInput::make(name: 'authors'),
+                                Forms\Components\TextInput::make(name: 'year'),
+                                Forms\Components\TextInput::make(name: 'journal') ->columnSpan(span:'full'),
+                                Forms\Components\TextInput::make(name: 'citation')
+                                    ->columnSpan(span:'full')
+                            ])->columns(columns:3)
+                    ])
             ]);
     }
 
@@ -42,7 +49,7 @@ class PublicationResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make(name:'title')
+                Tables\Columns\TextColumn::make(name: 'title')
                 // Tables\Columns\TextColumn::make(name:'authors'),
                 // Tables\Columns\TextColumn::make(name:'journal'),
                 // Tables\Columns\TextColumn::make(name:'year'),

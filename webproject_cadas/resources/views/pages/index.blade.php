@@ -24,16 +24,14 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('/img/famelo-abt.png') }}" class="d-block w-100" alt="Image 1"
-                            style="width: 100%; height: auto;">
+                        <img src="{{ asset('/img/famelo-abt.png') }}" class="d-block w-100" alt="Image 1">
                         <div class="carousel-caption d-none d-md-block">
-                            {{-- <h5>First Slide Title</h5> --}}
+                            {{-- <h5>First Slide Title</h5 --}}
                             {{-- <p>First Slide Description.</p> --}}
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('/img/group.jpg') }}" class="d-block w-100" alt="Image 2"
-                            style="width: 100%; height: auto;">
+                        <img src="{{ asset('/img/group.jpg') }}" class="d-block w-100" alt="Image 2" {{-- style="width: 100%; height: auto;" --}}>
                         <div class="carousel-caption d-none d-md-block">
                             {{-- <h5>Second Slide Title</h5> --}}
                             {{-- <p>Second Slide Description.</p> --}}
@@ -41,7 +39,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="{{ asset('/img/header_original.jpg') }}" class="d-block w-100" alt="Image 3"
-                            style="width: 100%; height: auto;">
+                            {{-- style="width: 100%; height: auto;" --}}>
                         <div class="carousel-caption d-none d-md-block">
                             {{-- <h5>Third Slide Title</h5> --}}
                             {{-- <p>Third Slide Description.</p> --}}

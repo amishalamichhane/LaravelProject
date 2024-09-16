@@ -6,7 +6,7 @@ use App\Http\Controllers\PublicationController;
 
 
 Route::get('/', function () {
-    return view('pages.home');
+    return view('pages.index');
 });
 
 Route::get('/contact', function () {
