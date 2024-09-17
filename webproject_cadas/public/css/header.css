@@ -402,7 +402,8 @@ footer {
     color: rgb(228, 223, 223);
     font-family: "Open Sans", system-ui;
     font-size: small;
-    padding-left: 30px;
+    padding-left: 55px;
+    padding-right: 40px;
     letter-spacing: 0.5px;
     display: flex; /* Ensure Flexbox is used */
     justify-content: space-between; /* Space between left-side and right-side sections */
@@ -414,15 +415,36 @@ footer {
 /* Left side section */
 .left-side {
     text-align: left; /* Align text to the left */
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
 
 /* Right side section */
 .right_side {
-    text-align: right; /* Align text to the right */
-    padding-right: 30px;
-    margin-top: 80px;
+    
+    /* padding-right: 30px; */
+    margin-top: 17px;
 }
+
+/* Right side section images */
+.right_side_logo {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    align-items: center; /* Vertically center the images */
+    justify-content: flex-end; /* Align images to the right */
+    margin-left: 254px; /* Space from the left side */
+    padding: 3px; /* Padding around the container */
+    width: 15%; /* Width of the logo container */
+    gap: 18px; /* Space between images */
+}
+
+.right_side_logo img {
+    width: auto; /* Adjust width as needed */
+    height: 50px; /* Set a specific height for images (adjust as needed) */
+}
+
+.right_side p{
+    text-align: right; /* Align text to the right */
+}
+
 
 /* Logo styles */
 .logo {
@@ -432,12 +454,12 @@ footer {
 }
 
 .logo img {
-    width: 12%; /* Set the logo size */
+    width: 15%; /* Set the logo size */
     margin-right: 5px; /* Space between the image and the text */
 }
 
 .logo h4 {
-    font-size: 1rem; /* Font size for the logo text */
+    font-size: 0.7rem; /* Font size for the logo text */
     font-family: "Open Sans", system-ui;
     color: #46b34a; /* Customize text color */
     letter-spacing: 0.5px;
@@ -454,11 +476,6 @@ footer {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Right side section images */
-.right_side img {
-    width: 6%; /* Set the image size */
-    margin-top: 100px; /* Space below the image */
-}
 
 /* Middle section with copyright notice */
 .mid {

@@ -20,7 +20,7 @@
             {{-- <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid"> --}}
             <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
             <div class="header-content">
-                <h1><br>Family Migration and early life outcomes</h1>
+                <h2><br><b>Family Migration and early life outcomes</b><br></h2>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg custom-nav">

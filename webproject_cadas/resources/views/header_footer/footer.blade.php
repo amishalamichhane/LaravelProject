@@ -17,8 +17,11 @@
         </div>
 
         <div class="right_side">
-
-            <p><a href="https://umich.edu/">University of Michigan, Michigan </a><i class="fa fa-external-link"
+            <div class="right_side_logo">
+            <img src="/img/iser.png" alt="ISERN_N Logo" class="img-fluid">
+            <img src="/img/michigan-M.png" alt="Michigan Logo" class="img-fluid">
+            </div>
+            <p><a href="https://umich.edu/"><br>University of Michigan, Michigan </a><i class="fa fa-external-link"
                 aria-hidden="true"></i> | <a href=" ">ISER-N </a><i class="fa fa-external-link"
                 aria-hidden="true"></i>
             <br>This project is funded by the University of Michigan.
@@ -32,7 +35,7 @@
 
         </div>
         <hr>
-        <div class="mid" align="middle">
+        <div class="mid" >
              <p>© Institute for Social and Environmental Research - Nepal | website: <a href="https://isernepal.org.np/
                 ">ISER-N</a>{{-- | <a href="https://davidkerrdesign.com/">website: David Kerr Design</a><i
                     class="fa fa-external-link" aria-hidden="true"></i>--}}</p> 
