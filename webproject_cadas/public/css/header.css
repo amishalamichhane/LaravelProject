@@ -389,64 +389,90 @@ a:hover {
 
 /* End of contact section */
 
-
-/* footer */
-footer{
-    background-color: #1F5C72;
-    padding-top: 30px;
+/* Footer Styles */
+footer {
+    background-color: #1F5C72; /* Footer background color */
+    padding-top: 30px; /* Existing padding for top */
+    position: relative; /* Relative positioning for child elements */
     
 }
+
+/* Container for footer content */
+.container-footer {
+    color: rgb(228, 223, 223);
+    font-family: "Open Sans", system-ui;
+    font-size: small;
+    padding-left: 30px;
+    letter-spacing: 0.5px;
+    display: flex; /* Ensure Flexbox is used */
+    justify-content: space-between; /* Space between left-side and right-side sections */
+    align-items: flex-start; /* Align items at the start (top) */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    
+}
+
+/* Left side section */
+.left-side {
+    text-align: left; /* Align text to the left */
+    padding-right: 30px;
+}
+
+/* Right side section */
+.right_side {
+    text-align: right; /* Align text to the right */
+    padding-right: 30px;
+    margin-top: 80px;
+}
+
+/* Logo styles */
 .logo {
-    display: flex; /* Use flexbox for side-by-side alignment */
+    display: flex; /* Flexbox for side-by-side alignment */
     align-items: center; /* Vertically center the image and text */
-    padding: 5px; /* Add padding around the logo container */
+    padding: 5px; /* Padding around the logo container */
 }
 
 .logo img {
-    width: 6%; /* Keep the logo size */
-    margin-right: 5px; /* Add some space between the image and the text */
+    width: 12%; /* Set the logo size */
+    margin-right: 5px; /* Space between the image and the text */
 }
 
 .logo h4 {
-    font-size: 1rem; /* Adjust the font size */
+    font-size: 1rem; /* Font size for the logo text */
     font-family: "Open Sans", system-ui;
-    color: #46b34a; /* Customize text color if needed */
+    color: #46b34a; /* Customize text color */
     letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-
-.container-footer{
-    /* background-color: #4A4A4A ; */
-    color:rgb(228, 223, 223);
-    font-family: "Open Sans", system-ui;
-    font-size: small;
-    /* margin-top: 40px; */
-    /* padding-top: 40px; */
-    padding-left: 30px;
-    letter-spacing: 0.5px;
-}
-.container-footer a{
-    color:rgb(228, 223, 223);
+/* Footer links and text */
+.container-footer a {
+    color: rgb(228, 223, 223); /* Link color */
+    text-decoration: none; /* Remove underline from links */
 }
 
-.right_side{
-    padding-right:30px;
-    padding-bottom: 30px;
-    /* margin-top: -70px; */
+.container-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
-.right_side img{
-    width: 6%;
-    /* margin-right:10px; */
-    margin-bottom:10px;
+/* Right side section images */
+.right_side img {
+    width: 6%; /* Set the image size */
+    margin-top: 100px; /* Space below the image */
 }
 
+/* Middle section with copyright notice */
 .mid {
-    padding-bottom: 5px;
-    padding-top: 10px;
+    text-align: center; /* Center text alignment */
+    margin-left: 450px; /* Vertical padding */
+    font-size: 0.9rem; /* Adjust font size */
+    background-color: #1F5C72; /* Same background color as the footer for consistency */
+    color: rgb(228, 223, 223); /* Same text color as the rest of the footer */
 }
 
-.container-footer hr {
-    width: 100%;
-    margin: 0px !important; /* Removes default margins */
+/* Horizontal rule styles */
+hr {
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Margin above and below the line */
+    border: 0; /* Remove default border */
+    border-top: 1px solid rgba(255, 255, 255, 0.5); /* Custom border style */
 }
