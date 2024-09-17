@@ -28,6 +28,7 @@ body {
     font-family: "Open Sans", system-ui;
     letter-spacing: 1px;
     font-weight: 400 !important;
+    line-height: normal;
     margin-left: 15px; /* Small margin to ensure a slight gap between the image and text */
 }
 
@@ -415,12 +416,12 @@ footer{
 
 
 .container-footer{
-    background-color: #4A4A4A ;
+    /* background-color: #4A4A4A ; */
     color:rgb(228, 223, 223);
     font-family: "Open Sans", system-ui;
     font-size: small;
     /* margin-top: 40px; */
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-left: 30px;
     letter-spacing: 0.5px;
 }
@@ -428,13 +429,10 @@ footer{
     color:rgb(228, 223, 223);
 }
 
-.left-side{
-    /* padding-bottom: 10px; */
-}
-
 .right_side{
     padding-right:30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    /* margin-top: -70px; */
 }
 
 .right_side img{
@@ -444,7 +442,8 @@ footer{
 }
 
 .mid {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 .container-footer hr {

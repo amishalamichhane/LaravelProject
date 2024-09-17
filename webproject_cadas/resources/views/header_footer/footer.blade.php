@@ -9,17 +9,7 @@
                 <h4><br>Family Migration<br> and early life<br> outcomes</h4>
                 <br>
             </div>
-            <p><a href="https://umich.edu/">University of Michigan, Michigan </a><i class="fa fa-external-link"
-                    aria-hidden="true"></i> | <a href=" ">ISERN </a><i class="fa fa-external-link"
-                    aria-hidden="true"></i>
-                <br>This project is funded by the University of Michigan.
-            </p>
-
-        </div>
-
-        <div class="right_side" align="right">
-            {{-- <img src="/img/isernepal-at.png"> --}}
-            <br>
+            
             FAMELO | University of Michigan<br>
             Michigan MI 94720-2120<br>
             E-mail: iser.nepal@outlook.com<br><br>
@@ -28,6 +18,19 @@
                     href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Web Accessibility Policy</a>
                 <i class="fa fa-external-link" aria-hidden="true"></i>| Disclaimer
             </p>
+
+        </div>
+
+        <div class="right_side" align="right">
+            {{-- <img src="/img/isernepal-at.png"> --}}
+
+            <p><a href="https://umich.edu/">University of Michigan, Michigan </a><i class="fa fa-external-link"
+                aria-hidden="true"></i> | <a href=" ">ISER-N </a><i class="fa fa-external-link"
+                aria-hidden="true"></i>
+            <br>This project is funded by the University of Michigan.
+        </p>
+
+
         </div>
         <hr>
         <div class="mid" align="middle">
