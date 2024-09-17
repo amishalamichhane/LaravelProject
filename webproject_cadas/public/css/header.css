@@ -395,13 +395,28 @@ footer{
     padding-top: 30px;
     
 }
-.logo img{
-    width: 5%;
+.logo {
+    display: flex; /* Use flexbox for side-by-side alignment */
+    align-items: center; /* Vertically center the image and text */
+    padding: 5px; /* Add padding around the logo container */
 }
+
+.logo img {
+    width: 6%; /* Keep the logo size */
+    margin-right: 5px; /* Add some space between the image and the text */
+}
+
+.logo h4 {
+    font-size: 1rem; /* Adjust the font size */
+    font-family: "Open Sans", system-ui;
+    color: #46b34a; /* Customize text color if needed */
+    letter-spacing: 0.5px;
+}
+
 
 .container-footer{
     background-color: #4A4A4A ;
-    color:#fff;
+    color:rgb(228, 223, 223);
     font-family: "Open Sans", system-ui;
     font-size: small;
     /* margin-top: 40px; */
@@ -409,9 +424,12 @@ footer{
     padding-left: 30px;
     letter-spacing: 0.5px;
 }
+.container-footer a{
+    color:rgb(228, 223, 223);
+}
 
 .left-side{
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .right_side{
@@ -420,11 +438,16 @@ footer{
 }
 
 .right_side img{
-    width: 40%;
+    width: 6%;
     /* margin-right:10px; */
     margin-bottom:10px;
 }
 
 .mid {
     padding-bottom: 15px;
+}
+
+.container-footer hr {
+    width: 100%;
+    margin: 0px !important; /* Removes default margins */
 }

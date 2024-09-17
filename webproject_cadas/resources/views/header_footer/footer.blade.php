@@ -6,13 +6,15 @@
         <div class="left-side">
             <div class="logo">
                 <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
+                <h4><br>Family Migration<br> and early life<br> outcomes</h4>
                 <br>
             </div>
-            <p><br><a href="https://umich.edu/">University of Michigan, Michigan </a><i class="fa fa-external-link"
+            <p><a href="https://umich.edu/">University of Michigan, Michigan </a><i class="fa fa-external-link"
                     aria-hidden="true"></i> | <a href=" ">ISERN </a><i class="fa fa-external-link"
-                    aria-hidden="true"></i></p>
-            <p>This project is funded by the University of Michigan.
+                    aria-hidden="true"></i>
+                <br>This project is funded by the University of Michigan.
             </p>
+
         </div>
 
         <div class="right_side" align="right">
@@ -27,9 +29,10 @@
                 <i class="fa fa-external-link" aria-hidden="true"></i>| Disclaimer
             </p>
         </div>
-
+        <hr>
         <div class="mid" align="middle">
-             <p>Copyright 2024.{{-- | <a href="https://davidkerrdesign.com/">website: David Kerr Design</a><i
+             <p>© Institute for Social and Environmental Research - Nepal | website: <a href="https://isernepal.org.np/
+                ">ISER-N</a>{{-- | <a href="https://davidkerrdesign.com/">website: David Kerr Design</a><i
                     class="fa fa-external-link" aria-hidden="true"></i>--}}</p> 
         </div>
 
