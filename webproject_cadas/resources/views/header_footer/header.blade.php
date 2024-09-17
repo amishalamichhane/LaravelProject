@@ -19,6 +19,9 @@
         <div class="header">
             {{-- <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid"> --}}
             <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
+            <div class="header-content">
+                <h3>Family Migration<br> and early life <br>outcomes</h3>
+            </div>
         </div>
         <nav class="navbar navbar-expand-lg custom-nav">
             <div class="container-fluid">

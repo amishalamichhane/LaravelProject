@@ -10,16 +10,27 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #0f3c4d; /* Light green background for header */
-    padding: 10px 20px;
+    background-color: #0f3c4d; /* Background color */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center the image and content */
+    padding: 15px; /* Padding around the whole header */
+    padding-left: 30px;
 }
 
 .header img {
-    /* width: 30%; */
-    width: 6%;
-    margin-left: 20px;
-    /* margin: 10px; */
+    width: 10%; /* Adjust the image size */
+    margin-right: 0; /* No space between image and content */
 }
+
+.header-content {
+    color: #46b34a;
+    text-transform: uppercase;
+    font-family: "Open Sans", system-ui;
+    font-weight: 400;
+    margin-left: 20px; /* Small margin to ensure a slight gap between the image and text */
+}
+
+
 
 /* Navbar Styles */
 .custom-nav {
