@@ -23,11 +23,12 @@ body {
 }
 
 .header-content {
-    color: #46b34a;
+    color: #46b34a ; /* */
     text-transform: uppercase;
     font-family: "Open Sans", system-ui;
-    font-weight: 400;
-    margin-left: 20px; /* Small margin to ensure a slight gap between the image and text */
+    letter-spacing: 1px;
+    font-weight: 400 !important;
+    margin-left: 15px; /* Small margin to ensure a slight gap between the image and text */
 }
 
 
