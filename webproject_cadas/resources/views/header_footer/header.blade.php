@@ -79,7 +79,7 @@
                             </ul>
                           </li>
 
-                        <a class="nav-link" href="/data">DATA</a>
+                        {{-- <a class="nav-link" href="/data">DATA</a> --}}
                         <a class="nav-link" href="/contact">CONTACT</a>
                     </div>
                 </div>
