@@ -536,10 +536,11 @@ footer {
 /* Middle section with copyright notice */
 .mid {
     text-align: center; /* Center text alignment */
-    margin-left: 450px; /* Vertical padding */
     font-size: 0.9rem; /* Adjust font size */
     background-color: #1F5C72; /* Same background color as the footer for consistency */
     color: rgb(228, 223, 223); /* Same text color as the rest of the footer */
+    padding:10px;
+    font-family: "Open Sans", system-ui;
 }
 
 /* Horizontal rule styles */
