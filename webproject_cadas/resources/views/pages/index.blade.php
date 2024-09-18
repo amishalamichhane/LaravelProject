@@ -13,7 +13,8 @@
         {{-- ----------------------------------------------------- --}}
         <div class="container-fluid mt-5 img_slider"> <!-- Use container-fluid to allow full width -->
             <!-- Image Slider -->
-            <div id="imageSlider" class="carousel slide" data-ride="carousel">
+            <div id="imageSlider" class="carousel slide" data-ride="carousel" data-interval="2500"> <!-- Set interval to 2000ms (2 seconds) -->
+
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#imageSlider" data-slide-to="0" class="active"></li>
@@ -24,7 +25,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('/img/famelo-abt.png') }}" class="d-block w-100" alt="Image 1">
+                        <img src="{{ asset('/img/header_original.jpg') }}" class="d-block w-100" alt="Image 1">
                         <div class="carousel-caption d-none d-md-block">
                             {{-- <h5>First Slide Title</h5 --}}
                             {{-- <p>First Slide Description.</p> --}}
@@ -38,7 +39,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('/img/header_original.jpg') }}" class="d-block w-100" alt="Image 3"
+                        <img src="{{ asset('/img/famelo-abt.png') }}" class="d-block w-100" alt="Image 3"
                             {{-- style="width: 100%; height: auto;" --}}>
                         <div class="carousel-caption d-none d-md-block">
                             {{-- <h5>Third Slide Title</h5> --}}

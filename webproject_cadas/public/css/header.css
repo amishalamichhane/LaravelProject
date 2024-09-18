@@ -11,28 +11,14 @@ body {
 /* Header Styles */
 .header {
     background-color: #0f3c4d; /* Background color */
-    display: flex; /* Flexbox for alignment */
-    align-items: center; /* Vertically center the image and content */
-    padding: 15px; /* Padding around the whole header */
-    padding-left: 30px;
+    padding: 10px; /* Padding around the whole header */
+    padding-left: 50px;
 }
 
 .header img {
-    width: 10%; /* Adjust the image size */
-    margin-right: 0; /* No space between image and content */
+    width: 8%; /* Adjust the image size */
+    
 }
-
-.header-content {
-    color: #46b34a ; /* */
-    text-transform: uppercase;
-    font-family: "Open Sans", system-ui;
-    letter-spacing: 1px;
-    font-weight: 400 !important;
-    line-height: normal;
-    margin-bottom: 25px;
-    margin-left: 6px; /* Small margin to ensure a slight gap between the image and text */
-}
-
 
 
 /* Navbar Styles */
@@ -97,6 +83,17 @@ a {
 a:hover {
     text-decoration: underline;
     color: white;
+}
+
+.dropdown-menu{
+    background-color: #908c8cc7;
+    border-radius: 0%;
+    padding: 0;
+}
+
+.dropdown-menu a:hover{
+    background-color: #27530e;
+    
 }
 
 /* end nav  */
@@ -374,6 +371,17 @@ body, .abt-container {
     text-align: center; /* Ensures text is centered */
     padding: 10px;
 }
+.container-txt a{
+    color: #1246d7;
+    font-size: 20px;
+}
+
+.container-txt p:last-child {
+    font-size: 14px;
+    color: #555; /* Light gray for description text */
+    margin-top: 4px;
+}
+
 
 /* end Researcher section */
 

@@ -1,0 +1,61 @@
+.container1 {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Adds space between the polaroid and content */
+    padding: 80px;
+    text-align: justify; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.polaroid-1 {
+    text-align: center;
+    margin-right: 20px; /* Add space to the right of the image */
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+    flex-shrink: 0; /* Prevent image from shrinking */
+    padding:20px;
+}
+
+.polaroid-1 img {
+    border-radius: 50%; /* Make image circular */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.container-txt1 {
+    text-align: center;
+}
+
+.container-txt1 h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.container-txt1 p {
+    font-size: 15px;
+    color: #555;
+}
+
+.container-txt1 a {
+    display: block;
+    margin-top: 5px;
+    font-size: 17px;
+    color: #0830b4;
+    text-decoration: none;
+}
+
+.container-txt1 a:hover {
+    text-decoration: underline;
+    color: #0830b4;
+}
+
+.content {
+    flex-grow: 1; /* Ensure content takes up remaining space */
+    font-size: 20px;
+    line-height: 1.6;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+}

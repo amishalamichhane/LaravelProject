@@ -19,9 +19,9 @@
         <div class="header">
             {{-- <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid"> --}}
             <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
-            <div class="header-content">
+            {{-- <div class="header-content">
                 <h2><br><b>Family Migration and early life outcomes</b><br></h2>
-            </div>
+            </div> --}}
         </div>
         <nav class="navbar navbar-expand-lg custom-nav">
             <div class="container-fluid">
@@ -34,9 +34,52 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="/">HOME</a>
-                        <a class="nav-link" href="/publications">PUBLICATION</a>
-                        <a class="nav-link" href="/about">ABOUT</a>
-                        <a class="nav-link" href="/researcher">RESEARCHER</a>
+                        {{-- <a class="nav-link" href="/publications">PUBLICATION</a> --}}
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PUBLICATION
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/publications">articles</a></li>
+                              <li><a class="dropdown-item" href="#">dissertation</a></li>                         
+                              <li><a class="dropdown-item" href="#">Books</a></li>                         
+                              {{-- <li><hr class="dropdown-divider">Board member</li> --}}
+                              {{-- <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
+                            </ul>
+                          </li>
+
+                        {{-- <a class="nav-link" href="/about">STUDY</a> --}}
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Study
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/about">About</a></li>
+                              <li><a class="dropdown-item" href="/data">Data</a></li>
+                              {{-- <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
+                            </ul>
+                          </li>
+
+                        {{-- <a class="nav-link" href="/researcher">RESEARCHER</a> --}}
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                RESEARCHER
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/researcher">RESEARCHER</a></li>
+                              <li><a class="dropdown-item" href="#">STAFF</a></li>                         
+                              <li><a class="dropdown-item" href="#">Board member</a></li>                         
+                              {{-- <li><hr class="dropdown-divider">Board member</li> --}}
+                              {{-- <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
+                            </ul>
+                          </li>
+
+                        <a class="nav-link" href="/data">DATA</a>
                         <a class="nav-link" href="/contact">CONTACT</a>
                     </div>
                 </div>
