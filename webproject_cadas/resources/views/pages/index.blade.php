@@ -63,40 +63,37 @@
         <div class="abt-container">
             <div class="abt-img">
                 {{-- <img src="/img/famelo-abt.png"> --}}
+                <H2>
+                    What we study </H2>
+                <h4>… and how</h4>
+
 
             </div>
             <div class="intro">
                 {{-- <h2>About</h2> --}}
                 <p>
-                    Guided by a novel model combining migration and child development perspectives, this project explores
-                    how family migration affects left-behind children's social competence and psychological adjustment. By
-                    understanding migration's impacts, we aim to support families and inform policies addressing mental
-                    health challenges like depression, anxiety, and aggression.
+                    Guided by a model combining migration and child development perspectives, the study explores how
+                    family migration influences left-behind children's social competence and psychological adjustment.
+                    The goal is to support families and inform policies addressing mental health challenges like
+                    depression, anxiety, and aggression.
                 </p>
-                <p>
+                <p><b>Key areas of focus include:</b>
                 <ul>
-                    <li>Reciprocal effects of caregivers' practices and children's socio-emotional development.</li>
+                    <li>Caregivers' practices and children's socio-emotional development.</li>
                     <li>Impact of family migration on socio-emotional outcomes and moderating factors.</li>
-                    <li>Fathers' roles in children's socio-emotional outcomes and comparison of migrating vs. non-migrating
-                        fathers' practices.</li>
+                    <li>Comparison of migrating and non-migrating fathers' roles in children's development.
+                    </li>
                 </ul>
-
                 </p>
 
                 <p>
-                    The Survey Research Center at the University of Michigan developed the FAMELO sampling plan for Nepal,
-                    targeting households with children aged 5-17 years. We used a multi-stage sampling approach and
-                    collected data from 2,341 diverse households.
+                    The FAMELO sampling plan, created by the University of Michigan's Survey Research Center, targets
+                    2,341 households in Nepal with children aged 5-17. Data collection, led by ISER-N under Dr. Ghimire,
+                    involves in-home interviews with children, caregivers, and fathers (migrating fathers interviewed by
+                    phone). Privacy measures and tailored interviews, using self-reports and other-reports, ensure data
+                    accuracy.
                 </p>
 
-                <p>
-                    Data collection will be managed by ISER-N, led by Dr. Ghimire, with in-home interviews for children,
-                    caregivers, and fathers (if present). Migrating fathers will be interviewed by phone. Interviews will be
-                    short, verbal, and use visual aids for clarity. Data will be recorded directly into software to minimize
-                    errors. Special measures will ensure privacy and confidentiality, with follow-up interviews to manage
-                    attrition. Interviews will be adapted for age and include both self-reports and other-reports to capture
-                    accurate information.
-                </p>
 
             </div>
         </div>
