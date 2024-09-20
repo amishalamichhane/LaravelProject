@@ -47,7 +47,7 @@
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="/git">General Interviewing Techniques (GIT) Training</a></li>
                               <li><a class="dropdown-item" href="sst">Study Specific Training</a></li>                         
-                              <li><a class="dropdown-item" href="st">Supervisors Training</a></li>
+                              <li><a class="dropdown-item" href="supervisor-training">Supervisors Training</a></li>
                               <li><a class="dropdown-item" href="sdat">Survey Data Analysis Training</a></li>
                             </ul>
                           </li>

@@ -401,6 +401,140 @@ body, .abt-container {
 /* end Researcher section */
 
 
+/* Gallery section  */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 35px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Captions */
+  .gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Responsive for tablets */
+  @media (max-width: 768px) {
+    .gallery-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    }
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 480px) {
+    .gallery-container {
+      grid-template-columns: 1fr; /* 1 image per row */
+    }
+  }
+
+/* End of Gallery section  */
+
+
+/* Event Section */
+
+
+.event-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .event-container h1 {
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .event-card {
+    display: flex;
+    background: rgb(238, 236, 236);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    overflow: hidden;
+    flex-direction: row; /* Default to horizontal layout */
+  }
+  
+  .event-date {
+    background: #AC262C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .event-date h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .event-date p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  .event-details {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .event-details h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .event-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-card {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  
+    .event-date {
+      text-align: left; /* Align text left */
+    }
+  
+    .event-details {
+      padding: 10px; /* Reduce padding */
+    }
+  }
+
+
+/* End of Event Section */
+
 
 /* Contact section */
 

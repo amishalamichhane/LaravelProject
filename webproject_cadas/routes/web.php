@@ -75,7 +75,7 @@ Route::get('/sst', function () {
     return view('capacity_building.sst');
 });
 
-Route::get('/st', function () {
+Route::get('/supervisor-training', function () {
     return view('capacity_building.st');
 });
 
