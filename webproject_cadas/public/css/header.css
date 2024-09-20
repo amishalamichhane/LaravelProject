@@ -10,7 +10,7 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #0f3c4d; /* Background color */
+    background-color: #fff; /* Background color */
     padding: 10px; /* Padding around the whole header */
     padding-left: 50px;
 }
@@ -23,7 +23,7 @@ body {
 
 /* Navbar Styles */
 .custom-nav {
-    background-color: #396b1b; /* Darker green background for navbar */
+    background-color: #0f3c4d; /* Darker green background for navbar */
     color: white !important;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -38,22 +38,22 @@ body {
 .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    margin-right: 90px;
+    /* margin-right: 90px; */
 }
 
 /* Ensure navbar items are aligned properly */
 .navbar-nav {
     display: flex; /* Flexbox layout for navbar items */
     align-items: center; /* Center items vertically */
-    margin-left: auto;
-    padding: 0; /* Remove padding to fit navbar height */
+    margin: auto;
+    padding: 0px; /* Remove padding to fit navbar height */
 }
 
 /* Style links within the navbar */
 .navbar-nav a {
     color: #fff !important;
     text-decoration: none !important;
-    padding: 0 20px; /* Adjust padding to fit design */
+    padding: 0; /* Adjust padding to fit design */
     display: block; /* Make <a> a block element */
     height: 100%; /* Ensure <a> fills the height of its parent */
     box-sizing: border-box; /* Include padding in width/height calculations */
@@ -63,14 +63,13 @@ body {
 
 /* Hover effect for all nav links */
 .navbar-nav a:hover, .navbar-nav .nav-link.active {
-    background-color: #27530e; /* Background color on hover and active */
-    
+    background-color: #10303a; /* Background color on hover and active */  
     color: #fff !important; /* Ensuring the text color remains white */
 }
 
 /* Active link styling */
 .navbar-nav .nav-link.active {
-    background-color: #27530e !important; /* Background color for active link */
+    background-color: #10303a !important; /* Background color for active link */
 }
 
 /* General anchor tag styles */
@@ -86,15 +85,28 @@ a:hover {
 }
 
 .dropdown-menu{
-    background-color: #908c8cc7;
+    background-color: #514d4dc7;
     border-radius: 0%;
     padding: 0;
+    margin:0
+}
+
+.dropdown-menu.show{
+    margin:0;
+    padding:0;
 }
 
 .dropdown-menu a:hover{
-    background-color: #27530e;
-    
+    background-color: #10303a;
+    padding: 0;
+    margin:0
 }
+
+/* home icon  */
+.custom-size {
+    font-size: 26px; /* Adjust this value to make it bigger */
+    padding: 10px;
+  }
 
 /* end nav  */
 
@@ -365,6 +377,9 @@ body, .abt-container {
 .polaroid img {
     border-radius: 50%;
     padding: 10px; /* Adjusted padding */
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
 }
 
 .container-txt {

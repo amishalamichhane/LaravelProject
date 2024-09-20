@@ -13,13 +13,14 @@
         {{-- ----------------------------------------------------- --}}
         <div class="container-fluid mt-5 img_slider"> <!-- Use container-fluid to allow full width -->
             <!-- Image Slider -->
-            <div id="imageSlider" class="carousel slide" data-ride="carousel" data-interval="2500"> <!-- Set interval to 2000ms (2 seconds) -->
+            <div id="imageSlider" class="carousel slide" data-ride="carousel" data-interval="5000"> <!-- Set interval to 2000ms (5 seconds) -->
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#imageSlider" data-slide-to="0" class="active"></li>
                     <li data-target="#imageSlider" data-slide-to="1"></li>
                     <li data-target="#imageSlider" data-slide-to="2"></li>
+                    <li data-target="#imageSlider" data-slide-to="3"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -31,6 +32,15 @@
                             {{-- <p>First Slide Description.</p> --}}
                         </div>
                     </div>
+
+                    <div class="carousel-item">
+                        <img src="{{ asset('/img/migration.jpg') }}" class="d-block w-100" alt="Image 4" {{-- style="width: 100%; height: auto;" --}}>
+                        <div class="carousel-caption d-none d-md-block">
+                            {{-- <h5>Second Slide Title</h5> --}}
+                            {{-- <p>Second Slide Description.</p> --}}
+                        </div>
+                    </div>
+
                     <div class="carousel-item">
                         <img src="{{ asset('/img/group.jpg') }}" class="d-block w-100" alt="Image 2" {{-- style="width: 100%; height: auto;" --}}>
                         <div class="carousel-caption d-none d-md-block">
@@ -46,6 +56,7 @@
                             {{-- <p>Third Slide Description.</p> --}}
                         </div>
                     </div>
+                    
                 </div>
 
                 <!-- Controls -->

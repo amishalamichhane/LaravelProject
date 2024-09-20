@@ -9,6 +9,17 @@
             <h2>Principal Investigators</h2>
             <div class="research-member">
                 {{-- 1st --}}
+
+
+                {{-- 3rd --}}
+                <div class="polaroid">
+                    <img src="/img/dhirgha.jpg" alt="Dirgha Ghimire">
+                    <div class="container-txt">
+                        <a href="/dirgha">Dirgha Jibi Ghimire</a>
+                        <p>Principal Director & <br>Principle Investigator</p>
+                    </div>
+                </div>
+
                 <div class="polaroid">
                     <img src="/img/natalie.jpg" alt="Natalie D. Eggum">
                     <div class="container-txt">
@@ -21,17 +32,8 @@
                 <div class="polaroid">
                     <img src="/img/scott.png" alt="Scott Yabiku">
                     <div class="container-txt">
-                        <a href="">Scott Yabiku</a>
+                        <a href="/scott">Scott Yabiku</a>
                         <p>Data Collection and Data<br>Management Core Director</p> <!-- Added info -->
-                    </div>
-                </div>
-        
-                {{-- 3rd --}}
-                <div class="polaroid">
-                    <img src="/img/sarah.jpg" alt="Sarah R. Hayford">
-                    <div class="container-txt">
-                        <a href="">Sarah R. Hayford</a>
-                        <p>Principal Investigator<br>of Project 3</p>
                     </div>
                 </div>
         
@@ -40,7 +42,7 @@
                 <div class="polaroid">
                     <img src="/img/jennifer.jpg" alt="Jennifer Glick">
                     <div class="container-txt">
-                        <a href="">Jennifer Glick</a>
+                        <a href="/jennifer">Jennifer Glick</a>
                         <p>Program Director & Principal<br>Investigator Project 2</p>
                     </div>
                 </div>

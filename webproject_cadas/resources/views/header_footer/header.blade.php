@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAMELO</title>
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -33,20 +34,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="/">HOME</a>
-                        {{-- <a class="nav-link" href="/publications">PUBLICATION</a> --}}
+                        <a class="nav-link active" aria-current="page" href="/"> <i class="fa-solid fa-house custom-size"></i> HOME</a>
+                        <a class="nav-link" href="/data">Data</a>
+                        <a class="nav-link" href="/publications">Publication</a>
+                        <a class="nav-link" href="/researcher">PEOPLE</a>
 
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PUBLICATION
+                                CAPACITY BUILDING
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/publications">articles</a></li>
-                              <li><a class="dropdown-item" href="#">dissertation</a></li>                         
-                              <li><a class="dropdown-item" href="#">Books</a></li>                         
-                              {{-- <li><hr class="dropdown-divider">Board member</li> --}}
-                              {{-- <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
+                              <li><a class="dropdown-item" href="/git">General Interviewing Techniques (GIT) Training</a></li>
+                              <li><a class="dropdown-item" href="sst">Study Specific Training</a></li>                         
+                              <li><a class="dropdown-item" href="st">Supervisors Training</a></li>
+                              <li><a class="dropdown-item" href="sdat">Survey Data Analysis Training</a></li>
                             </ul>
                           </li>
 
@@ -54,32 +56,18 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="/about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Study
+                              PRODUCTS
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/about">About</a></li>
-                              <li><a class="dropdown-item" href="/data">Data</a></li>
-                              {{-- <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
-                            </ul>
+                              <li><a class="dropdown-item" href="/presentation">Presentations</a></li>
+                              <li><a class="dropdown-item" href="/policybrief">Policy Brief</a></li>
+                              <li><a class="dropdown-item" href="/dissemination">dissemination</a></li>
+                              <li><a class="dropdown-item" href="/working_paper">Working Paper</a></li>
+                              </ul>
                           </li>
 
-                        {{-- <a class="nav-link" href="/researcher">RESEARCHER</a> --}}
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                RESEARCHER
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/researcher">RESEARCHER</a></li>
-                              <li><a class="dropdown-item" href="#">STAFF</a></li>                         
-                              <li><a class="dropdown-item" href="#">Board member</a></li>                         
-                              {{-- <li><hr class="dropdown-divider">Board member</li> --}}
-                              {{-- <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
-                            </ul>
-                          </li>
-
-                        {{-- <a class="nav-link" href="/data">DATA</a> --}}
+                        <a class="nav-link" href="/events">events</a>
+                        <a class="nav-link" href="/gallery">Gallery</a>
                         <a class="nav-link" href="/contact">CONTACT</a>
                     </div>
                 </div>

@@ -3,9 +3,9 @@
 @section('content')
     <div class="container1">
         <div class="polaroid-1">
-            <img src="/img/natalie.jpg" alt="Natalie D. Eggum">
+            <img src="/img/scott.png" alt="scoot">
             <div class="container-txt1">
-                <h4>Natalie D. Eggum</h4>
+                <h4>Scott Yabiku</h4>
                 <p>Principal Investigator of Project 1</p>
                 <a href="https://thesanfordschool.asu.edu/">Arizona State University</a>
             </div>
@@ -19,7 +19,7 @@
             involve latent variable modeling of longitudinal data. You can learn more about her work here.
 
             <br><br>
-            <a class="cv-link" href="/files/natalie_cv.pdf" target="_blank">View CV</a>
+            <a class="cv-link" href="/files/scott_yabiku_cv.pdf" target="_blank">View CV</a>
         </div>
     </div>
 @endsection

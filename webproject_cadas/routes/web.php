@@ -20,19 +20,63 @@ Route::get('/data', function () {
     return view('pages.data');
 });
 
+Route::get('/events', function () {
+    return view('pages.events');
+});
+
+Route::get('/gallery', function () {
+    return view('pages.gallery');
+});
 
 Route::get('/researcher', function () {
     return view('pages.researcher');
 });
-Route::get('/member', function () {
-    return view('pages.boardmember');
-});
-Route::get('/staff', function () {
-    return view('pages.staff');
-});
 
 Route::get('/natalie', function () {
     return view('research_team.natalie');
+});
+
+Route::get('/dirgha', function () {
+    return view('research_team.dirgha');
+});
+
+Route::get('/jennifer', function () {
+    return view('research_team.jennifer');
+});
+
+Route::get('/scott', function () {
+    return view('research_team.scott');
+});
+
+Route::get('/presentation', function () {
+    return view('product.presentation');
+});
+
+Route::get('/policybrief', function () {
+    return view('product.policybrief');
+});
+Route::get('/dissemination', function () {
+    return view('product.dissemination');
+});
+
+Route::get('/working_paper', function () {
+    return view('product.workingpaper');
+});
+
+Route::get('/git', function () {
+    return view('capacity_building.git');
+});
+
+Route::get('/sdat', function () {
+    return view('capacity_building.sdat');
+});
+
+Route::get('/sst', function () {
+    return view('capacity_building.sst');
+});
+
+Route::get('/st', function () {
+    return view('capacity_building.st');
 });
 
 
