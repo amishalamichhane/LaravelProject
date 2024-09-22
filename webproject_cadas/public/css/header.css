@@ -199,9 +199,69 @@ body, .abt-container {
 /* end of home section */
 
 
+/* Data Section */
+
+.data-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(238, 236, 236);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .data-table th {
+    background-color: #894649;
+    color: white;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .data-table td {
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .data-container {
+      padding: 15px;
+    }
+  
+    .data-table th, .data-table td {
+      padding: 10px;
+    }
+  }
+
+
+/* end of Data Section */
+
 /* Publication section */
 
 .publications-container {
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,6 +346,7 @@ body, .abt-container {
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Add padding inside the container */
     text-align: justify;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container img {
@@ -410,6 +471,7 @@ body, .abt-container {
     padding: 30px;
     max-width: 1200px;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .gallery-item {
@@ -602,6 +664,726 @@ body, .abt-container {
 
 /* End of contact section */
 
+
+/* Presentation section */
+
+.presentation-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .presentation-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .presentation-card {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .presentation-card h2 {
+    color: #AC262C;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .presenter, .date {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .description {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Hover Effect */
+  .presentation-card:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .presentation-container {
+      padding: 15px;
+    }
+  
+    .presentation-card {
+      padding: 15px;
+    }
+  }
+
+
+/* end of  Presentation section */
+
+/* Policy brief section */
+
+.policy-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .policy-container h1 {
+    text-align: center;
+    color: #AC262C;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .policy-section {
+    margin-bottom: 25px;
+  }
+  
+  .policy-section h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .policy-section p,.policy-section ul {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .policy-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .policy-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Hover Effects for Important Sections */
+  .policy-section:hover {
+    background-color: #f9f9f9;
+    border-left: 4px solid #AC262C;
+    padding-left: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .policy-container {
+      padding: 15px;
+    }
+  
+  .policy-container h1 {
+      font-size: 24px;
+    }
+  
+    .policy-section h2 {
+      font-size: 20px;
+    }
+  
+    .policy-section p, .policy-section ul {
+      font-size: 14px;
+    }
+  }
+
+
+/* End of Policy brief section */
+
+
+/* Dissemination section */
+
+
+.dissemination-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .dissemination-container h1 {
+    text-align: center;
+    color: #AC262C;
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section  h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .section  p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+ .section ul li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Publication List */
+  .publication-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .publication-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .publication-item h3 {
+    color: #AC262C;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .publication-item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #AC262C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #8b1f26;
+  }
+  
+  /* Event List */
+  .event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .event-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-item h3 {
+    color: #AC262C;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .event-item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dissemination-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+
+/* End of Dissemination section */
+
+
+/* Working paper section */
+
+
+.working-paper-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .working-paper-container h1 {
+    text-align: center;
+    color: #AC262C;
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  
+  .paper-card {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .paper-card h2 {
+    color: #AC262C;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .author, .date {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .summary {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #AC262C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #8b1f26;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .working-paper-container {
+      padding: 15px;
+    }
+  
+    .working-paper-container h1 {
+      font-size: 28px;
+    }
+  
+    .paper-card h2 {
+      font-size: 20px;
+    }
+  
+    .summary {
+      font-size: 14px;
+    }
+  }
+
+/* End of Working paper section */
+
+
+
+/* GIT SEction */
+
+.training-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .training-container h1 {
+    text-align: center;
+    color: #AC262C;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .training-info {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .training-info p {
+    margin-bottom: 15px;
+  }
+  
+  .training-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  .training-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .training-info ul li strong {
+    color: #AC262C;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .training-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .training-info {
+      font-size: 14px;
+    }
+  
+    .training-info ul li {
+      font-size: 14px;
+    }
+  }
+
+
+/* end of GIT SEction */
+
+
+/* SST Section */
+
+
+.sst-training-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sst-training-container h1 {
+    text-align: center;
+    color: #AC262C;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .sst-info {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .sst-info p {
+    margin-bottom: 15px;
+  }
+  
+  .sst-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  .sst-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .sst-info ul li strong {
+    color: #AC262C;
+  }
+  
+  .sst-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .sst-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AC262C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .sst-link:hover {
+    background-color: #8b1f26;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sst-training-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .sst-info {
+      font-size: 14px;
+    }
+  
+    .sst-info ul li {
+      font-size: 14px;
+    }
+  
+    .sst-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .sst-link {
+      width: 100%;
+    }
+  }
+
+
+
+/* End of SST Section */
+
+/* ST section */
+
+
+.supervisors-training-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .supervisors-training-container h1 {
+    text-align: center;
+    color: #AC262C;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .supervisors-info {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .supervisors-info p {
+    margin-bottom: 15px;
+  }
+  
+  .supervisors-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  .supervisors-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .supervisors-info ul li strong {
+    color: #AC262C;
+  }
+  
+  .supervisors-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .supervisors-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AC262C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 45%;
+  }
+  
+  .supervisors-link:hover {
+    background-color: #8b1f26;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .supervisors-training-container {
+      padding: 15px;
+    }
+  
+    .supervisors-training-container h1 {
+      font-size: 28px;
+    }
+  
+    .supervisors-info {
+      font-size: 14px;
+    }
+  
+    .supervisors-info ul li {
+      font-size: 14px;
+    }
+  
+    .supervisors-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .supervisors-link {
+      width: 100%;
+    }
+  }
+
+
+/* End of ST section */
+
+
+/* SDAT section */
+
+
+.survey-data-analysis-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .survey-title {
+    text-align: center;
+    color: #AC262C;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .training-session {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .training-session p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .resource-persons {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  .resource-persons li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .resource-persons li strong {
+    color: #AC262C;
+  }
+  
+  .survey-links {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .survey-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AC262C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .survey-link:hover {
+    background-color: #8b1f26;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .survey-data-analysis-container {
+      padding: 15px;
+    }
+  
+    .survey-title {
+      font-size: 28px;
+    }
+  
+    .training-session p {
+      font-size: 14px;
+    }
+  
+    .resource-persons li {
+      font-size: 14px;
+    }
+  }
+
+
+/* End of SDAT section */
+
+
+
 /* Footer Styles */
 footer {
     background-color: #1F5C72; /* Footer background color */
@@ -707,3 +1489,8 @@ hr {
     border: 0; /* Remove default border */
     border-top: 1px solid rgba(255, 255, 255, 0.5); /* Custom border style */
 }
+
+
+
+
+
