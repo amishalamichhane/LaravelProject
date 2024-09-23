@@ -63,21 +63,8 @@ Route::get('/working_paper', function () {
     return view('product.workingpaper');
 });
 
-Route::get('/git', function () {
-    return view('capacity_building.git');
+Route::get('/capacity_building', function () {
+    return view('pages.capacity_building');
 });
-
-Route::get('/sdat', function () {
-    return view('capacity_building.sdat');
-});
-
-Route::get('/sst', function () {
-    return view('capacity_building.sst');
-});
-
-Route::get('/supervisor-training', function () {
-    return view('capacity_building.st');
-});
-
 
 Route::get('/publications', [PublicationController::class, 'publications']);

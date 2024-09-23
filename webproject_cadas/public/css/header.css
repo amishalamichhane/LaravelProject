@@ -201,62 +201,76 @@ body, .abt-container {
 
 /* Data Section */
 
-.data-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgb(238, 236, 236);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.data-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  /* Remove the gap here to prevent extra space between divs */
+}
+
+.data-item {
+  background-color: #e6e3e3;
+  /* padding: 20px; */
+  margin: 18px; /* Provides spacing around the div */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex: 1 1 30%;
+  /* max-width: 30%; */
+}
+
+.data-item img {
+  width: 100%; /* Ensures the image fills the div */
+  height: auto;
+}
+
+.data-item h2 {
+  padding: 20px 0 15px 20px;
+  /* margin: 15px 0; */
+  font-size: 1.5rem;
+}
+
+.data-links {
+  padding: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column; /* Arranges the links in a column */
+}
+
+.data-links a {
+  margin-bottom: 10px; /* Adds space between links */
+  color: #1430d0;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.data-links a:hover {
+  text-decoration: underline;
+  color: #1430d0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .data-item {
+    flex: 1 1 45%;
+    max-width: 45%;
   }
-  
-  .data-container h1 {
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
+}
+
+@media (max-width: 480px) {
+  .data-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  
-  .table-responsive {
-    overflow-x: auto;
-  }
-  
-  .data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  .data-table th, .data-table td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .data-table th {
-    background-color: #894649;
-    color: white;
-  }
-  
-  .data-table tbody tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .data-table td {
-    color: #555;
-  }
-  
-  @media (max-width: 768px) {
-    .data-container {
-      padding: 15px;
-    }
-  
-    .data-table th, .data-table td {
-      padding: 10px;
-    }
-  }
+}
+
+
+
 
 
 /* end of Data Section */
+
+
 
 /* Publication section */
 
@@ -460,6 +474,10 @@ body, .abt-container {
 
 
 /* end Researcher section */
+
+
+
+
 
 
 /* Gallery section  */
@@ -1016,371 +1034,6 @@ body, .abt-container {
   }
 
 /* End of Working paper section */
-
-
-
-/* GIT SEction */
-
-.training-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .training-container h1 {
-    text-align: center;
-    color: #AC262C;
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-  
-  .training-info {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .training-info p {
-    margin-bottom: 15px;
-  }
-  
-  .training-info ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 10px;
-  }
-  
-  .training-info ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .training-info ul li strong {
-    color: #AC262C;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .training-container {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 28px;
-    }
-  
-    .training-info {
-      font-size: 14px;
-    }
-  
-    .training-info ul li {
-      font-size: 14px;
-    }
-  }
-
-
-/* end of GIT SEction */
-
-
-/* SST Section */
-
-
-.sst-training-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sst-training-container h1 {
-    text-align: center;
-    color: #AC262C;
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-  
-  .sst-info {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .sst-info p {
-    margin-bottom: 15px;
-  }
-  
-  .sst-info ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 10px;
-  }
-  
-  .sst-info ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .sst-info ul li strong {
-    color: #AC262C;
-  }
-  
-  .sst-links {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-  }
-  
-  .sst-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #AC262C;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    width: 30%;
-  }
-  
-  .sst-link:hover {
-    background-color: #8b1f26;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .sst-training-container {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 28px;
-    }
-  
-    .sst-info {
-      font-size: 14px;
-    }
-  
-    .sst-info ul li {
-      font-size: 14px;
-    }
-  
-    .sst-links {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .sst-link {
-      width: 100%;
-    }
-  }
-
-
-
-/* End of SST Section */
-
-/* ST section */
-
-
-.supervisors-training-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .supervisors-training-container h1 {
-    text-align: center;
-    color: #AC262C;
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-  
-  .supervisors-info {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .supervisors-info p {
-    margin-bottom: 15px;
-  }
-  
-  .supervisors-info ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 10px;
-  }
-  
-  .supervisors-info ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .supervisors-info ul li strong {
-    color: #AC262C;
-  }
-  
-  .supervisors-links {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-  }
-  
-  .supervisors-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #AC262C;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    width: 45%;
-  }
-  
-  .supervisors-link:hover {
-    background-color: #8b1f26;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .supervisors-training-container {
-      padding: 15px;
-    }
-  
-    .supervisors-training-container h1 {
-      font-size: 28px;
-    }
-  
-    .supervisors-info {
-      font-size: 14px;
-    }
-  
-    .supervisors-info ul li {
-      font-size: 14px;
-    }
-  
-    .supervisors-links {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .supervisors-link {
-      width: 100%;
-    }
-  }
-
-
-/* End of ST section */
-
-
-/* SDAT section */
-
-
-.survey-data-analysis-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .survey-title {
-    text-align: center;
-    color: #AC262C;
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-  
-  .training-session {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fafafa;
-  }
-  
-  h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .training-session p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-  }
-  
-  .resource-persons {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 10px;
-  }
-  
-  .resource-persons li {
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .resource-persons li strong {
-    color: #AC262C;
-  }
-  
-  .survey-links {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .survey-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #AC262C;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .survey-link:hover {
-    background-color: #8b1f26;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .survey-data-analysis-container {
-      padding: 15px;
-    }
-  
-    .survey-title {
-      font-size: 28px;
-    }
-  
-    .training-session p {
-      font-size: 14px;
-    }
-  
-    .resource-persons li {
-      font-size: 14px;
-    }
-  }
-
-
-/* End of SDAT section */
 
 
 

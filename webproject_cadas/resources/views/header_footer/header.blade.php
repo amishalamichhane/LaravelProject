@@ -34,37 +34,38 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="/"> <i class="fa-solid fa-house custom-size"></i> HOME</a>
+                        <a class="nav-link active" aria-current="page" href="/"> <i
+                                class="fa-solid fa-house custom-size"></i> HOME</a>
                         <a class="nav-link" href="/data">Data</a>
                         <a class="nav-link" href="/publications">Publication</a>
-                        <a class="nav-link" href="/researcher">PEOPLE</a>
-
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                CAPACITY BUILDING
+                            <a class="nav-link dropdown-toggle" href="/about" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PEOPLE
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/git">General Interviewing Techniques (GIT) Training</a></li>
-                              <li><a class="dropdown-item" href="sst">Study Specific Training</a></li>                         
-                              <li><a class="dropdown-item" href="supervisor-training">Supervisors Training</a></li>
-                              <li><a class="dropdown-item" href="sdat">Survey Data Analysis Training</a></li>
+                                <li><a class="dropdown-item" href="/researcher">Investigators</a></li>
+                                <li><a class="dropdown-item" href="/staff">Staff</a></li>
+                                <li><a class="dropdown-item" href="/collaborator">collaborator</a></li>
                             </ul>
-                          </li>
+                        </li>
 
-                        {{-- <a class="nav-link" href="/about">STUDY</a> --}}
+
+                        <a class="nav-link" href="/about">CAPACITY BUILDING</a>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              PRODUCTS
+                            <a class="nav-link dropdown-toggle" href="/about" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PRODUCTS
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/presentation">Presentations</a></li>
-                              <li><a class="dropdown-item" href="/policybrief">Policy Brief</a></li>
-                              <li><a class="dropdown-item" href="/dissemination">dissemination</a></li>
-                              <li><a class="dropdown-item" href="/working_paper">Working Paper</a></li>
-                              </ul>
-                          </li>
+                                <li><a class="dropdown-item" href="/presentation">Presentations</a></li>
+                                <li><a class="dropdown-item" href="/policybrief">Policy Brief</a></li>
+                                <li><a class="dropdown-item" href="/dissemination">dissemination</a></li>
+                                <li><a class="dropdown-item" href="/working_paper">Working Paper</a></li>
+                            </ul>
+                        </li>
 
                         <a class="nav-link" href="/events">events</a>
                         <a class="nav-link" href="/gallery">Gallery</a>

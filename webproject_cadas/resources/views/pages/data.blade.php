@@ -12,61 +12,41 @@
 
     <body>
 
-        <div class="data-container">
-            <h1>Collected Data</h1>
 
-            <div class="table-responsive">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Date Collected</th>
-                            <th>Location</th>
-                            <th>Data Summary</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Migration Study - Group A</td>
-                            <td>2024-09-01</td>
-                            <td>Chitwan</td>
-                            <td>Initial data on family migration impact in rural areas.</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Migration Study - Group B</td>
-                            <td>2024-09-02</td>
-                            <td>Lumbini</td>
-                            <td>Survey data on child development outcomes post-migration.</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Migration Study - Group C</td>
-                            <td>2024-09-03</td>
-                            <td>Parsa</td>
-                            <td>Focus group discussions on parental migration effects.</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Migration Study - Group D</td>
-                            <td>2024-09-04</td>
-                            <td>Hetauda</td>
-                            <td>Data collected on socio-psychological impacts on left-behind children.</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Migration Study - Group E</td>
-                            <td>2024-09-05</td>
-                            <td>Nepal Gunj</td>
-                            <td>Longitudinal study data on family reunification impacts.</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="data-page">
+            <!-- First section -->
+            <div class="data-item">
+                <img src="/img/data1.jpg" alt="Data Image 1">
+                <h2>Dataset 1</h2>
+                <div class="data-links">
+                    <a href="#">Data</a>
+                    <a href="#">Codebook</a>
+                    <a href="#">Questions</a>
+                </div>
+            </div>
+
+            <!-- Second section -->
+            <div class="data-item">
+                <img src="/img/data2.jpg" alt="Data Image 2">
+                <h2>Dataset 2</h2>
+                <div class="data-links">
+                    <a href="#">Data</a>
+                    <a href="#">Codebook</a>
+                    <a href="#">Questions</a>
+                </div>
+            </div>
+
+            <!-- Third section -->
+            <div class="data-item">
+                <img src="/img/data3.jpg" alt="Data Image 3">
+                <h2>Family Migration Context and Socio-emotional Competence</h2>
+                <div class="data-links">
+                    <a href="#">Data</a>
+                    <a href="#">Codebook</a>
+                    <a href="#">Questions</a>
+                </div>
             </div>
         </div>
-
 
     </body>
 
