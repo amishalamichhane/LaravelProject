@@ -13,6 +13,10 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
+use Filament\Tables\Columns\Text;
+use Filament\Tables\Columns\Image;
+
+
 class StaffResource extends Resource
 {
     protected static ?string $model = Staff::class;
@@ -23,21 +27,20 @@ class StaffResource extends Resource
     {
         return $form
             ->schema([
-                //
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->label('Name'),
+                    ->maxLength(255),
+
                 Forms\Components\TextInput::make('role')
                     ->required()
-                    ->label('Role'),
-                Forms\Components\Section::make('Image')
-                    ->schema([
-                        Forms\Components\FileUpload::make('image')
-                            ->required()
-                            ->label('Image')
-                            ->disk('public') // Specify your disk
-                            ->directory('img'), // Specify your directory
-                    ])->collapsible()
+                    ->maxLength(255),
+
+                Forms\Components\FileUpload::make('image')
+                    ->required()
+                    ->image()
+                    ->maxSize(2048) // Maximum size in kilobytes
+                    ->directory('staff_images') // Where the image will be stored
+                    ->preserveFilenames(),
             ]);
     }
 
@@ -45,28 +48,35 @@ class StaffResource extends Resource
     {
         return $table
             ->columns([
-                //
-                Tables\Columns\TextColumn::make('name')->label('Name'),
-                Tables\Columns\TextColumn::make('role')->label('Role'),
-                Tables\Columns\ImageColumn::make('image')->label('Image'),
+                Tables\Columns\TextColumn::make('name') // Using TextColumn
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\TextColumn::make('role') // Using TextColumn
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\ImageColumn::make('image') // Using ImageColumn
+                    ->width(50)
+                    ->height(50)
+                    ->label('Profile Image'), // Optional: Custom label for display
             ])
             ->filters([
-                //
+                // Add any filters here if needed
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
 
     public static function getRelations(): array
     {
         return [
+
             //
         ];
     }

@@ -69,8 +69,10 @@ Route::get('/capacity_building', function () {
     return view('pages.capacity_building');
 });
 
+// Define the route for displaying staff members
+Route::get('staff', [StaffController::class, 'staff'])->name('staff');
 
-
-Route::get('/staff', [StaffController::class, 'staff']);
+// Define the route for storing a new staff member
+Route::post('staff', [StaffController::class, 'store'])->name('staff.store');
 
 Route::get('/publications', [PublicationController::class, 'publications']);

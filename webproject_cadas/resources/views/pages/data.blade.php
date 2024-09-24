@@ -13,7 +13,11 @@
     <body>
 
 
+        <div class="data-heading">
+            <h1>Data</h1>
+        </div>
         <div class="data-page">
+            
             <!-- First section -->
             <div class="data-item">
                 <img src="/img/data1.jpg" alt="Data Image 1">
