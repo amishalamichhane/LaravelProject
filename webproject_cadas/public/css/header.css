@@ -266,8 +266,6 @@ body, .abt-container {
 
 
 
-
-
 /* end of Data Section */
 
 
@@ -475,7 +473,59 @@ body, .abt-container {
 
 /* end Researcher section */
 
+/* Staff Section */
 
+
+
+.staff-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.staff-item {
+  background-color: #f0ebeb;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 22%;
+  max-width: 25%;
+}
+
+.staff-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.staff-item h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+}
+
+.staff-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .staff-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .staff-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* End of Staff Section */
 
 
 

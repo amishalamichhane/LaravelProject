@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicationController;
-
+use App\Http\Controllers\StaffController;
 
 
 Route::get('/', function () {
@@ -31,6 +31,8 @@ Route::get('/gallery', function () {
 Route::get('/researcher', function () {
     return view('pages.researcher');
 });
+
+
 
 Route::get('/natalie', function () {
     return view('research_team.natalie');
@@ -66,5 +68,9 @@ Route::get('/working_paper', function () {
 Route::get('/capacity_building', function () {
     return view('pages.capacity_building');
 });
+
+
+
+Route::get('/staff', [StaffController::class, 'staff']);
 
 Route::get('/publications', [PublicationController::class, 'publications']);
