@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2024 at 11:00 AM
+-- Generation Time: Sep 24, 2024 at 11:36 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -38,8 +38,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('77de68daecd823babbb58edb1c8e14d7106e83bb', 'i:1;', 1727168313),
-('77de68daecd823babbb58edb1c8e14d7106e83bb:timer', 'i:1727168313;', 1727168313);
+('77de68daecd823babbb58edb1c8e14d7106e83bb', 'i:2;', 1727169235),
+('77de68daecd823babbb58edb1c8e14d7106e83bb:timer', 'i:1727169235;', 1727169235);
 
 -- --------------------------------------------------------
 
@@ -127,7 +127,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('4aRWXgHdDdDWyuh6pyF4z8mYVXQVp7K4j9tC7VdU', 3, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoia29Db2MxUktLbUxNQUszQ25VbFhneUZXTjRpc0hTUDFVM3NzeVJHYiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zdGFmZiI7fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aTozO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkRmNSU2dNejREM1JUS1N4eGFsTTBmdUozeFlYenlYT0p4bUFSLmVtL09waGxXUFJJUk9tbm0iO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1727168324);
+('4aRWXgHdDdDWyuh6pyF4z8mYVXQVp7K4j9tC7VdU', 3, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoia29Db2MxUktLbUxNQUszQ25VbFhneUZXTjRpc0hTUDFVM3NzeVJHYiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zdGFmZiI7fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aTozO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkRmNSU2dNejREM1JUS1N4eGFsTTBmdUozeFlYenlYT0p4bUFSLmVtL09waGxXUFJJUk9tbm0iO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1727170553);
 
 -- --------------------------------------------------------
 
@@ -143,6 +143,19 @@ CREATE TABLE `staff` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `staff`
+--
+
+INSERT INTO `staff` (`id`, `name`, `role`, `image`, `created_at`, `updated_at`) VALUES
+(16, 'Prof. Dr. Dirgha J. Ghimire', 'EXECUTIVE DIRECTOR', 'staff_images/dhirgha.jpg', '2024-09-24 03:20:58', '2024-09-24 03:20:58'),
+(17, 'Mrs. Indra Kumari Chaudhary', 'PROGRAM COORDINATOR', 'staff_images/Indra-Kumari-Chaudhary.jpg', '2024-09-24 03:23:19', '2024-09-24 03:23:19'),
+(18, 'Mrs. Adina Gurung', 'DATA MANAGER', 'staff_images/mrs adina gurung.jpg', '2024-09-24 03:24:19', '2024-09-24 03:24:19'),
+(19, 'Mr. Rajendra Ghimire', 'RESEARCH OFFICER', 'staff_images/Rajendra-Ghimire.jpg', '2024-09-24 03:25:26', '2024-09-24 03:25:26'),
+(20, 'Mr. Krishna Shrestha', 'RESEARCH OFFICER', 'staff_images/Krishna-Shrestha.jpg', '2024-09-24 03:26:11', '2024-09-24 03:26:11'),
+(21, 'Mrs. Sita Chaudhary', 'ASST. RESEARCH OFFICER', 'staff_images/Sita-Chaudhary.jpg', '2024-09-24 03:28:04', '2024-09-24 03:28:04'),
+(22, 'Mr. Govinda Lamichhane', 'ASST. RESEARCH OFFICER', 'staff_images/Gobinda-Lamichhane.jpg', '2024-09-24 03:28:35', '2024-09-24 03:28:35');
 
 -- --------------------------------------------------------
 
@@ -237,7 +250,7 @@ ALTER TABLE `publications`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -502,7 +502,7 @@ body, .abt-container {
 
 .staff-item img {
   width: 100%;               /* Image fills the width of the item */
-  height: auto;              /* Maintain aspect ratio */
+  height: 80%;              /* Maintain aspect ratio */
           /* Make images circular */
 }
 
