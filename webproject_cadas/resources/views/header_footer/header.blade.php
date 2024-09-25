@@ -56,7 +56,7 @@
                         <a class="nav-link" href="/publications">Publication</a>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/about" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 PEOPLE
                             </a>
@@ -71,7 +71,7 @@
                         <a class="nav-link" href="/about">CAPACITY BUILDING</a>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/about" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 PRODUCTS
                             </a>

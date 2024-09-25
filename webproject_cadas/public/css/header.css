@@ -130,7 +130,7 @@ body {
 }
 
 /* Hover effect for all nav links */
-.navbar-nav a:hover {
+.navbar-nav a:hover, .nav-link.active{
     background-color: #247c96; /* Background color on hover and active */  
     color: #fff !important; /* Ensuring the text color remains white */
 }
