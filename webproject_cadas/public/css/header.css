@@ -20,24 +20,91 @@ body {
     
 }
 
+.language-select {
+  background-color: #0f3c4d;
+  padding: 10px 50px 0 0 ;
+  
+  height: 50px;
+  letter-spacing: 0.5px;
+  font-family: "Open Sans", system-ui;
+  font-weight: 400;
+  text-align: right;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.language-select label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.language-select select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.language-select select:hover {
+  border-color: #888;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .language-select {
+      top: 5px;
+      right: 10px;
+      font-size: 13px;
+  }
+
+  .language-select label {
+      margin-right: 5px;
+  }
+
+  .language-select select {
+      padding: 4px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .language-select {
+      top: 5px;
+      right: 5px;
+      font-size: 12px;
+  }
+
+  .language-select label {
+      display: none; /* Hide the label on very small screens to save space */
+  }
+
+  .language-select select {
+      padding: 3px;
+  }
+}
+
 
 /* Navbar Styles */
 .custom-nav {
     background-color: #0f3c4d; /* Darker green background for navbar */
     color: white !important;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     font-family: "Open Sans", system-ui;
-    font-weight: 400;
+    font-weight: 600;
     padding: 0; /* Remove padding */
     height: 60px; /* Set a fixed height for the navbar */
     line-height: 60px; /* Align text vertically */
-    
 }
 
 .navbar-expand-lg .navbar-collapse {
     display: flex !important;
-    flex-basis: auto;
+    flex-basis: auto;  
     /* margin-right: 90px; */
 }
 
@@ -46,6 +113,7 @@ body {
     display: flex; /* Flexbox layout for navbar items */
     align-items: center; /* Center items vertically */
     margin: auto;
+    gap: 20px;
     padding: 0px; /* Remove padding to fit navbar height */
 }
 
@@ -62,14 +130,9 @@ body {
 }
 
 /* Hover effect for all nav links */
-.navbar-nav a:hover, .navbar-nav .nav-link.active {
-    background-color: #10303a; /* Background color on hover and active */  
+.navbar-nav a:hover {
+    background-color: #247c96; /* Background color on hover and active */  
     color: #fff !important; /* Ensuring the text color remains white */
-}
-
-/* Active link styling */
-.navbar-nav .nav-link.active {
-    background-color: #10303a !important; /* Background color for active link */
 }
 
 /* General anchor tag styles */

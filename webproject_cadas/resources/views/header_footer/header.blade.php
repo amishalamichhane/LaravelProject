@@ -17,6 +17,22 @@
 
 <body>
     <header>
+
+        <!-- Language Selector -->
+        <div class="language-select">
+            <label for="language">Select Language: </label>
+            <select id="language" onchange="translateLanguage()">
+                <option value="en">English</option>
+                <option value="ne">Nepali</option>
+            </select>
+        </div>
+
+        <!-- Google Translate Script -->
+        <div id="google_translate_element" style="display:none;"></div>
+
+
+
+
         <div class="header">
             {{-- <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid"> --}}
             <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
@@ -68,7 +84,7 @@
                         </li>
 
                         <a class="nav-link" href="/events">events</a>
-                        <a class="nav-link" href="/gallery">Gallery</a>
+                        {{-- <a class="nav-link" href="/gallery">Gallery</a> --}}
                         <a class="nav-link" href="/contact">CONTACT</a>
                     </div>
                 </div>
@@ -78,7 +94,7 @@
 
 
     <!-- Inline JavaScript -->
-    <script>
+    <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function() {
             const links = document.querySelectorAll('.navbar-nav .nav-link');
             const currentPath = window.location.pathname;
@@ -91,7 +107,43 @@
                 }
             });
         });
+
+
+
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // Default language
+                includedLanguages: 'en,ne', // Languages included in the dropdown
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        function translateLanguage() {
+            var language = document.getElementById("language").value;
+
+            // Set the Google Translate cookie with the selected language
+            var translateCookie = 'googtrans=/en/' + language;
+            document.cookie = translateCookie;
+
+            // Reload the page to apply translation
+            window.location.reload();
+        }
+
+        // Load the Google Translate script dynamically
+        function loadGoogleTranslateScript() {
+            var script = document.createElement('script');
+            script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+            document.head.appendChild(script);
+        }
+
+        // Initialize Google Translate on page load
+        window.onload = function() {
+            loadGoogleTranslateScript();
+        };
     </script>
+
 
 </body>
 
