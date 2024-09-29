@@ -68,7 +68,7 @@
                         </li>
 
 
-                        <a class="nav-link" href="/about">CAPACITY BUILDING</a>
+                        <a class="nav-link" href="">CAPACITY BUILDING</a>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
@@ -85,7 +85,7 @@
 
                         <a class="nav-link" href="/events">events</a>
                         {{-- <a class="nav-link" href="/gallery">Gallery</a> --}}
-                        <a class="nav-link" href="/contact">CONTACT</a>
+                        {{-- <a class="nav-link" href="/contact">CONTACT</a> --}}
                     </div>
                 </div>
             </div>

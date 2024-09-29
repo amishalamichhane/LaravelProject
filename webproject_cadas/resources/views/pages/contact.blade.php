@@ -12,7 +12,7 @@
 
 <body>
 
-    @section('content')
+    @section('contact')
         <div class="contact-container">
             <div class="contact-info">
                 <h2>Contact</h2>

@@ -148,7 +148,7 @@ a:hover {
 }
 
 .dropdown-menu{
-    background-color: #514d4dc7;
+    background-color: #0f3c4d;
     border-radius: 0%;
     padding: 0;
     margin:0
@@ -196,15 +196,21 @@ body, .img_slider {
 
 .carousel-inner img {
     width: auto ;
-    height: 70% ;
+    /* height: auto ; */
+    height: calc(80vh - 70px);
+    min-height: 250px; /* or keep it at 240.398px if precision is important */
+    transition: transform 0.3s ease;
+    transform-origin: center; 
 }
 
 /* Container for aligning .abt-img and .intro side by side */
 .abt-container {
+    width: 100%; /* Ensure the container takes up the full width of its parent */
+    /* margin: 0 auto;  */
+    /* Center the container horizontally */
     display: flex; /* Use Flexbox for side-by-side alignment */
     align-items: flex-start; /* Align items to the top */
     box-sizing: border-box; /* Include padding in the container's width calculation */
-    width: 100%; /* Ensure the container takes up the full width of its parent */
     /* padding removed for no extra space around container */
 
 }
@@ -213,7 +219,8 @@ body, .img_slider {
 .abt-img {
     /* flex: 1;  */
     /* Allow this section to take up space on the left */
-    padding: 20px; /* Add padding around the content */
+    padding: 50px; 
+    /* Add padding around the content */
     margin-left:60px;
     margin-top: 90px;
     
@@ -241,7 +248,7 @@ body, .img_slider {
 /* Ensure .intro takes up space on the right */
 .intro {
     flex: 2; /* Allow this section to take up more space on the right */
-    padding: 30px; /* Add padding around the content */
+    padding: 50px; /* Add padding around the content */
     margin-right: 80px;
     margin-top: 10px;
 }
@@ -251,6 +258,22 @@ body, .img_slider {
     margin-top: 10px; /* Add space above the list */
     padding-left: 20px; /* Add indentation for the list */
 }
+
+.readmore {
+  text-decoration: none;
+  padding: 0.4rem;
+  border: 1px solid #1e1e1e;
+  color: rgb(0, 0, 0);
+  background-color: #c0cbd6;
+  border-radius: 8px;
+}
+.readmore:hover {
+  text-decoration: none;
+  
+  color: white;
+  background-color: #989ca0;
+}
+
 
 /* Remove default margins from body or container if necessary */
 body, .abt-container {
@@ -264,20 +287,21 @@ body, .abt-container {
 
 /* Data Section */
 .data-heading h1{
-  padding-left:70px;
-  padding-top:20px;
+  padding-left:75px;
+  padding-top:25px;
+  
 }
 
 .data-page {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 50px 50px 50px;
+  padding: 10px 60px 50px 60px;
   /* Remove the gap here to prevent extra space between divs */
 }
 
 .data-item {
-  background-color: #e6e3e3;
+  background-color: #f7fcff;
   /* padding: 20px; */
   margin: 18px; /* Provides spacing around the div */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -751,12 +775,13 @@ body, .abt-container {
 
 /* Main contact container */
 .contact-container {
+  background: #efefef;
     display: flex; /* Flexbox to align items side by side */
     justify-content: space-between; /* Space between contact info and map */
     align-items: flex-start; /* Align items to the top */
-    max-width: 1200px; /* Maximum width of the container */
-    margin: 20px auto; /* Center container horizontally */
-    padding: 20px; /* Padding around the content */
+    width: 100%; /* Maximum width of the container */
+     /* Center container horizontally */
+    padding: 60px 60px 60px 60px; /* Padding around the content */
     gap: 20px; /* Gap between the contact info and map */
     font-family: "Open Sans", system-ui; /* Font family for text */
 }
@@ -764,8 +789,8 @@ body, .abt-container {
 /* Contact information styling */
 .contact-info {
     flex: 1; /* Take up available space */
-    max-width: 30%; /* Limit width to half the container */
-
+    max-width: 40%; /* Limit width to half the container */
+    padding-left: 90px;
 }
 
 /* Contact header styling */
@@ -786,7 +811,8 @@ body, .abt-container {
 /* Map container styling */
 .contact-map {
     flex: 1; /* Take up available space */
-    max-width: 50%; /* Limit width to half the container */
+    max-width: 60%; /* Limit width to half the container */
+    padding-right: 90px;
 }
 
 /* Map header styling */
