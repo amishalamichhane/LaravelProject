@@ -100,6 +100,8 @@ body {
     padding: 0; /* Remove padding */
     height: 60px; /* Set a fixed height for the navbar */
     line-height: 60px; /* Align text vertically */
+
+    
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -115,10 +117,12 @@ body {
     margin: auto;
     gap: 20px;
     padding: 0px; /* Remove padding to fit navbar height */
+    
 }
 
 /* Style links within the navbar */
 .navbar-nav a {
+  
     color: #fff !important;
     text-decoration: none !important;
     padding: 0; /* Adjust padding to fit design */

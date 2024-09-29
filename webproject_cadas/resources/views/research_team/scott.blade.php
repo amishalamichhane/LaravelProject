@@ -19,7 +19,7 @@
             involve latent variable modeling of longitudinal data. You can learn more about her work here.
 
             <br><br>
-            <a class="cv-link" href="/files/scott_yabiku_cv.pdf" target="_blank">View CV</a>
+            <a class="cv-link" href="/report/Scott-Yabiku-CV.pdf" target="_blank">View CV</a>
         </div>
     </div>
 @endsection

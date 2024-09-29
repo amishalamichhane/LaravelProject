@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
 <footer>
     <div class="container-footer">
@@ -12,7 +13,8 @@
 
             FAMELO | University of Michigan<br>
             Michigan MI 94720-2120<br>
-            E-mail: iser.nepal@outlook.com<br><br>
+            E-mail: iser.nepal@outlook.com<br>
+            <a href="https://www.facebook.com/isernepalofficial/"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
 
         </div>
 

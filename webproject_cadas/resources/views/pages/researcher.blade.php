@@ -95,7 +95,9 @@
             <div class="research-member">
                 {{-- 1st  --}}
                 <div class="polaroid">
-                    <img src="/img/isern.jpg" alt="5 Terre" style="width:100%">
+                    <a href="https://isernepal.org.np/">
+                        <img src="/img/isern.jpg" alt="5 Terre" style="width:100%">
+                    </a>
                     <div class="container-txt">
                         <p>ISERN</p>
                     </div>

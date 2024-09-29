@@ -22,7 +22,7 @@
             household energy use). More recently his work has focused on ideational aspects of these substantive areas.
 
             <br><br>
-            <a class="cv-link" href="/files/dirgha_ghimire_cv.pdf" target="_blank">View CV</a>
+            <a class="cv-link" href="/report/Dirgha_cv.pdf" target="_blank">View CV</a>
         </div>
     </div>
 @endsection

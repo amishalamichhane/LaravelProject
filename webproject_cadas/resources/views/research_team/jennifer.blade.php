@@ -18,7 +18,7 @@
             household or return. You can learn more about me here.
 
             <br><br>
-            <a class="cv-link" href="/files/jennifer_glick_cv.pdf" target="_blank">View CV</a>
+            <a class="cv-link" href="/report/genifer-glick_CV.pdf" target="_blank">View CV</a>
         </div>
     </div>
 @endsection
