@@ -129,7 +129,8 @@
                     <div class="data-links">
                         <a href="#">Data</a>
                         <a href="#">Codebook</a>
-                        <a href="#">Questions</a>
+                        <a href="/question">Questions</a>
+                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
                     </div>
                 </div>
     
@@ -140,7 +141,8 @@
                     <div class="data-links">
                         <a href="#">Data</a>
                         <a href="#">Codebook</a>
-                        <a href="#">Questions</a>
+                        <a href="/question">Questions</a>
+                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
                     </div>
                 </div>
     
@@ -151,7 +153,8 @@
                     <div class="data-links">
                         <a href="#">Data</a>
                         <a href="#">Codebook</a>
-                        <a href="#">Questions</a>
+                        <a href="/question">Questions</a>
+                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
                     </div>
                 </div>
             </div>

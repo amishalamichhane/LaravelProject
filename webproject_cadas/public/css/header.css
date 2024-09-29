@@ -355,8 +355,44 @@ body, .abt-container {
 }
 
 
-
 /* end of Data Section */
+
+/* Questions Section */
+
+.study-intro {
+  font-size: 1.125rem; /* Using relative units for better scaling */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.study-questions {
+  margin-left: 1.25rem;
+  padding-left: 0.625rem;
+  font-size: 1rem; /* Using relative units */
+  line-height: 1.6;
+}
+
+.study-questions li {
+  margin-bottom: 0.5rem;
+}
+
+/* Media query for smaller devices (like phones) */
+@media (max-width: 600px) {
+  .study-intro {
+      font-size: 1rem; /* Slightly smaller font on small screens */
+  }
+
+  .study-questions {
+      margin-left: 0.75rem;
+      padding-left: 0.5rem;
+      font-size: 0.875rem; /* Reduce font size for readability on smaller screens */
+  }
+}
+
+
+
+
+/* End Questions Section */
 
 
 
