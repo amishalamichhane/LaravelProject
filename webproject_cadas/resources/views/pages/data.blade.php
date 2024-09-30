@@ -1,63 +1,34 @@
 @extends('layout')
+
 @section('content')
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>DATA</title>
-    </head>
-
-    <body>
-
-
-        <div class="data">
-            <div class="data-heading">
-                <h1>Data</h1>
-            </div>
-            <div class="data-page">
-                
-                <!-- First section -->
-                <div class="data-item">
-                    <img src="/img/data1.jpg" alt="Data Image 1">
-                    <h2>Family Migration Context & Socio-emotional Competence. Study-2017</h2>
-                    <div class="data-links">
-                        <a href="#">Data</a>
-                        <a href="#">Codebook</a>
-                        <a href="/question">Questions</a>
-                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
-                    </div>
-                </div>
-    
-                <!-- Second section -->
-                <div class="data-item">
-                    <img src="/img/data2.jpg" alt="Data Image 2">
-                    <h2>Family Migration Context and Socio-emotional Competence. Study-2021</h2>
-                    <div class="data-links">
-                        <a href="#">Data</a>
-                        <a href="#">Codebook</a>
-                        <a href="/question">Questions</a>
-                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
-                    </div>
-                </div>
-    
-                <!-- Third section -->
-                <div class="data-item">
-                    <img src="/img/data3.jpg" alt="Data Image 3">
-                    <h2>Family Migration Context and Socialization & Children's Socio-emotional Development. Study-2024</h2>
-                    <div class="data-links">
-                        <a href="#">Data</a>
-                        <a href="#">Codebook</a>
-                        <a href="/question">Questions</a>
-                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
-                    </div>
-                </div>
-            </div>
+    <div class="data">
+        <div class="data-heading">
+            <h1>Data</h1>
         </div>
+        <div class="data-page">
+            
+            @foreach($studies as $study)
+            <div class="data-item">
+                <img src="{{ $study->image }}" alt="{{ $study->title }}">
+                <h2>{{ $study->title }}</h2>
+                {{-- <div class="data-links">
+                    <a href="{{ $study->data_link }}">Data</a>
+                    <a href="{{ $study->codebook_link }}">Codebook</a>
+                    <a href="{{ $study->questions_link }}">Questions</a>
+                    <a href="{{ $study->report_link }}" target="_blank">Report</a>
+                </div> --}}
 
-    </body>
+                <div class="data-links">
+                    <a href="{{ route('datas') }}">Data</a>
+                    <a href="{{ route('codebooks') }}">Codebook</a>
+                    <a href="/question">Questions</a>
+                    <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
+                </div>
 
-    </html>
+
+
+            </div>
+            @endforeach
+        </div>
+    </div>
 @endsection

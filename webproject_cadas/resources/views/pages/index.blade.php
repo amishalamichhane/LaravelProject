@@ -127,8 +127,8 @@
                     <img src="/img/data1.jpg" alt="Data Image 1">
                     <h2>Family Migration Context & Socio-emotional Competence. Study-2017</h2>
                     <div class="data-links">
-                        <a href="#">Data</a>
-                        <a href="#">Codebook</a>
+                        <a href="/datas">Data</a>
+                        <a href="/codebooks">Codebook</a>
                         <a href="/question">Questions</a>
                         <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
                     </div>
@@ -139,8 +139,8 @@
                     <img src="/img/data2.jpg" alt="Data Image 2">
                     <h2>Family Migration Context and Socio-emotional Competence. Study-2021</h2>
                     <div class="data-links">
-                        <a href="#">Data</a>
-                        <a href="#">Codebook</a>
+                        <a href="/datas">Data</a>
+                        <a href="/codebooks">Codebook</a>
                         <a href="/question">Questions</a>
                         <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
                     </div>
@@ -151,8 +151,8 @@
                     <img src="/img/data3.jpg" alt="Data Image 3">
                     <h2>Family Migration Context and Socialization & Children's Socio-emotional Development. Study-2024</h2>
                     <div class="data-links">
-                        <a href="#">Data</a>
-                        <a href="#">Codebook</a>
+                        <a href="/datas">Data</a>
+                        <a href="/codebooks">Codebook</a>
                         <a href="/question">Questions</a>
                         <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
                     </div>

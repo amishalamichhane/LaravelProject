@@ -406,6 +406,68 @@ body, .abt-container {
 
 /* End Questions Section */
 
+/* CodeBook */
+
+.codebook-container {
+  max-width: 800px; /* Set a maximum width for larger screens */
+  width: 90%; /* Set width to 90% for smaller screens */
+  margin: 20px auto 30px auto; /* Center the container */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.codebook-intro {
+  font-size: 2rem; /* Larger font for the introduction */
+  margin-bottom: 15px; /* Space below the heading */
+  color: #000000; /* Dark red color for text */
+  text-align: center; /* Center the text */
+}
+
+.codebook-links {
+   /* Remove default list styling */
+  padding: 10px; /* Remove padding */
+}
+
+.codebook-links li {
+  margin: 10px 40px; /* Space between list items */
+}
+
+.codebook-links a {
+   /* Remove underline */
+  color: #101113; /* Link color */
+  font-size: 1.125rem; /* Font size for links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.codebook-links a:hover {
+  color: #004997; /* Darker shade for hover effect */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .codebook-intro {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .codebook-links a {
+      font-size: 1rem; /* Adjust font size for links */
+  }
+
+  .codebook-container {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+
+
+/* End CodeBook */
+
+
+
+
+
 
 
 /* Publication section */
