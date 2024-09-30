@@ -23,7 +23,6 @@ body {
 .language-select {
   background-color: #0f3c4d;
   padding: 10px 50px 0 0 ;
-  
   height: 50px;
   letter-spacing: 0.5px;
   font-family: "Open Sans", system-ui;
@@ -90,6 +89,18 @@ body {
 
 
 /* Navbar Styles */
+
+
+/* Sticky Navbar Styles */
+.sticky-top-custom {
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Stick to the top */
+  transition: background-color 1s ease; /* Smooth transition for background color */
+  z-index: 3; /* Ensure it appears above other content */
+  width: 100%; /* Full width */
+}
+
+/* Navbar Styles */
 .custom-nav {
     background-color: #0f3c4d; /* Darker green background for navbar */
     color: white !important;
@@ -98,31 +109,27 @@ body {
     font-family: "Open Sans", system-ui;
     font-weight: 600;
     padding: 0; /* Remove padding */
-    height: 60px; /* Set a fixed height for the navbar */
+    height: 60px; /* Fixed height */
     line-height: 60px; /* Align text vertically */
-
-    
-}
-
-.navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;  
-    /* margin-right: 90px; */
 }
 
 /* Ensure navbar items are aligned properly */
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;  
+}
+
+/* Flexbox layout for navbar items */
 .navbar-nav {
     display: flex; /* Flexbox layout for navbar items */
     align-items: center; /* Center items vertically */
     margin: auto;
     gap: 20px;
     padding: 0px; /* Remove padding to fit navbar height */
-    
 }
 
 /* Style links within the navbar */
 .navbar-nav a {
-  
     color: #fff !important;
     text-decoration: none !important;
     padding: 0; /* Adjust padding to fit design */
@@ -134,7 +141,7 @@ body {
 }
 
 /* Hover effect for all nav links */
-.navbar-nav a:hover, .nav-link.active{
+.navbar-nav a:hover, .nav-link.active {
     background-color: #247c96; /* Background color on hover and active */  
     color: #fff !important; /* Ensuring the text color remains white */
 }
@@ -151,29 +158,30 @@ a:hover {
     color: white;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #0f3c4d;
     border-radius: 0%;
     padding: 0;
-    margin:0
+    margin: 0;
 }
 
-.dropdown-menu.show{
-    margin:0;
-    padding:0;
+.dropdown-menu.show {
+    margin: 0;
+    padding: 0;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     background-color: #247c96;
     padding: 0;
-    margin:0
+    margin: 0;
 }
 
-/* home icon  */
+/* Home icon */
 .custom-size {
     font-size: 26px; /* Adjust this value to make it bigger */
     padding: 10px;
-  }
+}
+
 
 /* end nav  */
 

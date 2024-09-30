@@ -35,12 +35,10 @@ class StaffResource extends Resource
                     ->required()
                     ->maxLength(255),
 
-                Forms\Components\FileUpload::make('image')
+                Forms\Components\TextInput::make('image')
                     ->required()
-                    ->image()
-                    ->maxSize(2048) // Maximum size in kilobytes
-                    ->directory('staff_images') // Where the image will be stored
-                    ->preserveFilenames(),
+                    ->maxLength(2048),
+
             ]);
     }
 
@@ -56,10 +54,7 @@ class StaffResource extends Resource
                     ->sortable()
                     ->searchable(),
 
-                Tables\Columns\ImageColumn::make('image') // Using ImageColumn
-                    ->width(50)
-                    ->height(50)
-                    ->label('Profile Image'), // Optional: Custom label for display
+                // Optional: Custom label for display
             ])
             ->filters([
                 // Add any filters here if needed

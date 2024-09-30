@@ -11,7 +11,9 @@
         <div class="staff-list">
             @foreach($staff as $member)
                 <div class="staff-item">
-                    <img src="{{ asset('storage/' . $member->image) }}" alt="{{ $member->name }}">
+                    <img src="{{ ($member->image) }}" alt="{{ $member->name }}">
+                    {{-- Img ko url dini  --}}
+                    
                     <h3 class="staff-name">{{ $member->name }}</h3>
                     <p class="staff-role">{{ $member->role }}</p>
                 </div>
