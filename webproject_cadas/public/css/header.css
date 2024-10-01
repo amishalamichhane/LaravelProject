@@ -178,10 +178,17 @@ a:hover {
 
 /* Home icon */
 .custom-size {
-    font-size: 26px; /* Adjust this value to make it bigger */
-    padding: 10px;
+  font-size: 26px; /* Default size */
+  padding: 10px;   /* Default padding */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For devices smaller than 768px */
+  .custom-size {
+      font-size: 22px; /* Adjust size for smaller screens */
+      padding: 8px;    /* Adjust padding */
+  }
+}
 
 /* end nav  */
 
@@ -292,6 +299,71 @@ body, .abt-container {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding if needed */
 }
+
+
+/* Mediaquery */
+
+/* Responsive Navbar Styles */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column; /* Stack the nav items vertically */
+      text-align: center; /* Center the items */
+      width: 100%; /* Make the navbar full width */
+  }
+
+  .navbar-nav a {
+      padding: 10px 0; /* Add padding for touch targets */
+  }
+
+  .header img {
+      width: 60%; /* Adjust image size for smaller screens */
+  }
+
+  .abt-container {
+      flex-direction: column; /* Stack items vertically */
+      padding: 20px; /* Adjust padding for mobile */
+  }
+
+  .abt-img, .intro {
+      margin: 0; /* Reset margin */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .abt-img h2 {
+      font-size: 36px; /* Responsive font size */
+  }
+
+  .abt-img h4 {
+      font-size: 28px; /* Responsive font size */
+  }
+}
+
+/* Further adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+  .navbar-nav {
+      gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .header img {
+      width: 80%; /* Further adjust image size */
+  }
+
+  .abt-container {
+      padding: 10px; /* Less padding on very small screens */
+  }
+
+  .abt-img h2 {
+      font-size: 28px; /* Smaller font size */
+  }
+
+  .abt-img h4 {
+      font-size: 24px; /* Smaller font size */
+  }
+}
+
+
+/* Mediaquery */
+
 
 
 /* end of home section */
