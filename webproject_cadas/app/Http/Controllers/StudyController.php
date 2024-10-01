@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Study; // Import the Study model
 use Illuminate\Http\Request;
 
+
 class StudyController extends Controller
 {
 
@@ -31,10 +32,12 @@ class StudyController extends Controller
          return view('data.datas', compact('study'));
      }
       // Method to display the question page
-    public function questions()
+    public function question()
     {
         // $study = Study::all();
         $study = Study::first(); // Fetch a single study
         return view('data.questions', compact('study'));
     }
+
+   
 }

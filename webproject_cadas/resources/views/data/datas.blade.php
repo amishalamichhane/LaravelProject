@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="data-container">
-    {{ $study->data_link }}
+    {!! $study->data_link !!}
 </div>
 
 @endsection

@@ -22,8 +22,8 @@ class PublicationResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationLabel = 'Research Paper';
-    protected static ?string $navigationGroup = 'Publications';
+    protected static ?string $navigationLabel = 'Publications';
+    // protected static ?string $navigationGroup = 'Publications';
 
 
     public static function form(Form $form): Form

@@ -21,7 +21,7 @@
                 <div class="data-links">
                     <a href="{{ route('datas') }}">Data</a>
                     <a href="{{ route('codebooks') }}">Codebook</a>
-                    <a href="{{ route('question') }}">Questions</a>
+                    <a href="{{ route('questions') }}">Questions</a>
                     <a href="{{  $study->report_link }}" target="_blank">Report</a>
                 </div>
 

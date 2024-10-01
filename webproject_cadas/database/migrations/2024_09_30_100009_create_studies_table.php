@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');          // Study title
             $table->string('image')->nullable();          // URL for image
-            $table->string('data_link')->nullable();      // Link to data
-            $table->string('codebook_link')->nullable();  // Link to codebook
-            $table->string('questions_link')->nullable(); // Link to questions
+            $table->text('data_link')->nullable();      // Link to data
+            $table->text('codebook_link')->nullable();  // Link to codebook
+            $table->text('questions_link')->nullable(); // Link to questions
             $table->string('report_link')->nullable();    // Link to report
             $table->timestamps();             // Created at and updated at timestamps
         });

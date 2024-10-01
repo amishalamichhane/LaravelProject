@@ -20,6 +20,7 @@ class StudyResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationLabel = 'Data';
     public static function form(Form $form): Form
     {
         return $form
@@ -33,11 +34,11 @@ class StudyResource extends Resource
                 // Forms\Components\TextInput::make('questions_link'),
                 Forms\Components\TextInput::make('report_link'),
                 TinyEditor::make('data_link')
-                ->columnSpan(span:'full'),
+                    ->columnSpan(span: 'full'),
                 TinyEditor::make('codebook_link')
-                ->columnSpan(span:'full'),
+                    ->columnSpan(span: 'full'),
                 TinyEditor::make('questions_link')
-                ->columnSpan(span:'full'),
+                    ->columnSpan(span: 'full'),
             ]);
     }
 

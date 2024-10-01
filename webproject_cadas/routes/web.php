@@ -21,9 +21,9 @@ Route::get('/about', function () {
 // Route::get('/data', function () {
 //     return view('pages.data');
 // });
-Route::get('/question', function () {
-    return view('data.questions');
-});
+// Route::get('/question', function () {
+//     return view('data.questions');
+// });
 // Route::get('/codebooks', function () {
 //     return view('data.codebook');
 // });
@@ -31,7 +31,8 @@ Route::get('/question', function () {
 Route::get('/data', [StudyController::class, 'data']);
 
 Route::get('/codebooks', [StudyController::class, 'codebook'])->name('codebooks');
-Route::get('/datas', [StudyController::class, 'data'])->name('datas');
+Route::get('/datas', [StudyController::class, 'datas'])->name('datas');
+Route::get('/questions', [StudyController::class, 'question'])->name('questions');
 
 
 Route::get('/events', function () {
