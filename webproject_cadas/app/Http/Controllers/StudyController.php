@@ -21,7 +21,20 @@ class StudyController extends Controller
     // Method to display the codebook page
     public function codebook()
     {
-        $studies = Study::all();
-        return view('data.codebook', compact('studies'));
+        $study = Study::first();
+        return view('data.codebook', compact('study'));
+    }
+     // Method to display the datas page
+     public function datas()
+     {
+         $study = Study::first();
+         return view('data.datas', compact('study'));
+     }
+      // Method to display the question page
+    public function questions()
+    {
+        // $study = Study::all();
+        $study = Study::first(); // Fetch a single study
+        return view('data.questions', compact('study'));
     }
 }

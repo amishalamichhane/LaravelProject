@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
 class StudyResource extends Resource
 {
@@ -31,6 +32,12 @@ class StudyResource extends Resource
                 // Forms\Components\TextInput::make('codebook_link'),
                 // Forms\Components\TextInput::make('questions_link'),
                 Forms\Components\TextInput::make('report_link'),
+                TinyEditor::make('data_link')
+                ->columnSpan(span:'full'),
+                TinyEditor::make('codebook_link')
+                ->columnSpan(span:'full'),
+                TinyEditor::make('questions_link')
+                ->columnSpan(span:'full'),
             ]);
     }
 

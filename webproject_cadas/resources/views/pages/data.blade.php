@@ -21,8 +21,8 @@
                 <div class="data-links">
                     <a href="{{ route('datas') }}">Data</a>
                     <a href="{{ route('codebooks') }}">Codebook</a>
-                    <a href="/question">Questions</a>
-                    <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
+                    <a href="{{ route('question') }}">Questions</a>
+                    <a href="{{  $study->report_link }}" target="_blank">Report</a>
                 </div>
 
 

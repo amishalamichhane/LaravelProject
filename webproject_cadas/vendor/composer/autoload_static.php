@@ -135,6 +135,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Mohamedsabil83\\FilamentFormsTinyeditor\\' => 39,
             'Mockery\\' => 8,
             'Masterminds\\' => 12,
         ),
@@ -447,6 +448,10 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Mohamedsabil83\\FilamentFormsTinyeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mohamedsabil83/filament-forms-tinyeditor/src',
+        ),
         'Mockery\\' => 
         array (
             0 => __DIR__ . '/..' . '/mockery/mockery/library/Mockery',
@@ -682,6 +687,10 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'App\\Filament\\Resources\\StaffResource\\Pages\\CreateStaff' => __DIR__ . '/../..' . '/app/Filament/Resources/StaffResource/Pages/CreateStaff.php',
         'App\\Filament\\Resources\\StaffResource\\Pages\\EditStaff' => __DIR__ . '/../..' . '/app/Filament/Resources/StaffResource/Pages/EditStaff.php',
         'App\\Filament\\Resources\\StaffResource\\Pages\\ListStaff' => __DIR__ . '/../..' . '/app/Filament/Resources/StaffResource/Pages/ListStaff.php',
+        'App\\Filament\\Resources\\StudyResource' => __DIR__ . '/../..' . '/app/Filament/Resources/StudyResource.php',
+        'App\\Filament\\Resources\\StudyResource\\Pages\\CreateStudy' => __DIR__ . '/../..' . '/app/Filament/Resources/StudyResource/Pages/CreateStudy.php',
+        'App\\Filament\\Resources\\StudyResource\\Pages\\EditStudy' => __DIR__ . '/../..' . '/app/Filament/Resources/StudyResource/Pages/EditStudy.php',
+        'App\\Filament\\Resources\\StudyResource\\Pages\\ListStudies' => __DIR__ . '/../..' . '/app/Filament/Resources/StudyResource/Pages/ListStudies.php',
         'App\\Filament\\Resources\\UserResource' => __DIR__ . '/../..' . '/app/Filament/Resources/UserResource.php',
         'App\\Filament\\Resources\\UserResource\\Pages\\CreateUser' => __DIR__ . '/../..' . '/app/Filament/Resources/UserResource/Pages/CreateUser.php',
         'App\\Filament\\Resources\\UserResource\\Pages\\EditUser' => __DIR__ . '/../..' . '/app/Filament/Resources/UserResource/Pages/EditUser.php',
@@ -689,8 +698,10 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\PublicationController' => __DIR__ . '/../..' . '/app/Http/Controllers/PublicationController.php',
         'App\\Http\\Controllers\\StaffController' => __DIR__ . '/../..' . '/app/Http/Controllers/StaffController.php',
+        'App\\Http\\Controllers\\StudyController' => __DIR__ . '/../..' . '/app/Http/Controllers/StudyController.php',
         'App\\Models\\Publication' => __DIR__ . '/../..' . '/app/Models/Publication.php',
         'App\\Models\\Staff' => __DIR__ . '/../..' . '/app/Models/Staff.php',
+        'App\\Models\\Study' => __DIR__ . '/../..' . '/app/Models/Study.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\Filament\\AdminPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AdminPanelProvider.php',
@@ -5152,6 +5163,8 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Mockery\\Undefined' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Undefined.php',
         'Mockery\\VerificationDirector' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationDirector.php',
         'Mockery\\VerificationExpectation' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationExpectation.php',
+        'Mohamedsabil83\\FilamentFormsTinyeditor\\Components\\TinyEditor' => __DIR__ . '/..' . '/mohamedsabil83/filament-forms-tinyeditor/src/Components/TinyEditor.php',
+        'Mohamedsabil83\\FilamentFormsTinyeditor\\FilamentFormsTinyeditorServiceProvider' => __DIR__ . '/..' . '/mohamedsabil83/filament-forms-tinyeditor/src/FilamentFormsTinyeditorServiceProvider.php',
         'Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/AsMonologProcessor.php',
         'Monolog\\Attribute\\WithMonologChannel' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/WithMonologChannel.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',

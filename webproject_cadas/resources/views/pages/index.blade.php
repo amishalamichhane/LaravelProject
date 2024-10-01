@@ -116,7 +116,7 @@
 
         {{--  Data --}}
 
-        <div class="data">
+        {{-- <div class="data">
             <div class="data-heading">
                 <h1>Data</h1>
             </div>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
 

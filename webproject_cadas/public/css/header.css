@@ -418,30 +418,25 @@ body, .abt-container {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.codebook-intro {
-  font-size: 2rem; /* Larger font for the introduction */
-  margin-bottom: 15px; /* Space below the heading */
-  color: #000000; /* Dark red color for text */
-  text-align: center; /* Center the text */
-}
-
-.codebook-links {
+.codebook-list {
    /* Remove default list styling */
   padding: 10px; /* Remove padding */
+  
 }
 
-.codebook-links li {
+.codebook-list li {
   margin: 10px 40px; /* Space between list items */
+  
 }
 
-.codebook-links a {
+.codebook-list a{
    /* Remove underline */
-  color: #101113; /* Link color */
+  color: #111213 ; /* Link color */
   font-size: 1.125rem; /* Font size for links */
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-.codebook-links a:hover {
+.codebook-list a:hover {
   color: #004997; /* Darker shade for hover effect */
 }
 
@@ -451,7 +446,7 @@ body, .abt-container {
       font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
 
-  .codebook-links a {
+  .codebook-list a {
       font-size: 1rem; /* Adjust font size for links */
   }
 

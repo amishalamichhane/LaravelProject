@@ -14,20 +14,8 @@
 
 @extends('layout')
 @section('content')
-
-<div class="codebook-container">
-    <h1>Codebooks</h1>
-    <ul class="codebook-list">
-        @foreach($studies as $study)
-            <li>
-                <h2>{{ $study->title }}</h2>
-                <a href="{{ $study->codebook_link }}" target="_blank">Download Codebook</a>
-                <a href="{{ $study->codebook_link }}" target="_blank">Download Codebook</a>
-                <a href="{{ $study->codebook_link }}" target="_blank">Download Codebook</a>
-            </li>
-        @endforeach
-    </ul>
-</div>
-
+    <div class="codebook-container">
+        
+        {{ $study->codebook_link }}
+    </div>
 @endsection
-
