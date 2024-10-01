@@ -6,28 +6,19 @@
             <h1>Data</h1>
         </div>
         <div class="data-page">
-            
-            @foreach($studies as $study)
-            <div class="data-item">
-                <img src="{{ $study->image }}" alt="{{ $study->title }}">
-                <h2>{{ $study->title }}</h2>
-                {{-- <div class="data-links">
-                    <a href="{{ $study->data_link }}">Data</a>
-                    <a href="{{ $study->codebook_link }}">Codebook</a>
-                    <a href="{{ $study->questions_link }}">Questions</a>
-                    <a href="{{ $study->report_link }}" target="_blank">Report</a>
-                </div> --}}
+            @foreach ($studies as $study)
+                <div class="data-item">
+                    <img src="{{ $study->image }}" alt="{{ $study->title }}">
+                    <h2>{{ $study->title }}</h2>
 
-                <div class="data-links">
-                    <a href="{{ route('datas') }}">Data</a>
-                    <a href="{{ route('codebooks') }}">Codebook</a>
-                    <a href="{{ route('questions') }}">Questions</a>
-                    <a href="{{  $study->report_link }}" target="_blank">Report</a>
+                    <div class="data-links">
+                        <!-- Links generated dynamically by passing the study's slug -->
+                        <a href="{{ route('datas', $study->slug) }}">Data</a>
+                        <a href="{{ route('codebooks', $study->slug) }}">Codebook</a>
+                        <a href="{{ route('questions', $study->slug) }}">Questions</a>
+                        <a href="{{ $study->report_link }}" target="_blank">Report</a>
+                    </div>
                 </div>
-
-
-
-            </div>
             @endforeach
         </div>
     </div>

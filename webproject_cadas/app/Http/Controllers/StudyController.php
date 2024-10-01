@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Study; // Import the Study model
 use Illuminate\Http\Request;
-
+use App\Models\Post; 
 
 class StudyController extends Controller
 {
@@ -18,26 +19,25 @@ class StudyController extends Controller
         return view('pages.data', compact('studies'));
     }
 
-
     // Method to display the codebook page
-    public function codebook()
+    public function codebook($slug) // Accept slug as a parameter
     {
-        $study = Study::first();
+        
+        $study = Study::where('slug', $slug)->firstOrFail(); // Fetch by slug
         return view('data.codebook', compact('study'));
     }
-     // Method to display the datas page
-     public function datas()
-     {
-         $study = Study::first();
-         return view('data.datas', compact('study'));
-     }
-      // Method to display the question page
-    public function question()
+
+    // Method to display the datas page
+    public function datas($slug) // Accept slug as a parameter
     {
-        // $study = Study::all();
-        $study = Study::first(); // Fetch a single study
-        return view('data.questions', compact('study'));
+        $study = Study::where('slug', $slug)->firstOrFail(); // Fetch by slug
+        return view('data.datas', compact('study'));
     }
 
-   
+    // Method to display the question page
+    public function question($slug) // Accept slug as a parameter
+    {
+        $study = Study::where('slug', $slug)->firstOrFail(); // Fetch by slug
+        return view('data.questions', compact('study'));
+    }
 }

@@ -27,6 +27,8 @@ class StudyResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required(),
+                    Forms\Components\TextInput::make('slug')
+                    ->required(),
                 Forms\Components\TextInput::make('image')
                     ->required(),
                 // Forms\Components\TextInput::make('data_link'),
