@@ -522,87 +522,113 @@ body, .abt-container {
 
 
 
-
-
 /* Publication section */
 
 .publications-container {
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    min-height: calc(100vh - 40px); /* Adjust for top and bottom margins */
-    margin-top: 60px; /* Add margin to the top and bottom */
-    margin-bottom: 40px;
-    margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjust alignment for smaller screens */
+  padding: 60px 60px 60px 60px;
+  width: 100%;
+  min-height: calc(100vh - 40px); /* Adjust for top and bottom margins */
+  margin: 0 auto;
+  flex-direction: column; /* Stack content on smaller screens */
 }
 
 .publication-header {
-    width: 20%; /* Adjust width as needed */
-    text-align: left; /* Align h1 to the left */
-    margin-left: 60px;
-    margin-top: -750px;
-    
+  width: 100%; /* Full width on smaller screens */
+  text-align: left; /* Align h1 to the left */
+  margin-left: 0;
+  margin-top: 0; /* Remove negative margin */
+  padding: 10px;
 }
 
 .publications-content {
-    width: 75%; /* Adjust width as needed */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+  width: 100%; /* Full width on smaller screens */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
 }
 
 .publication-item {
-    width: 90%; /* Adjust width as needed */
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: left; /* Align text to the left */
+  width: 100%; /* Full width on smaller screens */
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left; /* Align text to the left */
 }
 
 .citation-buttons {
-    margin-top: 10px;
-}
-
-.citation-buttons a {
-    text-decoration: none;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
 }
 
 .citation-buttons button {
-    background-color: #eff0f1;
-    color: rgb(0, 0, 0);
-    border: 0.5px solid gray;
-    padding: 5px 10px;
-    margin-right: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.citation-buttons button:hover {
-    background-color: #0056b3;
-    color:white;
+  background-color: #eff0f1;
+  color: rgb(0, 0, 0);
+  border: 0.5px solid gray;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px; /* Add margin to the bottom to ensure spacing */
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .pagination-container {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .publication-item a {
-    color: #007BFF;
-    text-decoration: none;
+  color: #007BFF;
+  text-decoration: none;
 }
 
 .publication-item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+
+
+/* For iPhone 14 Pro Max and similar devices (around 430px width) */
+@media (max-width: 430px) {
+  .publications-container, .publication-item {
+      padding: 10px; /* Reduce padding for small devices */
+  }
+
+  .citation-buttons button {
+      font-size: 11px; /* Slightly smaller font */
+      padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* For iPads and other devices (around 768px width) */
+@media (max-width: 768px) {
+  .publications-container, .publication-item {
+      padding: 15px; /* Adjust padding for tablet-sized screens */
+  }
+
+  .citation-buttons button {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .citation-buttons button {
+      font-size: 10px;
+      padding: 5px 8px; /* Reduce button size on very small screens */
+  }
 }
 
 
 
-/* end of publication section */
+
+/* End of Publication section */
 
 
 /* About Section */
@@ -1189,6 +1215,7 @@ body, .abt-container {
   }
   
   /* Publication List */
+
   .publication-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
