@@ -8,6 +8,9 @@ use App\Http\Controllers\StudyController;
 Route::get('/', function () {
     return view('pages.index');
 });
+Route::get('/header1', function () {
+    return view('header_footer.header1');
+});
 
 Route::get('/contact', function () {
     return view('pages.contact');

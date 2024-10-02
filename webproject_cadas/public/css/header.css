@@ -1,149 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
     box-sizing: border-box;
-  }
+}
+
 body {
-    margin: 0; /* Reset margin to avoid default browser margin */
-    padding: 0; /* Reset padding to avoid default browser padding */
-    font-family: 'Open Sans', sans-serif; /* Use your preferred font family */
+    margin: 0;
+    /* Reset margin to avoid default browser margin */
+    padding: 0;
+    /* Reset padding to avoid default browser padding */
+    font-family: "Open Sans", sans-serif;
+    /* Use your preferred font family */
 }
 
 /* Header Styles */
 .header {
-    background-color: #fff; /* Background color */
-    padding: 10px; /* Padding around the whole header */
+    background-color: #ffffff;
+    /* Background color */
+    padding: 10px;
+    /* Padding around the whole header */
     padding-left: 50px;
 }
 
 .header img {
-    width: 8%; /* Adjust the image size */
-    
+    width: 8%;
+    /* Adjust the image size */
 }
 
 .language-select {
-  background-color: #0f3c4d;
-  padding: 10px 50px 0 0 ;
-  height: 50px;
-  letter-spacing: 0.5px;
-  font-family: "Open Sans", system-ui;
-  font-weight: 400;
-  text-align: right;
-  top: 10px;
-  right: 20px;
-  z-index: 1000;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+    background-color: #0f3c4d;
+    padding: 10px 50px 0 0;
+    height: 50px;
+    letter-spacing: 0.5px;
+    font-family: "Open Sans", system-ui;
+    font-weight: 400;
+    text-align: right;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
 
 .language-select label {
-  margin-right: 10px;
-  font-weight: bold;
-  color: #ffffff;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .language-select select {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
 }
 
 .language-select select:hover {
-  border-color: #888;
+    border-color: #888;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .language-select {
-      top: 5px;
-      right: 10px;
-      font-size: 13px;
-  }
+    .language-select {
+        top: 5px;
+        right: 10px;
+        font-size: 13px;
+    }
 
-  .language-select label {
-      margin-right: 5px;
-  }
+    .language-select label {
+        margin-right: 5px;
+    }
 
-  .language-select select {
-      padding: 4px;
-  }
+    .language-select select {
+        padding: 4px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-  .language-select {
-      top: 5px;
-      right: 5px;
-      font-size: 12px;
-  }
+    .language-select {
+        top: 5px;
+        right: 5px;
+        font-size: 12px;
+    }
 
-  .language-select label {
-      display: none; /* Hide the label on very small screens to save space */
-  }
+    .language-select label {
+        display: none;
+        /* Hide the label on very small screens to save space */
+    }
 
-  .language-select select {
-      padding: 3px;
-  }
-}
-
-
-/* Navbar Styles */
-
-
-/* Sticky Navbar Styles */
-.sticky-top-custom {
-  position: sticky; /* Sticky positioning */
-  top: 0; /* Stick to the top */
-  transition: background-color 1s ease; /* Smooth transition for background color */
-  z-index: 3; /* Ensure it appears above other content */
-  width: 100%; /* Full width */
+    .language-select select {
+        padding: 3px;
+    }
 }
 
 /* Navbar Styles */
 .custom-nav {
-    background-color: #0f3c4d; /* Darker green background for navbar */
-    color: white !important;
+    background-color: #0f3c4d;
+    /* Darker green background for navbar */
+    /* color: white; */
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-family: "Open Sans", system-ui;
     font-weight: 600;
-    padding: 0; /* Remove padding */
-    height: 60px; /* Fixed height */
-    line-height: 60px; /* Align text vertically */
+    padding: 0;
+    /* Remove padding */
+    height: 60px;
+    /* Fixed height */
+    line-height: 60px;
+    /* Align text vertically */
 }
 
-/* Ensure navbar items are aligned properly */
-.navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;  
-}
-
-/* Flexbox layout for navbar items */
 .navbar-nav {
-    display: flex; /* Flexbox layout for navbar items */
-    align-items: center; /* Center items vertically */
+    align-items: center;
+    /* Center items vertically */
     margin: auto;
     gap: 20px;
-    padding: 0px; /* Remove padding to fit navbar height */
+    padding: 0px;
+    /* Remove padding to fit navbar height */
 }
 
 /* Style links within the navbar */
 .navbar-nav a {
-    color: #fff !important;
+    color: #ffffff !important;
     text-decoration: none !important;
-    padding: 0; /* Adjust padding to fit design */
-    display: block; /* Make <a> a block element */
-    height: 100%; /* Ensure <a> fills the height of its parent */
-    box-sizing: border-box; /* Include padding in width/height calculations */
-    text-align: center; /* Center text horizontally */
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    padding: 0;
+    height: 100%;
+    /* box-sizing: border-box; */
+    transition: background-color 0.3s ease;
+    /* Smooth transition effect */
 }
 
 /* Hover effect for all nav links */
-.navbar-nav a:hover, .nav-link.active {
-    background-color: #247c96; /* Background color on hover and active */  
-    color: #fff !important; /* Ensuring the text color remains white */
+.navbar-nav a:hover,
+.nav-link.active {
+    background-color: #247c96;
+    /* Background color on hover and active */
+    color: #ffffff !important;
+    /* Ensuring the text color remains white */
 }
 
 /* General anchor tag styles */
@@ -176,26 +171,20 @@ a:hover {
     margin: 0;
 }
 
-/* Home icon */
-.custom-size {
-  font-size: 26px; /* Default size */
-  padding: 10px;   /* Default padding */
-}
-
 /* Responsive adjustments */
-@media (max-width: 768px) { /* For devices smaller than 768px */
-  .custom-size {
-      font-size: 22px; /* Adjust size for smaller screens */
-      padding: 8px;    /* Adjust padding */
-  }
+@media (max-width: 768px) {
+    /* For devices smaller than 768px */
+    .custom-size {
+        font-size: 22px;
+        /* Adjust size for smaller screens */
+        padding: 8px;
+        /* Adjust padding */
+    }
 }
 
 /* end nav  */
-
-
-
 /* home section  */
-.abt-container{
+.abt-container {
     text-align: justify;
     /* margin-left: 30px;
     margin-right: 30px; */
@@ -206,20 +195,19 @@ a:hover {
     /* font-style: normal; */
 }
 
-
-body, .img_slider {
-    
+body,
+.img_slider {
     margin: 0 !important; /* Remove default margin */
     padding: 0; /* Remove default padding if needed */
 }
 
 .carousel-inner img {
-    width: auto ;
+    width: auto;
     /* height: auto ; */
     height: calc(80vh - 70px);
     min-height: 250px; /* or keep it at 240.398px if precision is important */
     transition: transform 0.3s ease;
-    transform-origin: center; 
+    transform-origin: center;
 }
 
 /* Container for aligning .abt-img and .intro side by side */
@@ -231,18 +219,16 @@ body, .img_slider {
     align-items: flex-start; /* Align items to the top */
     box-sizing: border-box; /* Include padding in the container's width calculation */
     /* padding removed for no extra space around container */
-
 }
 
 /* Ensure .abt-img takes up space on the left */
 .abt-img {
     /* flex: 1;  */
     /* Allow this section to take up space on the left */
-    padding: 50px; 
+    padding: 50px;
     /* Add padding around the content */
-    margin-left:60px;
+    margin-left: 60px;
     margin-top: 90px;
-    
 }
 
 /* Styling for heading in the .abt-img section */
@@ -279,357 +265,358 @@ body, .img_slider {
 }
 
 .readmore {
-  text-decoration: none;
-  padding: 0.4rem;
-  border: 1px solid #1e1e1e;
-  color: rgb(0, 0, 0);
-  background-color: #c0cbd6;
-  border-radius: 8px;
+    text-decoration: none;
+    padding: 0.4rem;
+    border: 1px solid #1e1e1e;
+    color: rgb(0, 0, 0);
+    background-color: #c0cbd6;
+    border-radius: 8px;
 }
 .readmore:hover {
-  text-decoration: none;
-  
-  color: white;
-  background-color: #989ca0;
+    text-decoration: none;
+
+    color: white;
+    background-color: #989ca0;
 }
 
-
 /* Remove default margins from body or container if necessary */
-body, .abt-container {
+body,
+.abt-container {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding if needed */
 }
-
 
 /* Mediaquery */
 
 /* Responsive Navbar Styles */
 @media screen and (max-width: 768px) {
-  .navbar-nav {
-      flex-direction: column; /* Stack the nav items vertically */
-      text-align: center; /* Center the items */
-      width: 100%; /* Make the navbar full width */
-  }
+    .navbar-nav {
+        flex-direction: column; /* Stack the nav items vertically */
+        text-align: center; /* Center the items */
+        width: 100%; /* Make the navbar full width */
+    }
 
-  .navbar-nav a {
-      padding: 10px 0; /* Add padding for touch targets */
-  }
+    .navbar-nav a {
+        padding: 10px 0; /* Add padding for touch targets */
+    }
 
-  .header img {
-      width: 60%; /* Adjust image size for smaller screens */
-  }
+    .header img {
+        width: 60%; /* Adjust image size for smaller screens */
+    }
 
-  .abt-container {
-      flex-direction: column; /* Stack items vertically */
-      padding: 20px; /* Adjust padding for mobile */
-  }
+    .abt-container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Adjust padding for mobile */
+    }
 
-  .abt-img, .intro {
-      margin: 0; /* Reset margin */
-      padding: 10px; /* Adjust padding */
-  }
+    .abt-img,
+    .intro {
+        margin: 0; /* Reset margin */
+        padding: 10px; /* Adjust padding */
+    }
 
-  .abt-img h2 {
-      font-size: 36px; /* Responsive font size */
-  }
+    .abt-img h2 {
+        font-size: 36px; /* Responsive font size */
+    }
 
-  .abt-img h4 {
-      font-size: 28px; /* Responsive font size */
-  }
+    .abt-img h4 {
+        font-size: 28px; /* Responsive font size */
+    }
 }
 
 /* Further adjustments for smaller screens */
 @media screen and (max-width: 480px) {
-  .navbar-nav {
-      gap: 10px; /* Reduce gap for smaller screens */
-  }
+    .navbar-nav {
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
 
-  .header img {
-      width: 80%; /* Further adjust image size */
-  }
+    .header img {
+        width: 80%; /* Further adjust image size */
+    }
 
-  .abt-container {
-      padding: 10px; /* Less padding on very small screens */
-  }
+    .abt-container {
+        padding: 10px; /* Less padding on very small screens */
+    }
 
-  .abt-img h2 {
-      font-size: 28px; /* Smaller font size */
-  }
+    .abt-img h2 {
+        font-size: 28px; /* Smaller font size */
+    }
 
-  .abt-img h4 {
-      font-size: 24px; /* Smaller font size */
-  }
+    .abt-img h4 {
+        font-size: 24px; /* Smaller font size */
+    }
 }
-
 
 /* Mediaquery */
 
-
-
 /* end of home section */
 
-
 /* Data Section */
-.data-heading h1{
-  padding-left:75px;
-  padding-top:25px;
-  
+.data-heading h1 {
+    padding-left: 75px;
+    padding-top: 25px;
 }
 
 .data-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px 60px 50px 60px;
-  /* Remove the gap here to prevent extra space between divs */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 60px 50px 60px;
+    /* Remove the gap here to prevent extra space between divs */
 }
 
 .data-item {
-  background-color: #f7fcff;
-  /* padding: 20px; */
-  margin: 18px; /* Provides spacing around the div */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  flex: 1 1 30%;
-  /* max-width: 30%; */
+    background-color: #f7fcff;
+    /* padding: 20px; */
+    margin: 18px; /* Provides spacing around the div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1 1 30%;
+    /* max-width: 30%; */
 }
 
 .data-item img {
-  width: 100%; /* Ensures the image fills the div */
-  height: auto;
+    width: 100%; /* Ensures the image fills the div */
+    height: auto;
 }
 
 .data-item h2 {
-  padding: 20px 0 15px 20px;
-  /* margin: 15px 0; */
-  font-size: 1.5rem;
+    padding: 20px 0 15px 20px;
+    /* margin: 15px 0; */
+    font-size: 1.5rem;
 }
 
 .data-links {
-  padding: 0 0 25px 25px;
-  display: flex;
-  flex-direction: column; /* Arranges the links in a column */
+    padding: 0 0 25px 25px;
+    display: flex;
+    flex-direction: column; /* Arranges the links in a column */
 }
 
 .data-links a {
-  margin-bottom: 10px; /* Adds space between links */
-  color: #1430d0;
-  text-decoration: none;
-  transition: text-decoration 0.3s;
+    margin-bottom: 10px; /* Adds space between links */
+    color: #1430d0;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
 }
 
 .data-links a:hover {
-  text-decoration: underline;
-  color: #1430d0;
+    text-decoration: underline;
+    color: #1430d0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .data-item {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
+    .data-item {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
 }
 
 @media (max-width: 480px) {
-  .data-item {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
+    .data-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
-
 
 /* end of Data Section */
 
 /* Questions Section */
 
 .study-intro {
-  font-size: 1.125rem; /* Using relative units for better scaling */
-  font-weight: bold;
-  margin-bottom: 1rem;
+    font-size: 1.125rem; /* Using relative units for better scaling */
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .study-questions {
-  margin-left: 1.25rem;
-  padding-left: 0.625rem;
-  font-size: 1rem; /* Using relative units */
-  line-height: 1.6;
+    margin-left: 1.25rem;
+    padding-left: 0.625rem;
+    font-size: 1rem; /* Using relative units */
+    line-height: 1.6;
 }
 
 .study-questions li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Media query for smaller devices (like phones) */
 @media (max-width: 600px) {
-  .study-intro {
-      font-size: 1rem; /* Slightly smaller font on small screens */
-  }
+    .study-intro {
+        font-size: 1rem; /* Slightly smaller font on small screens */
+    }
 
-  .study-questions {
-      margin-left: 0.75rem;
-      padding-left: 0.5rem;
-      font-size: 0.875rem; /* Reduce font size for readability on smaller screens */
-  }
+    .study-questions {
+        margin-left: 0.75rem;
+        padding-left: 0.5rem;
+        font-size: 0.875rem; /* Reduce font size for readability on smaller screens */
+    }
 }
-
-
-
 
 /* End Questions Section */
 
 /* Datas  */
 /* CodeBook */
 
-.codebook-container , .data-container{
-  max-width: 800px; /* Set a maximum width for larger screens */
-  width: 90%; /* Set width to 90% for smaller screens */
-  margin: 20px auto 30px auto; /* Center the container */
-  padding: 20px; /* Add padding for spacing */
-  background-color: #f9f9f9; /* Light background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+.codebook-container,
+.data-container {
+    max-width: 800px; /* Set a maximum width for larger screens */
+    width: 90%; /* Set width to 90% for smaller screens */
+    margin: 20px auto 30px auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-
-.codebook-container a{
-   /* Remove underline */
-  color:  #004997 ; /* Link color */
-  font-size: 1.125rem; /* Font size for links */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+.codebook-container a {
+    /* Remove underline */
+    color: #004997; /* Link color */
+    font-size: 1.125rem; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .codebook-container a:hover {
-  color: #41a0ff; /* Darker shade for hover effect */
+    color: #41a0ff; /* Darker shade for hover effect */
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
-  .codebook-container a {
-      font-size: 1rem; /* Adjust font size for links */
-  }
+    .codebook-container a {
+        font-size: 1rem; /* Adjust font size for links */
+    }
 
-  .codebook-container {
-      padding: 15px; /* Reduce padding for smaller screens */
-  }
+    .codebook-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
 }
-
-
 
 /* End CodeBook */
 
-
-
-
-
 /* Publication section */
-
 .publications-container {
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Adjust alignment for smaller screens */
-  padding: 60px 60px 60px 60px;
-  width: 100%;
-  min-height: calc(100vh - 40px); /* Adjust for top and bottom margins */
-  margin: 0 auto;
-  flex-direction: column; /* Stack content on smaller screens */
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    min-height: calc(100vh - 40px); /* Adjust for top and bottom margins */
+    margin-top: 60px; /* Add margin to the top and bottom */
+    margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .publication-header {
-  width: 100%; /* Full width on smaller screens */
-  text-align: left; /* Align h1 to the left */
-  margin-left: 0;
-  margin-top: 0; /* Remove negative margin */
-  padding: 10px;
+    width: 20%; /* Adjust width as needed */
+    text-align: left; /* Align h1 to the left */
+    margin-left: 60px;
+    margin-top: -750px;
 }
 
 .publications-content {
-  width: 100%; /* Full width on smaller screens */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to the left */
+    width: 75%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
 }
 
 .publication-item {
-  width: 100%; /* Full width on smaller screens */
-  margin-bottom: 20px;
-  padding: 10px;
-  /* box-sizing: border-box; */
-  text-align: left; /* Align text to the left */
+    width: 90%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
 }
 
 .citation-buttons {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+    margin-top: 10px;
+}
+
+.citation-buttons a {
+    text-decoration: none;
 }
 
 .citation-buttons button {
-  background-color: #eff0f1;
-  color: rgb(0, 0, 0);
-  border: 0.5px solid gray;
-  padding: 5px 10px;
-  margin-right: 5px;
-  margin-bottom: 5px; /* Add margin to the bottom to ensure spacing */
-  border-radius: 5px;
-  font-size: 12px;
-  cursor: pointer;
+    background-color: #eff0f1;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid gray;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.citation-buttons button:hover {
+    background-color: #0056b3;
+    color: white;
 }
 
 .pagination-container {
-  margin-top: 20px;
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .publication-item a {
-  color: #007BFF;
-  text-decoration: none;
+    color: #007bff;
+    text-decoration: none;
 }
 
 .publication-item a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
+/* Responsive Media Queries */
 
+/* Styles for tablets and below */
+@media screen and (max-width: 768px) {
+    .publications-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 
-/* For iPhone 14 Pro Max and similar devices (around 430px width) */
-@media (max-width: 430px) {
-  .publications-container, .publication-item {
-      padding: 10px; /* Reduce padding for small devices */
-  }
+    .publication-header {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
 
-  .citation-buttons button {
-      font-size: 11px; /* Slightly smaller font */
-      padding: 5px; /* Adjust padding for smaller screens */
-  }
+    .publications-content {
+        width: 100%; /* Full width for content */
+    }
+
+    .publication-item {
+        width: 95%; /* Slightly less than full width for items */
+    }
+
+    .citation-buttons button {
+        padding: 8px 12px; /* Adjust padding for touch targets */
+        font-size: 14px; /* Responsive font size for buttons */
+    }
 }
 
-/* For iPads and other devices (around 768px width) */
-@media (max-width: 768px) {
-  .publications-container, .publication-item {
-      padding: 15px; /* Adjust padding for tablet-sized screens */
-  }
+/* Further adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .publications-container {
+        padding: 5px; /* Less padding on very small screens */
+    }
 
-  .citation-buttons button {
-      font-size: 12px;
-      padding: 6px 10px;
-  }
+    .publication-header {
+        font-size: 20px; /* Smaller font size for header */
+    }
+
+    .publication-item {
+        width: 100%; /* Full width for items on very small screens */
+    }
+
+    .citation-buttons button {
+        font-size: 12px; /* Smaller font size for buttons */
+        padding: 5px 10px; /* Less padding */
+    }
 }
-
-@media (max-width: 480px) {
-  .citation-buttons button {
-      font-size: 10px;
-      padding: 5px 8px; /* Reduce button size on very small screens */
-  }
-}
-
-
-
 
 /* End of Publication section */
-
 
 /* About Section */
 
@@ -638,7 +625,7 @@ body, .abt-container {
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Add padding inside the container */
     text-align: justify;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .container img {
@@ -671,7 +658,7 @@ body, .abt-container {
 
 .timeline {
     padding: 20px; /* Adjusted padding */
-    background-color: #DA3C10;
+    background-color: #da3c10;
     color: white;
     font-weight: 300;
     margin-top: 30px;
@@ -682,8 +669,6 @@ body, .abt-container {
 }
 
 /* end of about section */
-
-
 
 /* start Researchers section */
 .research-body {
@@ -739,7 +724,7 @@ body, .abt-container {
     text-align: center; /* Ensures text is centered */
     padding: 10px;
 }
-.container-txt a{
+.container-txt a {
     color: #1246d7;
     font-size: 20px;
 }
@@ -750,80 +735,76 @@ body, .abt-container {
     margin-top: 4px;
 }
 
-
 /* end Researcher section */
 
 /* Staff Section */
 
-.staff-page h1{
-  padding-left:50px;
-  padding-top:20px;
+.staff-page h1 {
+    padding-left: 50px;
+    padding-top: 20px;
 }
 
 .staff-list {
-  display: flex;           /* Use flexbox for layout */
-  flex-wrap: wrap;        /* Allow items to wrap to the next line */
-  justify-content: space-between; /* Space between items */
-  padding: 10px 50px 50px 50px;          /* Add padding around the staff list */
-  gap: 25px;              /* Add space between staff items */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+    padding: 10px 50px 50px 50px; /* Add padding around the staff list */
+    gap: 25px; /* Add space between staff items */
 }
 
 .staff-item {
-  background-color: #f0ebeb; /* Light background color for each item */
-               /* Padding inside each item */
-  text-align: center;        /* Center text within items */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  flex: 1 1 22%;             /* Flex properties to allow growth and shrink */
-  max-width: 25%;            /* Maximum width of each staff item */
+    background-color: #f0ebeb; /* Light background color for each item */
+    /* Padding inside each item */
+    text-align: center; /* Center text within items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1 1 22%; /* Flex properties to allow growth and shrink */
+    max-width: 25%; /* Maximum width of each staff item */
 }
 
 .staff-item img {
-  width: 100%;               /* Image fills the width of the item */
-  height: 80%;              /* Maintain aspect ratio */
-          /* Make images circular */
+    width: 100%; /* Image fills the width of the item */
+    height: 80%; /* Maintain aspect ratio */
+    /* Make images circular */
 }
 
 .staff-item h3 {
-  margin: 15px 0 10px;      /* Margins around the heading */
-  font-size: 1.2rem;         /* Font size for the name */
+    margin: 15px 0 10px; /* Margins around the heading */
+    font-size: 1.2rem; /* Font size for the name */
 }
 
 .staff-item p {
-  font-size: 1rem;           /* Font size for the role */
-  color: #555;               /* Color for the role text */
+    font-size: 1rem; /* Font size for the role */
+    color: #555; /* Color for the role text */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .staff-item {
-      flex: 1 1 45%;         /* Adjust width for medium screens */
-      max-width: 45%;        /* Maximum width for medium screens */
-  }
-  .staff-item h3 {
-      font-size: 1.1rem;      /* Smaller font size for medium screens */
-  }
-  .staff-item p {
-      font-size: 0.9rem;      /* Smaller font size for medium screens */
-  }
+    .staff-item {
+        flex: 1 1 45%; /* Adjust width for medium screens */
+        max-width: 45%; /* Maximum width for medium screens */
+    }
+    .staff-item h3 {
+        font-size: 1.1rem; /* Smaller font size for medium screens */
+    }
+    .staff-item p {
+        font-size: 0.9rem; /* Smaller font size for medium screens */
+    }
 }
 
 @media (max-width: 480px) {
-  .staff-item {
-      flex: 1 1 100%;        /* Stack items vertically on small screens */
-      max-width: 100%;       /* Maximum width for mobile screens */
-  }
-  .staff-item h3 {
-      font-size: 1rem;       /* Smaller font size for mobile */
-  }
-  .staff-item p {
-      font-size: 0.8rem;      /* Smaller font size for mobile */
-  }
+    .staff-item {
+        flex: 1 1 100%; /* Stack items vertically on small screens */
+        max-width: 100%; /* Maximum width for mobile screens */
+    }
+    .staff-item h3 {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+    .staff-item p {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
 }
 
 /* End of Staff Section */
-
-
-
 
 /* Gallery section  */
 
@@ -834,29 +815,29 @@ body, .abt-container {
     padding: 30px;
     max-width: 1200px;
     margin: auto;
-    font-family: 'Open Sans', sans-serif;
-  }
+    font-family: "Open Sans", sans-serif;
+}
 
-  .gallery-item {
+.gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+}
 
-  .gallery-item img {
+.gallery-item img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     display: block;
     transition: transform 0.3s;
-  }
+}
 
-  .gallery-item:hover img {
+.gallery-item:hover img {
     transform: scale(1.05);
-  }
+}
 
-  /* Captions */
-  .gallery-item .caption {
+/* Captions */
+.gallery-item .caption {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
@@ -865,42 +846,40 @@ body, .abt-container {
     padding: 5px;
     text-align: center;
     font-size: 14px;
-  }
+}
 
-  /* Responsive for tablets */
-  @media (max-width: 768px) {
+/* Responsive for tablets */
+@media (max-width: 768px) {
     .gallery-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     }
-  }
+}
 
-  /* Responsive for mobile */
-  @media (max-width: 480px) {
+/* Responsive for mobile */
+@media (max-width: 480px) {
     .gallery-container {
-      grid-template-columns: 1fr; /* 1 image per row */
+        grid-template-columns: 1fr; /* 1 image per row */
     }
-  }
+}
 
 /* End of Gallery section  */
 
-
 /* Event Section */
-
 
 .event-container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .event-container h1 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.event-container h1 {
     margin-bottom: 25px;
     color: #333;
-  }
-  
-  .event-card {
+}
+
+.event-card {
     display: flex;
     background: rgb(238, 236, 236);
     border-radius: 8px;
@@ -908,69 +887,67 @@ body, .abt-container {
     margin: 25px 0;
     overflow: hidden;
     flex-direction: row; /* Default to horizontal layout */
-  }
-  
-  .event-date {
-    background: #AC262C;
+}
+
+.event-date {
+    background: #ac262c;
     color: white;
     padding: 20px;
     text-align: center;
-  }
-  
-  .event-date h2 {
+}
+
+.event-date h2 {
     margin: 0;
     font-size: 24px;
-  }
-  
-  .event-date p {
+}
+
+.event-date p {
     margin: 5px 0 0;
     font-size: 14px;
-  }
-  
-  .event-details {
+}
+
+.event-details {
     padding: 15px;
     flex: 1;
-  }
-  
-  .event-details h3 {
+}
+
+.event-details h3 {
     margin: 0;
     color: #333;
-  }
-  
-  .event-details p {
+}
+
+.event-details p {
     margin: 5px 0;
     color: #555;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .event-card {
-      flex-direction: column; /* Stack cards vertically on smaller screens */
-    }
-  
-    .event-date {
-      text-align: left; /* Align text left */
-    }
-  
-    .event-details {
-      padding: 10px; /* Reduce padding */
-    }
-  }
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+
+    .event-date {
+        text-align: left; /* Align text left */
+    }
+
+    .event-details {
+        padding: 10px; /* Reduce padding */
+    }
+}
 
 /* End of Event Section */
-
 
 /* Contact section */
 
 /* Main contact container */
 .contact-container {
-  background: #efefef;
+    background: #efefef;
     display: flex; /* Flexbox to align items side by side */
     justify-content: space-between; /* Space between contact info and map */
     align-items: flex-start; /* Align items to the top */
     width: 100%; /* Maximum width of the container */
-     /* Center container horizontally */
+    /* Center container horizontally */
     padding: 60px 60px 60px 60px; /* Padding around the content */
     gap: 20px; /* Gap between the contact info and map */
     font-family: "Open Sans", system-ui; /* Font family for text */
@@ -985,7 +962,7 @@ body, .abt-container {
 
 /* Contact header styling */
 .contact-info h2 {
-    margin-top:90px;
+    margin-top: 90px;
     font-size: 34px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -1022,13 +999,11 @@ body, .abt-container {
 /* Adjust padding for the entire contact section */
 .contact {
     margin-top: 20px !important;
-    padding: 50px;  /* Reduced padding for better alignment */
+    padding: 50px; /* Reduced padding for better alignment */
     font-family: "Open Sans", system-ui;
 }
 
-
 /* End of contact section */
-
 
 /* Presentation section */
 
@@ -1039,59 +1014,59 @@ body, .abt-container {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .presentation-container h1 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.presentation-container h1 {
     text-align: center;
     color: #333;
     margin-bottom: 30px;
-  }
-  
-  .presentation-card {
+}
+
+.presentation-card {
     background-color: #ffffff;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .presentation-card h2 {
-    color: #AC262C;
+}
+
+.presentation-card h2 {
+    color: #ac262c;
     margin-bottom: 10px;
     font-size: 22px;
-  }
-  
-  .presenter, .date {
+}
+
+.presenter,
+.date {
     color: #555;
     font-size: 14px;
-  }
-  
-  .description {
+}
+
+.description {
     margin-top: 15px;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-  }
-  
-  /* Hover Effect */
-  .presentation-card:hover {
+}
+
+/* Hover Effect */
+.presentation-card:hover {
     background-color: #f1f1f1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .presentation-container {
-      padding: 15px;
-    }
-  
-    .presentation-card {
-      padding: 15px;
-    }
-  }
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .presentation-container {
+        padding: 15px;
+    }
+
+    .presentation-card {
+        padding: 15px;
+    }
+}
 
 /* end of  Presentation section */
 
@@ -1104,77 +1079,75 @@ body, .abt-container {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .policy-container h1 {
+}
+
+.policy-container h1 {
     text-align: center;
-    color: #AC262C;
+    color: #ac262c;
     margin-bottom: 30px;
     font-size: 28px;
-  }
-  
-  .policy-section {
+}
+
+.policy-section {
     margin-bottom: 25px;
-  }
-  
-  .policy-section h2 {
+}
+
+.policy-section h2 {
     color: #333;
     font-size: 22px;
     margin-bottom: 10px;
-  }
-  
-  .policy-section p,.policy-section ul {
+}
+
+.policy-section p,
+.policy-section ul {
     color: #555;
     line-height: 1.6;
     font-size: 16px;
-  }
-  
-  .policy-section ul {
+}
+
+.policy-section ul {
     list-style-type: disc;
     margin-left: 20px;
-  }
-  
-  .policy-section ul li {
-    margin-bottom: 10px;
-  }
-  
-  /* Hover Effects for Important Sections */
-  .policy-section:hover {
-    background-color: #f9f9f9;
-    border-left: 4px solid #AC262C;
-    padding-left: 16px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .policy-container {
-      padding: 15px;
-    }
-  
-  .policy-container h1 {
-      font-size: 24px;
-    }
-  
-    .policy-section h2 {
-      font-size: 20px;
-    }
-  
-    .policy-section p, .policy-section ul {
-      font-size: 14px;
-    }
-  }
+}
 
+.policy-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Hover Effects for Important Sections */
+.policy-section:hover {
+    background-color: #f9f9f9;
+    border-left: 4px solid #ac262c;
+    padding-left: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .policy-container {
+        padding: 15px;
+    }
+
+    .policy-container h1 {
+        font-size: 24px;
+    }
+
+    .policy-section h2 {
+        font-size: 20px;
+    }
+
+    .policy-section p,
+    .policy-section ul {
+        font-size: 14px;
+    }
+}
 
 /* End of Policy brief section */
-
 
 /* Dissemination section */
 
 /* End of Dissemination section */
 
-
 /* Working paper section */
-
 
 .working-paper-container {
     max-width: 900px;
@@ -1183,86 +1156,84 @@ body, .abt-container {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .working-paper-container h1 {
+}
+
+.working-paper-container h1 {
     text-align: center;
-    color: #AC262C;
+    color: #ac262c;
     margin-bottom: 30px;
     font-size: 32px;
-  }
-  
-  .paper-card {
+}
+
+.paper-card {
     background-color: #f9f9f9;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .paper-card h2 {
-    color: #AC262C;
+}
+
+.paper-card h2 {
+    color: #ac262c;
     font-size: 22px;
     margin-bottom: 10px;
-  }
-  
-  .author, .date {
+}
+
+.author,
+.date {
     font-size: 14px;
     color: #555;
-  }
-  
-  .summary {
+}
+
+.summary {
     margin-top: 10px;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-  }
-  
-  .button {
+}
+
+.button {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #AC262C;
+    background-color: #ac262c;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #8b1f26;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .working-paper-container {
-      padding: 15px;
+        padding: 15px;
     }
-  
+
     .working-paper-container h1 {
-      font-size: 28px;
+        font-size: 28px;
     }
-  
+
     .paper-card h2 {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .summary {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
+}
 
 /* End of Working paper section */
 
-
-
 /* Footer Styles */
 footer {
-    background-color: #1F5C72; /* Footer background color */
+    background-color: #1f5c72; /* Footer background color */
     padding-top: 30px; /* Existing padding for top */
     position: relative; /* Relative positioning for child elements */
-    
 }
 
 /* Container for footer content */
@@ -1277,7 +1248,6 @@ footer {
     justify-content: space-between; /* Space between left-side and right-side sections */
     align-items: flex-start; /* Align items at the start (top) */
     flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    
 }
 
 /* Left side section */
@@ -1288,7 +1258,6 @@ footer {
 
 /* Right side section */
 .right_side {
-    
     /* padding-right: 30px; */
     margin-top: 17px;
 }
@@ -1309,10 +1278,9 @@ footer {
     height: 50px; /* Set a specific height for images (adjust as needed) */
 }
 
-.right_side p{
+.right_side p {
     text-align: right; /* Align text to the right */
 }
-
 
 /* Logo styles */
 .logo {
@@ -1344,14 +1312,13 @@ footer {
     text-decoration: underline; /* Underline on hover */
 }
 
-
 /* Middle section with copyright notice */
 .mid {
     text-align: center; /* Center text alignment */
     font-size: 0.9rem; /* Adjust font size */
-    background-color: #1F5C72; /* Same background color as the footer for consistency */
+    background-color: #1f5c72; /* Same background color as the footer for consistency */
     color: rgb(228, 223, 223); /* Same text color as the rest of the footer */
-    padding:10px;
+    padding: 10px;
     font-family: "Open Sans", system-ui;
 }
 
@@ -1362,8 +1329,3 @@ hr {
     border: 0; /* Remove default border */
     border-top: 1px solid rgba(255, 255, 255, 0.5); /* Custom border style */
 }
-
-
-
-
-

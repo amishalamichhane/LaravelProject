@@ -16,81 +16,80 @@
 </head>
 
 <body>
-    <header>
-
-        <!-- Language Selector -->
-        <div class="language-select">
-            <label for="language">Select Language: </label>
-            <select id="language" onchange="translateLanguage()">
-                <option value="en">English</option>
-                <option value="ne">Nepali</option>
-            </select>
-        </div>
-
-        <!-- Google Translate Script -->
-        <div id="google_translate_element" style="display:none;"></div>
 
 
+    <!-- Language Selector -->
+    <div class="language-select">
+        <label for="language">Select Language: </label>
+        <select id="language" onchange="translateLanguage()">
+            <option value="en">English</option>
+            <option value="ne">Nepali</option>
+        </select>
+    </div>
+
+    <!-- Google Translate Script -->
+    <div id="google_translate_element" style="display:none;"></div>
 
 
-        <div class="header">
-            {{-- <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid"> --}}
-            <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
-            {{-- <div class="header-content">
+
+
+    <div class="header">
+        {{-- <img src="/img/header_original.jpg" alt="Famelo Logo" class="img-fluid"> --}}
+        <img src="/img/famelo.png" alt="Famelo Logo" class="img-fluid">
+        {{-- <div class="header-content">
                 <h2><br><b>Family Migration and early life outcomes</b><br></h2>
             </div> --}}
-        </div>
-        <nav class="navbar navbar-expand-lg custom-nav sticky-top-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="/"> <i
-                                class="fa-solid fa-house custom-size"></i> HOME</a>
-                        <a class="nav-link" href="/data">Data</a>
-                        <a class="nav-link" href="/publications">Publication</a>
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top custom-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/"> <i class="fa-solid fa-house"></i>
+                        HOME</a>
+                    <a class="nav-link" href="/data">Data</a>
+                    <a class="nav-link" href="/publications">Publication</a>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                PEOPLE
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/researcher">Investigators</a></li>
-                                <li><a class="dropdown-item" href="/staff">Staff</a></li>
-                                <li><a class="dropdown-item" href="/collaborator">collaborator</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PEOPLE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/researcher">Investigators</a></li>
+                            <li><a class="dropdown-item" href="/staff">Staff</a></li>
+                            <li><a class="dropdown-item" href="/collaborator">collaborator</a></li>
+                        </ul>
+                    </li>
 
 
-                        <a class="nav-link" href="">CAPACITY BUILDING</a>
+                    <a class="nav-link" href="">CAPACITY BUILDING</a>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                PRODUCTS
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/presentation">Presentations</a></li>
-                                <li><a class="dropdown-item" href="/policybrief">Policy Brief</a></li>
-                                <li><a class="dropdown-item" href="/dissemination">dissemination</a></li>
-                                <li><a class="dropdown-item" href="/working_paper">Working Paper</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PRODUCTS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/presentation">Presentations</a></li>
+                            <li><a class="dropdown-item" href="/policybrief">Policy Brief</a></li>
+                            <li><a class="dropdown-item" href="/dissemination">dissemination</a></li>
+                            <li><a class="dropdown-item" href="/working_paper">Working Paper</a></li>
+                        </ul>
+                    </li>
 
-                        <a class="nav-link" href="/events">events</a>
-                        {{-- <a class="nav-link" href="/gallery">Gallery</a> --}}
-                        {{-- <a class="nav-link" href="/contact">CONTACT</a> --}}
-                    </div>
+                    <a class="nav-link" href="/events">events</a>
+                    {{-- <a class="nav-link" href="/gallery">Gallery</a> --}}
+                    {{-- <a class="nav-link" href="/contact">CONTACT</a> --}}
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
 
 
     <!-- Inline JavaScript -->
@@ -108,7 +107,7 @@
             });
         });
 
-        
+
 
 
 
