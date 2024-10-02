@@ -555,7 +555,7 @@ body, .abt-container {
   width: 100%; /* Full width on smaller screens */
   margin-bottom: 20px;
   padding: 10px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   text-align: left; /* Align text to the left */
 }
 
@@ -1169,134 +1169,6 @@ body, .abt-container {
 
 
 /* Dissemination section */
-
-
-.dissemination-container {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .dissemination-container h1 {
-    text-align: center;
-    color: #AC262C;
-    margin-bottom: 30px;
-    font-size: 32px;
-  }
-  
-  .section {
-    margin-bottom: 40px;
-  }
-  
-  .section  h2 {
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 20px;
-  }
-  
-  .section  p {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .section ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
- .section ul li {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  /* Publication List */
-
-  .publication-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .publication-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .publication-item h3 {
-    color: #AC262C;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .publication-item p {
-    font-size: 14px;
-    color: #777;
-  }
-  
-  .button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #AC262C;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #8b1f26;
-  }
-  
-  /* Event List */
-  .event-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .event-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .event-item h3 {
-    color: #AC262C;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .event-item p {
-    font-size: 14px;
-    color: #777;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .dissemination-container {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 28px;
-    }
-  
-    h2 {
-      font-size: 24px;
-    }
-  }
-
 
 /* End of Dissemination section */
 
