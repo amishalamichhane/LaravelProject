@@ -60,9 +60,9 @@
                             PEOPLE
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/researcher">Investigators</a></li>
-                            <li><a class="dropdown-item" href="/staff">Staff</a></li>
-                            <li><a class="dropdown-item" href="/collaborator">collaborator</a></li>
+                            <li><a class="dropdown-item" href="/researcher"> Investigators</a></li>
+                            <li><a class="dropdown-item" href="/staff"> Staff</a></li>
+                            <li><a class="dropdown-item" href="/collaborator"> collaborator</a></li>
                         </ul>
                     </li>
 
@@ -75,10 +75,10 @@
                             PRODUCTS
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/presentation">Presentations</a></li>
-                            <li><a class="dropdown-item" href="/policybrief">Policy Brief</a></li>
-                            <li><a class="dropdown-item" href="/dissemination">dissemination</a></li>
-                            <li><a class="dropdown-item" href="/working_paper">Working Paper</a></li>
+                            <li><a class="dropdown-item" href="/presentation"> Presentations</a></li>
+                            <li><a class="dropdown-item" href="/policybrief"> Policy Brief</a></li>
+                            <li><a class="dropdown-item" href="/dissemination"> dissemination</a></li>
+                            <li><a class="dropdown-item" href="/working_paper"> Working Paper</a></li>
                         </ul>
                     </li>
 

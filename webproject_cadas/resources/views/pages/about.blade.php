@@ -40,8 +40,8 @@
 
 
         </p>
-        <div class="timeline">
+        {{-- <div class="timeline">
             Project Timeline: Survey data collection has been delayed due to COVID-19.
-        </div>
+        </div> --}}
     </div>
 @endsection
