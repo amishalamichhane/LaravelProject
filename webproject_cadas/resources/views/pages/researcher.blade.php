@@ -24,7 +24,7 @@
                     <img src="/img/natalie.jpg" alt="Natalie D. Eggum">
                     <div class="container-txt">
                         <a href="/natalie">Natalie D. Eggum</a>
-                        <p>Principal Investigator<br>of Project 1</p> <!-- Added info -->
+                        <p>Principal Investigator</p> <!-- Added info -->
                     </div>
                 </div>
         
@@ -43,7 +43,7 @@
                     <img src="/img/jennifer.jpg" alt="Jennifer Glick">
                     <div class="container-txt">
                         <a href="/jennifer">Jennifer Glick</a>
-                        <p>Program Director & Principal<br>Investigator Project 2</p>
+                        <p>Principal Investigator </p>
                     </div>
                 </div>
             </div>
