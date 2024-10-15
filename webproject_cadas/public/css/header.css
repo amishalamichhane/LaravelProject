@@ -2,15 +2,9 @@
 
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
-    /* Reset margin to avoid default browser margin */
     padding: 0;
-    /* Reset padding to avoid default browser padding */
     font-family: "Open Sans", sans-serif;
-    /* Use your preferred font family */
 }
 
 /* Header Styles */
@@ -113,12 +107,14 @@ body {
 }
 
 .navbar-nav {
-    align-items: center;
-    /* Center items vertically */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
     margin: auto;
     gap: 20px;
-    padding: 0px;
-    /* Remove padding to fit navbar height */
+    /* flex-grow: 1; */
+    
+    /* padding: 0px; */
 }
 
 /* Style links within the navbar */
