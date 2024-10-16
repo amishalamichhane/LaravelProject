@@ -116,49 +116,29 @@
 
         {{--  Data --}}
 
-        {{-- <div class="data">
+        <div data-spy="scroll" data-target="navbar-example3" data-offset="0" class="data">
             <div class="data-heading">
                 <h1>Data</h1>
             </div>
             <div class="data-page">
-                
-                <!-- First section -->
-                <div class="data-item">
-                    <img src="/img/data1.jpg" alt="Data Image 1">
-                    <h2>Family Migration Context & Socio-emotional Competence. Study-2017</h2>
-                    <div class="data-links">
-                        <a href="/datas">Data</a>
-                        <a href="/codebooks">Codebook</a>
-                        <a href="/question">Questions</a>
-                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
-                    </div>
-                </div>
+                @foreach ($studies as $study)
+                    <div class="data-item">
+                        <img src="{{ $study->image }}" alt="{{ $study->title }}">
+                        <h2>{{ $study->title }}</h2>
     
-                <!-- Second section -->
-                <div class="data-item">
-                    <img src="/img/data2.jpg" alt="Data Image 2">
-                    <h2>Family Migration Context and Socio-emotional Competence. Study-2021</h2>
-                    <div class="data-links">
-                        <a href="/datas">Data</a>
-                        <a href="/codebooks">Codebook</a>
-                        <a href="/question">Questions</a>
-                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
+                        <div class="data-links">
+                            <!-- Links generated dynamically by passing the study's slug -->
+                            <a href="{{ route('datas', $study->slug) }}">Data</a>
+                            <a href="{{ route('codebooks', $study->slug) }}">Codebook</a>
+                            <a href="{{ route('questions', $study->slug) }}">Questions</a>
+                            <a href="{{ $study->report_link }}" target="_blank">Report</a>
+                        </div>
                     </div>
-                </div>
-    
-                <!-- Third section -->
-                <div class="data-item">
-                    <img src="/img/data3.jpg" alt="Data Image 3">
-                    <h2>Family Migration Context and Socialization & Children's Socio-emotional Development. Study-2024</h2>
-                    <div class="data-links">
-                        <a href="/datas">Data</a>
-                        <a href="/codebooks">Codebook</a>
-                        <a href="/question">Questions</a>
-                        <a href="{{ asset('report/wave2.pdf') }}" target="_blank">Report</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
-        </div> --}}
+        </div>
+
+        {{--––––––––––  Data ––––––––––--}}
 
 
 

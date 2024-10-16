@@ -40,7 +40,7 @@
                 <h2><br><b>Family Migration and early life outcomes</b><br></h2>
             </div> --}}
     </div>
-    <nav class="navbar navbar-expand-lg sticky-top custom-nav">
+    <nav class="navbar navbar-expand-lg sticky-top custom-nav" id="navbar-example3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"

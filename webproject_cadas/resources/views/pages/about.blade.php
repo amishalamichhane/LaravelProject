@@ -13,22 +13,13 @@
                 health and addressing issues like depression, anxiety, aggression, and substance use.
             </h3>
         </div>
-        <p>
+        {{-- <p>
             We initially designed the study to span five years (2015-2020), but it was delayed until 2022 due to the
             COVID-19 pandemic. In Wave 1, we began data collection on July 5, 2017, and completed it on July 9, 2018.
             Similarly, in Wave 2, we started data collection on April 8, 2021, and completed it on December 23, 2021.
-        </p>
-        <p>
-            {{-- We build on previous research by the 10/66 Dementia Research Group
-            <i class="fa fa-external-link" aria-hidden="true"></i> that indicates a remarkably high dementia
-            prevalence of 10-12% among metro-dwelling adults aged 65+ in Puerto Rico, Dominican Republic and Cuba, whose
-            similar histories but richly varying societal structures over the past century offer great promise for better
-            understanding AD/ADRD. These Hispanic Caribbean sites are also the origin of the vast majority of Caribbean
-            immigrants to the U.S., and we will also compare experiences in sending countries with experiences among U.S.
-            immigrants. Our surveys are designed for cross-harmonization with both past 10/66 surveys as well as the global
-            network of recent surveys using the Harmonized Cognitive Assessment Protocol <i class="fa fa-external-link"
-                aria-hidden="true"></i>, including the U.S. Health and
-            Retirement Study <i class="fa fa-external-link" aria-hidden="true"></i>. --}}
+        </p> --}}
+        {{-- <p>
+
 
             We covered 12 Village Development Committees and one Municipality in Western Chitwan, Nepal. Out of the total
             wards present in the study area, we randomly selected 54 sample sub-wards. Based on a listing of households,
@@ -39,9 +30,50 @@
             households for the Wave 1 survey.
 
 
-        </p>
-        {{-- <div class="timeline">
-            Project Timeline: Survey data collection has been delayed due to COVID-19.
-        </div> --}}
+        </p> --}}
+    </div>
+    <div class="timeline">
+        <div class="container" id="flex-content">
+            <div class="content">
+                <h3>Project Background </h3>
+                <p>This project explores how family migration impacts the social and emotional development of left-behind
+                    children,
+                    focusing on both the costs and benefits. While migration may bring financial resources that can benefit
+                    children, it often disrupts family dynamics, affecting their psychological well-being and social
+                    competence.
+                    Research on these children, especially in specific sending communities, is limited, and this study aims
+                    to
+                    fill
+                    that gap.
+                </p>
+                <h3>Purpose of Data Collection </h3>
+                <p>
+                    Focusing on children in Nepal, where labor migration is common, the project examines how migration
+                    affects
+                    family relationships, caregiving, and household resources. The findings aim to guide policymakers in
+                    addressing
+                    challenges like depression, anxiety, and behavioral issues among left-behind children.
+
+                </p>
+                <h3>Scope </h3>
+                <p>
+                    Data was collected in three waves (2017, 2020, and 2023) from children and their caregivers in Nepal's
+                    Western
+                    Chitwan Valley. This study includes interviews with fathers to assess migration's long-term effects on
+                    children's expectations as they grow. The goal is to provide insights that can inform better policies
+                    around
+                    parent-child separation and protect children's rights.
+                </p>
+            </div>
+            <div class="imp-link">
+                <h3>Data Collection Process</h3>
+                <ul>
+                    <li>Timeline</li>
+                    <li>Location</li>
+                    <li>Participants/Subjects</li>
+                    <li>Challenges Encountered</li>
+                </ul>
+            </div>
+        </div>
     </div>
 @endsection
