@@ -34,12 +34,20 @@ class PublicationResource extends Resource
                     ->schema([
                         Forms\Components\Section::make()
                             ->schema([
-                                Forms\Components\TextInput::make(name: 'title'),
+                                Forms\Components\TextInput::make(name: 'title')
+                                    ->columnSpan(span:'full'),
                                 Forms\Components\TextInput::make(name: 'authors'),
                                 Forms\Components\TextInput::make(name: 'year'),
                                 Forms\Components\TextInput::make(name: 'journal') ->columnSpan(span:'full'),
                                 Forms\Components\TextInput::make(name: 'citation')
-                                    ->columnSpan(span:'full')
+                                    ->columnSpan(span:'full'),
+                                Forms\Components\TextInput::make('url')// URL field
+                                    ->nullable()
+                                    ->url('The URL must be a valid URL format.')
+                                    ->maxLength(255), // Limit the URL length
+                                Forms\Components\TextInput::make('doi')
+                                    ->url(),
+                                
                             ])->columns(columns:3)
                     ])
             ]);

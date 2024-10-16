@@ -1,4 +1,4 @@
-@extends('layout') <!-- Extend the existing base layout -->
+@extends('layout')
 
 @section('content')
     <div class="publications-container">
@@ -21,13 +21,20 @@
                         <a href="{{ $publication->url }}" target="_blank">
                             <button>URL</button>
                         </a>
-                        <button>{{ $publication->cite }}CITE</button>
+                        <button onclick="showCitation('{{ $publication->citation }}')">CITE</button>
                     </div>
                 </div>
             @endforeach
         </div>
-        {{-- <div class="pagination-container">
+        
+        <div class="pagination-container">
             {{ $publications->links() }}
-        </div> --}}
+        </div>
     </div>
+
+    <script>
+        function showCitation(citation) {
+            alert("Citation: " + citation);
+        }
+    </script>
 @endsection

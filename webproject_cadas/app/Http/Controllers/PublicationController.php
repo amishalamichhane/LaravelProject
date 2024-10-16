@@ -10,17 +10,14 @@ class PublicationController extends Controller
     // Display a listing of the publications
     public function publications()
     {
-        // // Fetch all publications from the database
-        // $publications = Publication::orderBy('published_date', 'desc')->get();
+        // Fetch publications from the database with pagination
+        $publications = Publication::orderBy('year', 'desc')->paginate(10);
 
-        // // Return the view with publications data
-        // return view('pages.publications', compact('publications'));
+        // Fetch publications including the URL column
+        $publications = Publication::orderBy('created_at', 'desc')->paginate(10);
 
 
-        // Fetch all publications from the database
-        $publications = Publication::all();
-
-        // Return the publications view with the data
+        // Return the publications view with the paginated data
         return view('pages.publications', compact('publications'));
     }
 }
