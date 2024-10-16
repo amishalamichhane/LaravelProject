@@ -744,7 +744,7 @@ body,
     display: flex; /* Use flexbox for layout */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: space-between; /* Space between items */
-    padding: 10px 50px 50px 50px; /* Add padding around the staff list */
+    padding: 30px 60px 50px 60px; /* Add padding around the staff list */
     gap: 25px; /* Add space between staff items */
 }
 
@@ -754,22 +754,23 @@ body,
     text-align: center; /* Center text within items */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     flex: 1 1 22%; /* Flex properties to allow growth and shrink */
-    max-width: 25%; /* Maximum width of each staff item */
+    max-width: 15%; /* Maximum width of each staff item */
+    max-height:fit-content;
 }
 
 .staff-item img {
     width: 100%; /* Image fills the width of the item */
-    height: 80%; /* Maintain aspect ratio */
+    height: 60%; /* Maintain aspect ratio */
     /* Make images circular */
 }
 
 .staff-item h3 {
     margin: 15px 0 10px; /* Margins around the heading */
-    font-size: 1.2rem; /* Font size for the name */
+    font-size: 1.1rem; /* Font size for the name */
 }
 
 .staff-item p {
-    font-size: 1rem; /* Font size for the role */
+    font-size: 0.9rem; /* Font size for the role */
     color: #555; /* Color for the role text */
 }
 
