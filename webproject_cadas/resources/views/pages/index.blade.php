@@ -116,7 +116,7 @@
 
         {{--  Data --}}
 
-        <div data-spy="scroll" data-target="navbar-example3" data-offset="0" class="data">
+        {{-- <div data-spy="scroll" data-target="navbar-example3" data-offset="0" class="data">
             <div class="data-heading">
                 <h1>Data</h1>
             </div>
@@ -136,7 +136,7 @@
                     </div>
                 @endforeach
             </div>
-        </div>
+        </div> --}}
 
         {{--––––––––––  Data ––––––––––--}}
 
