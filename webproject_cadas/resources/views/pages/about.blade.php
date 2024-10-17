@@ -5,19 +5,19 @@
     <div class="container">
         <img src="/img/about.jpg" align="left" />
         <div class="first-para">
-            <h3>
+            <p>
                 <b><br>FAMELO</b> examines how family migration impacts children’s socio-psychological development.
                 Using a model that blends migration and child development perspectives, the study explores how migration
                 affects left-behind children’s social skills and psychological well-being, and how different environments
                 influence their outcomes. The goal is to help families adapt and guide policymakers in supporting mental
                 health and addressing issues like depression, anxiety, aggression, and substance use.
-            </h3>
+            </p>
         </div>
-        {{-- <p>
+        <p>
             We initially designed the study to span five years (2015-2020), but it was delayed until 2022 due to the
             COVID-19 pandemic. In Wave 1, we began data collection on July 5, 2017, and completed it on July 9, 2018.
             Similarly, in Wave 2, we started data collection on April 8, 2021, and completed it on December 23, 2021.
-        </p> --}}
+        </p>
         {{-- <p>
 
 
