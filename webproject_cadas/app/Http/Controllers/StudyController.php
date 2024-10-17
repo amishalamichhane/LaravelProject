@@ -25,6 +25,7 @@ class StudyController extends Controller
         
         $study = Study::where('slug', $slug)->firstOrFail(); // Fetch by slug
         return view('data.codebook', compact('study'));
+        
     }
 
     // Method to display the datas page

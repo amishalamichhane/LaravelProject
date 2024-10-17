@@ -62,7 +62,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/researcher"> Investigators</a></li>
                             <li><a class="dropdown-item" href="/staff"> Staff</a></li>
-                            <li><a class="dropdown-item" href="/collaborator"> collaborator</a></li>
+                            {{-- <li><a class="dropdown-item" href="/collaborator"> collaborator</a></li> --}}
                         </ul>
                     </li>
 

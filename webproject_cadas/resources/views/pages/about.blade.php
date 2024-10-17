@@ -78,58 +78,45 @@
 
                 <div class="data-links">
                     <h3>Important Links</h3>
-                    <div class="dl-container"> <!-- Add a wrapper for better control -->
-                        <dl>
-                            <dt>Wave 1</dt>
-                            <dd><a href="/codebook">Codebook</a></dd>
-                            <dd><a href="/datas">Data</a></dd>
-                            <dd><a href="/questions">Question</a></dd>
-                            <dd><a href="/report">Report</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Wave 2</dt>
-                            <dd><a href="/codebook">Codebook</a></dd>
-                            <dd><a href="/datas">Data</a></dd>
-                            <dd><a href="/questions">Question</a></dd>
-                            <dd><a href="/report">Report</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Wave 3</dt>
-                            <dd><a href="/codebook">Codebook</a></dd>
-                            <dd><a href="/datas">Data</a></dd>
-                            <dd><a href="/questions">Question</a></dd>
-                            <dd><a href="/report">Report</a></dd>
-                        </dl>
-                    </div>
+                    {{-- @foreach ($studies as $study) --}}
+                        <div class="dl-container"> <!-- Add a wrapper for better control -->
+                            <dl>
+                                <dt>Wave 1</dt>
+                                <dd><a
+                                        href="/codebook/family-migration-context-socio-emotional-competence-study-2017">Codebook</a>
+                                </dd>
+                                <dd><a href="/datas/family-migration-context-socio-emotional-competence-study-2017">Data</a>
+                                </dd>
+                                <dd><a href="/questions/family-migration-context-socio-emotional-competence-study-2017">Questions</a></dd>
+                                <dd><a href="/report/wave1.pdf" target="_blank">Report</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>Wave 2</dt>
+                                <dd><a
+                                        href="/codebook/family-migration-context-and-socio-emotional-competence-study-2021">Codebook</a>
+                                </dd>
+                                <dd><a href="/datas/family-migration-context-and-socio-emotional-competence-study-2021">Data</a></dd>
+                                <dd><a href="/questions/family-migration-context-and-socio-emotional-competence-study-2021">Questions</a></dd>
+                                <dd><a href="/report/wave2.pdf" target="_blank">Report</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>Wave 3</dt>
+                                <dd><a
+                                        href="/codebook/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Codebook</a>
+                                </dd>
+                                <dd><a
+                                        href="datas/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Data</a>
+                                </dd>
+                                <dd><a href="questions/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Question</a></dd>
+                                <dd><a href="/report/wave3.pdf">Report</a></dd>
+                            </dl>
+                    {{-- @endforeach --}}
                 </div>
-
-
-                {{-- <ol>
-                    <li>Wave 1</li>
-                    <ul>
-                        <li><a href="/codebook">Codebook</a></li>
-                        <li><a href="/datas">Data</a></li>
-                        <li><a href="/questions">Question</a></li>
-                        <li><a href="/report">Report</a></li>
-                    </ul>
-                    <li>Wave 2</li>
-                    <ul>
-                        <li><a href="/codebook">Codebook</a></li>
-                        <li><a href="/datas">Data</a></li>
-                        <li><a href="/questions">Question</a></li>
-                        <li><a href="/report">Report</a></li>
-                    </ul>
-                    <li>Wave 3</li>
-                    <ul>
-                        <li><a href="/codebook">Codebook</a></li>
-                        <li><a href="/datas">Data</a></li>
-                        <li><a href="/questions">Question</a></li>
-                        <li><a href="/report">Report</a></li>
-                    </ul>
-                </ol> --}}
-
-
             </div>
+
+
+
         </div>
+    </div>
     </div>
 @endsection
