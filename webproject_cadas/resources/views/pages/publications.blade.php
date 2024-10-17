@@ -10,9 +10,9 @@
                 <div class="publication-item">
 
                     <div class="publication-details">
-                        <strong>{{ $publication->authors }}</strong> ({{ $publication->year }}).
+                        {{ $publication->authors }} ({{ $publication->year }}).
                         <a href="{{ $publication->url }}" target="_blank">{{ $publication->title }}</a>.
-                        <br>
+                        
                         <em>{{ $publication->journal }}</em>.
                     </div>
 
