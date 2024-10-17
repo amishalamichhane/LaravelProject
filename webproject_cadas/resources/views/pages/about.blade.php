@@ -66,13 +66,69 @@
                 </p>
             </div>
             <div class="imp-link">
-                <h3>Data Collection Process</h3>
-                <ul>
-                    <li>Timeline</li>
-                    <li>Location</li>
-                    <li>Participants/Subjects</li>
-                    <li>Challenges Encountered</li>
-                </ul>
+                <div class="data-details">
+                    <h3>Data Collection Process</h3>
+                    <ul>
+                        <li>Timeline</li>
+                        <li>Location: Western Chitwan Valley, Nepal</li>
+                        <li>Participants/Subjects</li>
+                        <li>Challenges Encountered</li>
+                    </ul>
+                </div>
+
+                <div class="data-links">
+                    <h3>Important Links</h3>
+                    <div class="dl-container"> <!-- Add a wrapper for better control -->
+                        <dl>
+                            <dt>Wave 1</dt>
+                            <dd><a href="/codebook">Codebook</a></dd>
+                            <dd><a href="/datas">Data</a></dd>
+                            <dd><a href="/questions">Question</a></dd>
+                            <dd><a href="/report">Report</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>Wave 2</dt>
+                            <dd><a href="/codebook">Codebook</a></dd>
+                            <dd><a href="/datas">Data</a></dd>
+                            <dd><a href="/questions">Question</a></dd>
+                            <dd><a href="/report">Report</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>Wave 3</dt>
+                            <dd><a href="/codebook">Codebook</a></dd>
+                            <dd><a href="/datas">Data</a></dd>
+                            <dd><a href="/questions">Question</a></dd>
+                            <dd><a href="/report">Report</a></dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+                {{-- <ol>
+                    <li>Wave 1</li>
+                    <ul>
+                        <li><a href="/codebook">Codebook</a></li>
+                        <li><a href="/datas">Data</a></li>
+                        <li><a href="/questions">Question</a></li>
+                        <li><a href="/report">Report</a></li>
+                    </ul>
+                    <li>Wave 2</li>
+                    <ul>
+                        <li><a href="/codebook">Codebook</a></li>
+                        <li><a href="/datas">Data</a></li>
+                        <li><a href="/questions">Question</a></li>
+                        <li><a href="/report">Report</a></li>
+                    </ul>
+                    <li>Wave 3</li>
+                    <ul>
+                        <li><a href="/codebook">Codebook</a></li>
+                        <li><a href="/datas">Data</a></li>
+                        <li><a href="/questions">Question</a></li>
+                        <li><a href="/report">Report</a></li>
+                    </ul>
+                </ol> --}}
+
+
             </div>
         </div>
     </div>

@@ -137,18 +137,6 @@
     /* Ensuring the text color remains white */
 }
 
-/* General anchor tag styles */
-a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: white;
-}
-
 .dropdown-menu {
     background-color: #0f3c4d;
     border-radius: 0%;
@@ -661,16 +649,10 @@ body,
     
   }
   
-  .content, .imp-link {
+  .content {
     flex: 1; /* Ensures both sections take up equal space */
   }
   
-  .imp-link {
-    /* background-color: #f5f5f5; */
-    padding: 20px;
-    border-radius: 8px;
-    
-  }
   
   .timeline h3 {
     color: #AC262C; /* Example color for headings */
@@ -680,7 +662,31 @@ body,
     font-size: 16px;
     line-height: 1.5;
   }
+  .data-links {
+    display: flex;                 /* Enable flexbox for the container */
+    flex-direction: column;       /* Stack the heading above the dl elements */
+    
+}
 
+.dl-container {
+    display: flex;                /* Enable flexbox for the dl elements */
+    justify-content: space-between; /* Space out the dl elements evenly */
+    align-items: flex-start;      /* Align items to the top */
+    gap: 10px;                   /* Space between dl elements */
+    
+}
+
+.data-links dl {
+    flex: 1;                     /* Make each dl element take equal space */
+    margin: 0;                  /* Remove default margin */
+    border: 1px solid #ccc;     /* Optional: add border for visibility */
+    padding: 10px;              /* Optional: add padding for aesthetics */
+    background-color: #ffffff;
+}
+.data-links dt{
+    color: #400a0a;
+    padding-bottom: 7px;
+}
 
 /* end of about section */
 
