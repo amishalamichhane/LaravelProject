@@ -18,7 +18,7 @@
             COVID-19 pandemic. In Wave 1, we began data collection on July 5, 2017, and completed it on July 9, 2018.
             Similarly, in Wave 2, we started data collection on April 8, 2021, and completed it on December 23, 2021.
         </p>
-        {{-- <p>
+        <p><br>
 
 
             We covered 12 Village Development Committees and one Municipality in Western Chitwan, Nepal. Out of the total
@@ -30,7 +30,7 @@
             households for the Wave 1 survey.
 
 
-        </p> --}}
+        </p>
     </div>
     <div class="timeline">
         <div class="container" id="flex-content">
