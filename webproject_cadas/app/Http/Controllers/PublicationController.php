@@ -10,6 +10,7 @@ class PublicationController extends Controller
     // Display a listing of the publications
     public function publications()
     {
+        $publications = Publication::all();
         // Fetch publications from the database with pagination
         $publications = Publication::orderBy('year', 'desc')->paginate(10);
 

@@ -8,12 +8,14 @@
         <div class="publications-content">
             @foreach ($publications as $publication)
                 <div class="publication-item">
-                    <p>
-                        <strong>{{ $publication->authors }}</strong> ({{ $publication->year }}). 
+
+                    <div class="publication-details">
+                        <strong>{{ $publication->authors }}</strong> ({{ $publication->year }}).
                         <a href="{{ $publication->url }}" target="_blank">{{ $publication->title }}</a>.
                         <br>
                         <em>{{ $publication->journal }}</em>.
-                    </p>
+                    </div>
+
                     <div class="citation-buttons">
                         <a href="{{ $publication->doi }}" target="_blank">
                             <button>DOI</button>
@@ -26,7 +28,7 @@
                 </div>
             @endforeach
         </div>
-        
+
         <div class="pagination-container">
             {{ $publications->links() }}
         </div>
