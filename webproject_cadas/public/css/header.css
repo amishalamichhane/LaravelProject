@@ -738,7 +738,7 @@ body,
 .polaroid img {
     border-radius: 50%;
     padding: 10px; /* Adjusted padding */
-    object-fit: cover;
+    /* object-fit: cover; */
     width: 150px;
     height: 150px;
 }

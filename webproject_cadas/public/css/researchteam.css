@@ -20,7 +20,7 @@
     border-radius: 50%; /* Make image circular */
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    /* object-fit: cover; */
     margin-bottom: 10px;
 }
 
