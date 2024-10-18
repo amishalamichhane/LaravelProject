@@ -5,6 +5,7 @@ use App\Http\Controllers\PublicationController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StudyController;
 use App\Http\Controllers\CapacityBuildingController;
+use App\Http\Controllers\EventController;
 
 Route::get('/', function () {
     return view('pages.index');
@@ -29,9 +30,8 @@ Route::get('/codebook/{slug}', [StudyController::class, 'codebook'])->name('code
 Route::get('/questions/{slug}', [StudyController::class, 'question'])->name('questions');
 
 
-Route::get('/events', function () {
-    return view('pages.events');
-});
+Route::get('/events', [EventController::class, 'event']);
+
 
 Route::get('/gallery', function () {
     return view('pages.gallery');
@@ -87,3 +87,4 @@ Route::post('staff', [StaffController::class, 'store'])->name('staff.store');
 Route::get('/publications', [PublicationController::class, 'publications']);
 
 Route::get('/capacitybuilding', [CapacityBuildingController::class, 'CapacityBuilding']);
+
