@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicationController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StudyController;
+use App\Http\Controllers\CapacityBuildingController;
 
 Route::get('/', function () {
     return view('pages.index');
@@ -84,3 +85,5 @@ Route::get('staff', [StaffController::class, 'staff'])->name('staff');
 Route::post('staff', [StaffController::class, 'store'])->name('staff.store');
 
 Route::get('/publications', [PublicationController::class, 'publications']);
+
+Route::get('/capacitybuilding', [CapacityBuildingController::class, 'CapacityBuilding']);
