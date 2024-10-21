@@ -8,11 +8,9 @@
         <div class="publications-content">
             @foreach ($publications as $publication)
                 <div class="publication-item">
-
                     <div class="publication-details">
                         {{ $publication->authors }} ({{ $publication->year }}).
                         <a href="{{ $publication->url }}" target="_blank">{{ $publication->title }}</a>.
-                        
                         <em>{{ $publication->journal }}</em>.
                     </div>
 
@@ -34,9 +32,29 @@
         </div>
     </div>
 
+    <!-- Custom Modal -->
+    <div id="citation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCitation()">&times;</span>
+            <p id="citation-text"></p>
+        </div>
+    </div>
+
     <script>
         function showCitation(citation) {
-            alert("Citation: " + citation);
+            document.getElementById('citation-text').innerText = citation;
+            document.getElementById('citation-modal').style.display = 'block';
+        }
+
+        function closeCitation() {
+            document.getElementById('citation-modal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('citation-modal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
     </script>
 @endsection
