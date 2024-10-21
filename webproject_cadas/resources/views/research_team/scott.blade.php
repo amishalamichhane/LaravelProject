@@ -6,18 +6,15 @@
             <img src="/img/scott.png" alt="scoot">
             <div class="container-txt1">
                 <h4>Scott Yabiku</h4>
-                <p>Principal Investigator of Project 1</p>
-                <a href="https://thesanfordschool.asu.edu/">Arizona State University</a>
+                <p>Data Collection and <br>Data Management Core Director</p>
+                <a href="https://pop.psu.edu/">Population Research Institute,<br> Penn State University</a>
             </div>
         </div>
 
         <div class="content">
-            Dr. Eggum researches child, social, and cultural factors that shape children's and adolescents' social, school,
-            and psychological adjustment internationally. She has published over 50 articles and chapters, and her research
-            has been funded by the Eunice Kennedy Shriver National Institute of Child Health and Human Development and The
-            Brady Education Foundation. She is a Consulting Editor for Developmental Psychology. Her methodological interests
-            involve latent variable modeling of longitudinal data. You can learn more about her work here.
-
+            Scott T. Yabiku is a sociologist and social demographer in the Department of Sociology and Criminology, The
+            Pennsylvania State University. He is a Research Associate of the Population Research Institute and Programming
+            Director of the Computational and Spatial Analysis (CSA) Core.
             <br><br>
             <a class="cv-link" href="/report/Scott-Yabiku-CV.pdf" target="_blank">View CV</a>
         </div>
