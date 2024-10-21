@@ -14,7 +14,8 @@
         <div class="content">
             Scott T. Yabiku is a sociologist and social demographer in the Department of Sociology and Criminology, The
             Pennsylvania State University. He is a Research Associate of the Population Research Institute and Programming
-            Director of the Computational and Spatial Analysis (CSA) Core.
+            Director of the Computational and Spatial Analysis (CSA) Core.You can learn more about me <a href="https://sites.psu.edu/syabiku/">here</a>.
+
             <br><br>
             <a class="cv-link" href="/report/Scott-Yabiku-CV.pdf" target="_blank">View CV</a>
         </div>
