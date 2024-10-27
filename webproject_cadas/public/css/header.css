@@ -1218,6 +1218,80 @@ body,
 /* End of Policy brief section */
 
 /* Dissemination section */
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dissemination-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dissemination-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ac262c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dissemination-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ac262c;
+    padding-bottom: 5px;
+}
+
+/* List Styles */
+.objectives-list,
+.methods-list,
+.audience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.objectives-list li,
+.methods-list li,
+.audience-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Emphasis on key terms in lists */
+.methods-list li strong,
+.audience-list li strong {
+    color: #ac262c;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.dissemination-title:hover,
+.dissemination-subtitle:hover {
+    color: #900;
+    cursor: pointer;
+}
+
+objectives-list li:hover,
+.methods-list li:hover,
+.audience-list li:hover {
+    color: #666;
+    cursor: default;
+}
+
 
 /* End of Dissemination section */
 
