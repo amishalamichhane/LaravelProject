@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('working_papers', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('authors');
+            $table->date('date');
+            $table->text('summary');
+            $table->string('file_path'); // This is where the download link will point
             $table->timestamps();
         });
     }
