@@ -6,6 +6,7 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StudyController;
 use App\Http\Controllers\CapacityBuildingController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\WorkingPaperController;
 
 Route::get('/', function () {
     return view('pages.index');
@@ -70,9 +71,11 @@ Route::get('/dissemination', function () {
     return view('product.dissemination');
 });
 
-Route::get('/working_paper', function () {
-    return view('product.workingpaper');
-});
+// Route::get('/working_paper', function () {
+//     return view('product.workingpaper');
+// });
+
+Route::get('/working_paper', [WorkingPaperController::class, 'workingpaper'])->name('working_paper.workingpaper');
 
 Route::get('/capacity_building', function () {
     return view('pages.capacity_building');
