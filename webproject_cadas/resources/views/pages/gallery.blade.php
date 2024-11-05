@@ -15,7 +15,7 @@
                 <h3 class="gallery-title">{{ $gallery->title }}</h3> <!-- Title above the images -->
                 <div class="images-container"> <!-- Container for multiple images -->
                     @foreach($gallery->images as $image) <!-- Assuming each gallery has a collection of images -->
-                        <img src="{{ $image->url }}" alt="{{ $gallery->title }}" class="img-fluid"> <!-- Display each image -->
+                        <img src="{{ $image->image_url }}" alt="{{ $gallery->title }}" class="img-fluid"> <!-- Display each image -->
                     @endforeach
                 </div>
             </div>
