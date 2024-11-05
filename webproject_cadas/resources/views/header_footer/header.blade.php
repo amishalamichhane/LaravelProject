@@ -83,7 +83,7 @@
                     </li>
 
                     <a class="nav-link" href="/events">events</a>
-                    {{-- <a class="nav-link" href="/gallery">Gallery</a> --}}
+                    <a class="nav-link" href="/gallery">Gallery</a>
                     {{-- <a class="nav-link" href="/contact">CONTACT</a> --}}
                 </div>
             </div>
