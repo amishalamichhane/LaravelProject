@@ -1,44 +1,25 @@
 @extends('layout')
+
 @section('content')
-    <!DOCTYPE html>
-    <html lang="en">
+<h1 class="text-center">Gallery</h1> <!-- Main title for the gallery page -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>FAMELO-Gallery</title>
-    </head>
-
-    <body>
-        <div class="gallery-container">
+<div class="gallery-page">
+    
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+    
+    <div class="gallery-list">
+        @foreach($galleries as $gallery)
             <div class="gallery-item">
-                <img src="/img/migration.jpg" alt="Gallery Image 1">
-                <div class="caption">Migration</div>
+                <h3 class="gallery-title">{{ $gallery->title }}</h3> <!-- Title above the images -->
+                <div class="images-container"> <!-- Container for multiple images -->
+                    @foreach($gallery->images as $image) <!-- Assuming each gallery has a collection of images -->
+                        <img src="{{ $image->url }}" alt="{{ $gallery->title }}" class="img-fluid"> <!-- Display each image -->
+                    @endforeach
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="/img/migration.jpg" alt="Gallery Image 2">
-                <div class="caption">Migration</div>
-            </div>
-            <div class="gallery-item">
-                <img src="/img/migration.jpg" alt="Gallery Image 3">
-                <div class="caption">Migration</div>
-            </div>
-            <div class="gallery-item">
-                <img src="/img/migration.jpg" alt="Gallery Image 4">
-                <div class="caption">Migration</div>
-            </div>
-            <div class="gallery-item">
-                <img src="/img/migration.jpg" alt="Gallery Image 5">
-                <div class="caption">Migration</div>
-            </div>
-            <div class="gallery-item">
-                <img src="/img/migration.jpg" alt="Gallery Image 6">
-                <div class="caption">Migration</div>
-            </div>
-        </div>
-
-    </body>
-
-    </html>
+        @endforeach
+    </div>
+</div>
 @endsection
