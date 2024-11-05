@@ -21,6 +21,7 @@
                     <li data-target="#imageSlider" data-slide-to="1"></li>
                     <li data-target="#imageSlider" data-slide-to="2"></li>
                     <li data-target="#imageSlider" data-slide-to="3"></li>
+                    <li data-target="#imageSlider" data-slide-to="4"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -28,32 +29,33 @@
                     <div class="carousel-item active">
                         <img src="{{ asset('/img/header_original.jpg') }}" class="d-block w-100" alt="Image 1">
                         <div class="carousel-caption d-none d-md-block">
-                            {{-- <h5>First Slide Title</h5 --}}
-                            {{-- <p>First Slide Description.</p> --}}
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <img src="{{ asset('/img/migration.jpg') }}" class="d-block w-100" alt="Image 4" {{-- style="width: 100%; height: auto;" --}}>
                         <div class="carousel-caption d-none d-md-block">
-                            {{-- <h5>Second Slide Title</h5> --}}
-                            {{-- <p>Second Slide Description.</p> --}}
+                            <h5>A Glimpse into Family Migration</h5>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <img src="{{ asset('/img/group.jpg') }}" class="d-block w-100" alt="Image 2" {{-- style="width: 100%; height: auto;" --}}>
+                        <img src="{{ asset('/img/nagarpalika.JPG') }}" class="d-block w-100" alt="Image 2" {{-- style="width: 100%; height: auto;" --}}>
                         <div class="carousel-caption d-none d-md-block">
-                            {{-- <h5>Second Slide Title</h5> --}}
-                            {{-- <p>Second Slide Description.</p> --}}
+                            <h5>Sharing Insights on Family Migration: FAMELO Presentation at Nagarpalika</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('/img/famelo-abt.png') }}" class="d-block w-100" alt="Image 3"
-                            {{-- style="width: 100%; height: auto;" --}}>
+                        <img src="{{ asset('/img/group.jpg') }}" class="d-block w-100" alt="Image 3">
                         <div class="carousel-caption d-none d-md-block">
-                            {{-- <h5>Third Slide Title</h5> --}}
-                            {{-- <p>Third Slide Description.</p> --}}
+                            <h5>The FAMELO Research Team, USA</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{{ asset('/img/group1.JPG') }}" class="d-block w-100" alt="Image 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The FAMELO Research Team, Nepal</h5>
                         </div>
                     </div>
                     
