@@ -3,8 +3,8 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <div class="container">
-        <img src="/img/about.jpg" align="left" />
         <div class="first-para">
+            <img src="/img/about.jpg" align="left" />
             <p>
                 <b><br>FAMELO</b> examines how family migration impacts children’s socio-psychological development.
                 Using a model that blends migration and child development perspectives, the study explores how migration
@@ -18,20 +18,26 @@
             COVID-19 pandemic. In Wave 1, we began data collection on July 5, 2017, and completed it on July 9, 2018.
             Similarly, in Wave 2, we started data collection on April 8, 2021, and completed it on December 23, 2021.
         </p>
-        <p><br>
-
-
-            We covered 12 Village Development Committees and one Municipality in Western Chitwan, Nepal. Out of the total
-            wards present in the study area, we randomly selected 54 sample sub-wards. Based on a listing of households,
-            these 54 wards were divided into 119 sub-wards, with approximately 250 households in each sub-ward. From this
-            listing and household count, we chose 54 sub-wards for our study. In Wave 1, we initially selected a sample of
-            2268 households (42 households per sub-ward). Later, to increase the number of children aged 14 to 17 years, we
-            sampled an additional 378 households (7 households in each of the 54 sub-wards). In total, we sampled 2646
-            households for the Wave 1 survey.
-
-
-        </p>
+        <div class="second-para">
+            <img src="/img/abt2.jpeg" align="right" alt="Survey Area in Western Chitwan" />
+            <p>
+                We covered 12 Village Development Committees and one Municipality in Western Chitwan, Nepal. Out of the
+                total
+                wards present in the study area, we randomly selected 54 sample sub-wards. Based on a listing of households,
+                these 54 wards were divided into 119 sub-wards, with approximately 250 households in each sub-ward. From
+                this
+                listing and household count, we chose 54 sub-wards for our study.
+                <br><br>
+                In Wave 1, we initially selected a sample of 2268 households (42 households per sub-ward). Later, to
+                increase
+                the number of children aged 14 to 17 years, we sampled an additional 378 households (7 households in each of
+                the 54 sub-wards). In total, we sampled 2646 households for the Wave 1 survey.
+            </p>
+            
+        </div>
     </div>
+
+
     <div class="timeline">
         <div class="container" id="flex-content">
             <div class="content">
@@ -69,54 +75,92 @@
                 <div class="data-details">
                     <h3>Data Collection Process</h3>
                     <ul>
-                        <li>Timeline</li>
+                        <li>Timeline: 2015-2023</li>
                         <li>Location: Western Chitwan Valley, Nepal</li>
-                        <li>Participants/Subjects</li>
-                        <li>Challenges Encountered</li>
+                        <li>Participants/Subjects: Children and their families.</li>
+                        <li>Challenges Encountered:
+                            Challenges included timing<br>interviews, switching to phone surveys,contact issues,<br> and
+                            adding COVID-19 questions in Wave 2.</li>
                     </ul>
                 </div>
 
                 <div class="data-links">
                     <h3>Important Links</h3>
                     {{-- @foreach ($studies as $study) --}}
-                        <div class="dl-container"> <!-- Add a wrapper for better control -->
-                            <dl>
-                                <dt>Wave 1</dt>
-                                <dd><a
-                                        href="/codebook/family-migration-context-socio-emotional-competence-study-2017">Codebook</a>
-                                </dd>
-                                <dd><a href="/datas/family-migration-context-socio-emotional-competence-study-2017">Data</a>
-                                </dd>
-                                <dd><a href="/questions/family-migration-context-socio-emotional-competence-study-2017">Questions</a></dd>
-                                <dd><a href="/report/wave1.pdf" target="_blank">Report</a></dd>
-                            </dl>
-                            <dl>
-                                <dt>Wave 2</dt>
-                                <dd><a
-                                        href="/codebook/family-migration-context-and-socio-emotional-competence-study-2021">Codebook</a>
-                                </dd>
-                                <dd><a href="/datas/family-migration-context-and-socio-emotional-competence-study-2021">Data</a></dd>
-                                <dd><a href="/questions/family-migration-context-and-socio-emotional-competence-study-2021">Questions</a></dd>
-                                <dd><a href="/report/wave2.pdf" target="_blank">Report</a></dd>
-                            </dl>
-                            <dl>
-                                <dt>Wave 3</dt>
-                                <dd><a
-                                        href="/codebook/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Codebook</a>
-                                </dd>
-                                <dd><a
-                                        href="datas/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Data</a>
-                                </dd>
-                                <dd><a href="questions/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Question</a></dd>
-                                <dd><a href="/report/wave3.pdf">Report</a></dd>
-                            </dl>
-                    {{-- @endforeach --}}
+                    <div class="dl-container"> <!-- Add a wrapper for better control -->
+                        <dl>
+                            <dt>Wave 1</dt>
+                            <dd><a
+                                    href="/codebook/family-migration-context-socio-emotional-competence-study-2017">Codebook</a>
+                            </dd>
+                            <dd><a href="/datas/family-migration-context-socio-emotional-competence-study-2017">Data</a>
+                            </dd>
+                            <dd><a
+                                    href="/questions/family-migration-context-socio-emotional-competence-study-2017">Questions</a>
+                            </dd>
+                            <dd><a href="/report/wave1.pdf" target="_blank">Report</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>Wave 2</dt>
+                            <dd><a
+                                    href="/codebook/family-migration-context-and-socio-emotional-competence-study-2021">Codebook</a>
+                            </dd>
+                            <dd><a href="/datas/family-migration-context-and-socio-emotional-competence-study-2021">Data</a>
+                            </dd>
+                            <dd><a
+                                    href="/questions/family-migration-context-and-socio-emotional-competence-study-2021">Questions</a>
+                            </dd>
+                            <dd><a href="/report/wave2.pdf" target="_blank">Report</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>Wave 3</dt>
+                            <dd><a
+                                    href="/codebook/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Codebook</a>
+                            </dd>
+                            <dd><a
+                                    href="datas/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Data</a>
+                            </dd>
+                            <dd><a
+                                    href="questions/family-migration-context-and-socialization-childrens-socio-emotional-development-study-2024">Question</a>
+                            </dd>
+                            <dd><a href="/report/wave3.pdf">Report</a></dd>
+                        </dl>
+                        {{-- @endforeach --}}
+                    </div>
                 </div>
+
+
+
             </div>
-
-
-
         </div>
     </div>
+
+
+
+
+    <div class="study-section">
+        <div class="study-content">
+            <h3>Study Area</h3>
+            <div class="study-img">
+                <img src="/img/studyarea.png" alt="Study Image" align ="right">
+            </div>
+            <ul>
+                <li>
+                    For this study, initially, 2,646 households from the 54 selected communities with children aged 5 to 17
+                    were selected in the first phase (2074 B.S.).
+                </li>
+                <li>
+                    From these households, a scientific method was used to ensure equal representation of various
+                    ethnicities, religions, genders, regions, ages, and occupations. Children aged 5 to 17, along with their
+                    caregivers, were chosen, and they became the respondents of this study.
+                </li>
+                <li>
+                    Now, those children are between 10 and 23 years old, and information for the third phase will be
+                    gathered from them.
+                </li>
+                <li>Accordingly, there is a plan to collect data from approximately 2,200 households
+                    involving around 2,200 children and their fathers and mothers.</li>
+            </ul>
+        </div>
     </div>
 @endsection
