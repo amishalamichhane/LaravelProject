@@ -67,7 +67,7 @@
                     </li>
 
 
-                    <a class="nav-link" href="/capacitybuilding">CAPACITY BUILDING</a>
+                    <a class="nav-link" href="/capacity_building">CAPACITY BUILDING</a>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
