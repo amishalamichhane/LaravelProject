@@ -7,6 +7,7 @@ use App\Http\Controllers\StudyController;
 use App\Http\Controllers\CapacityBuildingController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\WorkingPaperController;
+use App\Http\Controllers\GalleryController;
 
 Route::get('/', function () {
     return view('pages.index');
@@ -34,9 +35,10 @@ Route::get('/questions/{slug}', [StudyController::class, 'question'])->name('que
 Route::get('/events', [EventController::class, 'event']);
 
 
-Route::get('/gallery', function () {
-    return view('pages.gallery');
-});
+Route::get('gallery', [GalleryController::class, 'showGallery'])->name('gallery.show'); // Use the custom showGallery method
+Route::post('/gallery', [GalleryController::class, 'store'])->name('gallery.store');
+
+
 
 Route::get('/researcher', function () {
     return view('pages.researcher');
@@ -77,9 +79,13 @@ Route::get('/dissemination', function () {
 
 Route::get('/working_paper', [WorkingPaperController::class, 'workingpaper'])->name('working_paper.workingpaper');
 
-Route::get('/capacity_building', function () {
-    return view('pages.capacity_building');
-});
+
+// Main page route using the CapacityBuilding method
+Route::get('/capacity_building', [CapacityBuildingController::class, 'CapacityBuilding'])->name('capacity_building');
+
+// Detailed page route using the show method for individual sections of capacity building
+Route::get('/capacity_building/{slug}', [CapacityBuildingController::class, 'show'])->name('capacity_building.show');
+
 
 // Define the route for displaying staff members
 Route::get('staff', [StaffController::class, 'staff'])->name('staff');
@@ -89,5 +95,6 @@ Route::post('staff', [StaffController::class, 'store'])->name('staff.store');
 
 Route::get('/publications', [PublicationController::class, 'publications']);
 
-Route::get('/capacitybuilding', [CapacityBuildingController::class, 'CapacityBuilding']);
+// Route::get('/capacitybuilding', [CapacityBuildingController::class, 'CapacityBuilding']);
+
 
