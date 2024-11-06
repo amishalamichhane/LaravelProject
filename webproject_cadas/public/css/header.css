@@ -653,7 +653,7 @@ body,
     padding: 20px; /* Add padding inside the container */
     text-align: justify;
     font-family: "Open Sans", sans-serif;
-    
+
 }
 
 .container img {
@@ -665,6 +665,7 @@ body,
     
     padding: 20px 40px 0px 0px;
 }
+
 
 .first-para h3 {
     font-size: 23px;
@@ -679,6 +680,17 @@ body,
     margin-bottom: 20px; /* Added bottom margin for spacing between paragraphs */
 }
 
+.second-para{
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+.second-para img{
+    width: 50%; /* Ensure responsive width */
+    float: right; /* Align the image to the left */
+    
+    padding: 0px 0px 0px 40px;
+}
+
 .fa-external-link {
     font-size: 0.75em; /* Adjusted font size */
     vertical-align: top;
@@ -688,7 +700,7 @@ body,
 
 .timeline {
     padding: 20px; /* Adjusted padding */
-    background-color: #f7f6f6;
+    background-color: #f1f2f4;
     color: rgb(0, 0, 0);
     margin-top: 30px;
     font-size: 16px; /* Adjusted font size for better readability */
@@ -708,7 +720,7 @@ body,
   
   
   .timeline h3 {
-    color: #AC262C; /* Example color for headings */
+    color: #000000; /* Example color for headings */
   }
   
   .timeline p {
@@ -740,6 +752,45 @@ body,
     color: #400a0a;
     padding-bottom: 7px;
 }
+
+
+.study-content {
+    float: left;
+    /* Adjust width as needed for the content section */
+    padding: 0 100px 30px 100px;
+    
+}
+.study-content h3{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.study-content ul{
+    padding-left: 40px;
+    padding-top: 10px;
+    gap:20px;
+}
+
+.study-section {
+    overflow: auto; /* Clears floats inside the container */
+    width: 100%; 
+}
+
+.study-img {
+    float: right;
+    width: 45%; 
+    padding-left: 20px;
+    /* Adjust width as needed for the image section */
+    
+}
+
+.study-img img {
+    width: 100%; 
+    /* Ensures the image fits within the container */
+    height: auto;
+}
+
+
 
 /* end of about section */
 
@@ -880,61 +931,101 @@ body,
 
 /* End of Staff Section */
 
+
+/* Capacity building Section */
+
+.container_capacitybuilding {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack sections vertically */
+    margin: 0 auto;
+    width: 90%;
+    padding: 50px;
+    
+}
+
+.capacity-section {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align items at the start */
+    gap : 35px;
+}
+
+.text-section {
+    text-align: left; /* Align text to the left */
+    flex: 1; /* Allow the text section to take up available space */
+    text-align: justify;
+    
+}
+
+.capacity-image {
+    max-width: 450px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+/* End of Capacity building Section */
+
+
+
 /* Gallery section  */
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-    gap: 35px;
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
-    font-family: "Open Sans", sans-serif;
+.gallery-page {
+    padding: 20px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-direction:column; /* Change to column layout */
+    align-items: center; /* Center items horizontally */
 }
 
 .gallery-item {
-    position: relative;
+    background-color: #f8f9fa; /* Light background for the gallery item */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px;
+     /* Space below each gallery item */
+    width: 90%; /* Adjust width for each gallery item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+
+
+.gallery-title {
+    font-size: 1.25rem; /* Adjust title size */
+    text-align: center; /* Center the title */
+    padding: 15px; 
+}
+
+.images-container {
+    display: flex; /* Arrange images in a row */
+    justify-content: center; 
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+.images-container img {
+    width: 35%; /* Allow image to use its natural width */
+    padding: 10px; /* Space between images */
+    border-radius: 5px; /* Rounded corners for images */
+    
 }
 
-.gallery-item img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    transition: transform 0.3s;
-}
 
-.gallery-item:hover img {
-    transform: scale(1.05);
-}
 
-/* Captions */
-.gallery-item .caption {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    font-size: 14px;
-}
-
-/* Responsive for tablets */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    .gallery-item {
+        width: 90%; /* Wider items on smaller screens */
     }
 }
 
-/* Responsive for mobile */
 @media (max-width: 480px) {
-    .gallery-container {
-        grid-template-columns: 1fr; /* 1 image per row */
+    .gallery-item {
+        width: 100%; /* Full width on extra small screens */
     }
 }
+
+
 
 /* End of Gallery section  */
 
@@ -1309,13 +1400,13 @@ objectives-list li:hover,
 .working-paper-container h1 {
     text-align: center;
     color: #ac262c;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 32px;
 }
 
 .paper-card {
     background-color: #f9f9f9;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -1323,9 +1414,14 @@ objectives-list li:hover,
 }
 
 .paper-card h2 {
-    color: #ac262c;
+    /* color: #ac262c; */
     font-size: 22px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    /* margin-bottom: 10px; */
+}
+.paper-card h2:hover {
+    /* color: #ac262c; */
+   
 }
 
 .author,
@@ -1343,9 +1439,9 @@ objectives-list li:hover,
 
 .button {
     display: inline-block;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     padding: 10px 20px;
-    background-color: #ac262c;
+    background-color: #3e2bcf;
     color: white;
     text-decoration: none;
     border-radius: 5px;
