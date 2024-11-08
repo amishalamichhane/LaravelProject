@@ -1399,7 +1399,7 @@ objectives-list li:hover,
 
 .working-paper-container h1 {
     text-align: center;
-    color: #ac262c;
+    color: #000000;
     /* margin-bottom: 30px; */
     font-size: 32px;
 }
@@ -1418,10 +1418,6 @@ objectives-list li:hover,
     font-size: 22px;
     font-weight: 600;
     /* margin-bottom: 10px; */
-}
-.paper-card h2:hover {
-    /* color: #ac262c; */
-   
 }
 
 .author,
