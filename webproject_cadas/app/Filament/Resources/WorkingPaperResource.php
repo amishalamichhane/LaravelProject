@@ -24,9 +24,9 @@ class WorkingPaperResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')->required(),
-                Forms\Components\TextInput::make('authors')->required(),
-                Forms\Components\DatePicker::make('date')->required(),
-                Forms\Components\Textarea::make('summary')->required(),
+                // Forms\Components\TextInput::make('authors')->required(),
+                // Forms\Components\DatePicker::make('date')->required(),
+                // Forms\Components\Textarea::make('summary')->required(),
                 Forms\Components\TextInput::make('file_path')->required(), // Or use file upload component
 
                 //
