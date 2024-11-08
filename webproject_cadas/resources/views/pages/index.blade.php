@@ -53,7 +53,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="{{ asset('/img/group1.JPG') }}" class="d-block w-100" alt="Image 4">
+                        <img src="{{ asset('/img/group1.jpg') }}" class="d-block w-100" alt="Image 4">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>The FAMELO Research Team, Nepal</h5>
                         </div>
