@@ -1,61 +1,49 @@
 @extends('layout')
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Policy Brief</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
-  <div class="policy-container">
-    <h1>Policy Brief: Family Migration and Child Development</h1>
-    
-    {{-- <div class="policy-section">
-      <h2>Overview</h2>
-      <p>
-        Family migration, especially when children are left behind, poses significant challenges for both the migrants and their families. This brief examines the socio-psychological impacts on left-behind children and provides policy recommendations to mitigate these effects.
-      </p>
-    </div>
-
-    <div class="policy-section">
-      <h2>Key Issues</h2>
-      <ul>
-        <li><strong>Mental Health:</strong> Children left behind by migrating parents show increased signs of anxiety and depression.</li>
-        <li><strong>Educational Attainment:</strong> Educational outcomes often decline due to the lack of parental guidance and support.</li>
-        <li><strong>Social Development:</strong> Separation from parents leads to social isolation and difficulties in forming peer relationships.</li>
-      </ul>
-    </div>
-
-    <div class="policy-section">
-      <h2>Recommendations</h2>
-      <ul>
-        <li><strong>Mental Health Services:</strong> Governments should provide targeted mental health support for left-behind children.</li>
-        <li><strong>Parental Training:</strong> Implement programs to support migrating parents in maintaining communication and involvement in their children’s lives.</li>
-        <li><strong>Educational Support:</strong> Create policies that provide educational assistance to left-behind children, such as tutoring and after-school programs.</li>
-        <li><strong>Community Programs:</strong> Develop community-based support systems to ensure children maintain social interactions.</li>
-      </ul>
-    </div>
-
-    <div class="policy-section">
-      <h2>Conclusion</h2>
-      <p>
-        Addressing the challenges faced by children left behind by migrant parents is critical for their development and well-being. Policymakers must prioritize mental health, education, and social integration to ensure these children have the resources and support needed to thrive.
-      </p>
-    </div>
-
-    <div class="policy-section">
-      <h2>Contact Information</h2>
-      <p>For more information or to discuss this policy brief, please contact:</p>
-      <p><strong>Email:</strong> research@famelo.org</p>
-      <p><strong>Phone:</strong> (123) 456-7890</p>
-    </div> --}}
-
+<div class="policy-container">
+  <h1>Policy Brief: Family Migration and Child Development</h1>
+  
+  <div class="policy-section">
+    <h2>Overview</h2>
+    <p>
+      Migration-related changes can deeply impact the socio-emotional development of children, especially those left behind. This brief explores the complex ways migration affects children’s mental health, social competence, and overall adjustment. Findings from this research can help educate families and inform public health strategies to support the adaptation of left-behind children.
+    </p>
   </div>
 
-</body>
-</html>
+  <div class="policy-section">
+    <h2>Key Issues</h2>
+    <ul>
+      <li><strong>Mental Health and Social Competence:</strong> Migration may disrupt family structures, which can lead to increased stress, anxiety, and socialization challenges for children left behind.</li>
+      <li><strong>Child Protection and Rights:</strong> The lack of parental presence can make children more vulnerable to risks such as child labor, requiring stronger protective policies.</li>
+      <li><strong>Educational and Social Development:</strong> Disrupted family dynamics affect educational performance and hinder children’s ability to form and maintain healthy relationships.</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <h2>Recommendations</h2>
+    <ul>
+      <li><strong>Mental Health Support:</strong> Policymakers should provide resources for targeted mental health support to help children cope with parental absence.</li>
+      <li><strong>Family Communication Programs:</strong> Develop programs to support effective communication between migrating parents and their children, helping maintain emotional bonds.</li>
+      <li><strong>Child Protection Policies:</strong> Strengthen policies that protect left-behind children from risks like child labor and ensure their rights are upheld.</li>
+      <li><strong>Community-Based Support:</strong> Encourage community programs that foster social interactions and provide support networks for children affected by migration.</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <h2>Conclusion</h2>
+    <p>
+      This research highlights the need for policies that address the well-being of left-behind children affected by migration. By focusing on mental health, education, and social integration, policymakers can help these children adapt to the challenges of parental migration and foster their development into well-adjusted adults.
+    </p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Contact Information</h2>
+    <p>For more information or to discuss this policy brief, please contact:</p>
+    <p><strong>Email:</strong> iser.nepal@outlook.com</p>
+    <p><strong>Phone:</strong> +977-56-591054, +977-56-592406</p>
+  </div>
+
+</div>
 
 @endsection

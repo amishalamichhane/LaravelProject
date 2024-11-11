@@ -938,7 +938,7 @@ body,
     display: flex; /* Use flexbox for alignment */
     flex-direction: column; /* Stack sections vertically */
     margin: 0 auto;
-    width: 90%;
+    width: 70%;
     padding: 50px;
     
 }
@@ -1248,7 +1248,7 @@ body,
 
 .policy-container h1 {
     text-align: center;
-    color: #ac262c;
+    color: #3826ac;
     margin-bottom: 30px;
     font-size: 28px;
 }
@@ -1282,7 +1282,7 @@ body,
 /* Hover Effects for Important Sections */
 .policy-section:hover {
     background-color: #f9f9f9;
-    border-left: 4px solid #ac262c;
+    border-left: 4px solid #3826ac;
     padding-left: 16px;
 }
 
@@ -1330,7 +1330,7 @@ body {
 .dissemination-title {
     font-size: 28px;
     font-weight: bold;
-    color: #ac262c;
+    color: #3826ac;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -1341,7 +1341,7 @@ body {
     color: #333;
     margin-top: 20px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ac262c;
+    border-bottom: 2px solid #3826ac;
     padding-bottom: 5px;
 }
 
@@ -1365,14 +1365,14 @@ body {
 /* Emphasis on key terms in lists */
 .methods-list li strong,
 .audience-list li strong {
-    color: #ac262c;
+    color: #3826ac;
     font-weight: bold;
 }
 
 /* Hover Effects */
 .dissemination-title:hover,
 .dissemination-subtitle:hover {
-    color: #900;
+    color: #3826ac;
     cursor: pointer;
 }
 
