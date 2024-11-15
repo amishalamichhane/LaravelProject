@@ -1,25 +1,54 @@
 @extends('layout')
 @section('content')
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <div class="container">
-        <div class="first-para">
-            <img src="/img/about.jpg" align="left" />
-            <p>
-                <b><br>FAMELO</b> examines how family migration impacts children’s socio-psychological development.
-                Using a model that blends migration and child development perspectives, the study explores how migration
-                affects left-behind children’s social skills and psychological well-being, and how different environments
-                influence their outcomes. The goal is to help families adapt and guide policymakers in supporting mental
-                health and addressing issues like depression, anxiety, aggression, and substance use.
-            </p>
+
+        <div class="first-para d-flex">
+            <!-- Carousel Images -->
+            <div class="carousel w-50">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="/img/about.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/img/abt2.jpeg" alt="Second slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="carousel-text w-50 pl-4">
+                <p>
+                    <strong>FAMELO</strong> examines how family migration impacts children’s socio-psychological
+                    development.
+                    Using a model that blends migration and child development perspectives, the study explores how migration
+                    affects left-behind children’s social skills and psychological well-being, and how different
+                    environments
+                    influence their outcomes. The goal is to help families adapt and guide policymakers in supporting mental
+                    health and addressing issues like depression, anxiety, aggression, and substance use.
+                </p>
+                <p>
+                    We initially designed the study to span five years (2015-2020), but it was delayed until 2022 due to the
+                    COVID-19 pandemic. In Wave 1, we began data collection on July 5, 2017, and completed it on July 9,
+                    2018.
+                    Similarly, in Wave 2, we started data collection on April 8, 2021, and completed it on December 23,
+                    2021.
+                </p>
+            </div>
         </div>
-        <p>
-            We initially designed the study to span five years (2015-2020), but it was delayed until 2022 due to the
-            COVID-19 pandemic. In Wave 1, we began data collection on July 5, 2017, and completed it on July 9, 2018.
-            Similarly, in Wave 2, we started data collection on April 8, 2021, and completed it on December 23, 2021.
-        </p>
         <div class="second-para">
-            <img src="/img/abt2.jpeg" align="right" alt="Survey Area in Western Chitwan" />
+
             <p>
                 We covered 12 Village Development Committees and one Municipality in Western Chitwan, Nepal. Out of the
                 total
@@ -27,13 +56,13 @@
                 these 54 wards were divided into 119 sub-wards, with approximately 250 households in each sub-ward. From
                 this
                 listing and household count, we chose 54 sub-wards for our study.
-                <br><br>
+
                 In Wave 1, we initially selected a sample of 2268 households (42 households per sub-ward). Later, to
                 increase
                 the number of children aged 14 to 17 years, we sampled an additional 378 households (7 households in each of
                 the 54 sub-wards). In total, we sampled 2646 households for the Wave 1 survey.
             </p>
-            
+
         </div>
     </div>
 

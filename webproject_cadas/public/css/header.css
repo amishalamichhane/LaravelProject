@@ -648,7 +648,7 @@ body,
 /* About Section */
 
 .container {
-    max-width: 1200px; /* Adjust max-width for better responsiveness */
+    max-width: 1180px; /* Adjust max-width for better responsiveness */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Add padding inside the container */
     text-align: justify;
@@ -656,39 +656,13 @@ body,
 
 }
 
-.container img {
-    /* display: block; */
-     /* Ensures image is a block element */
-    
+.carousel img {
     width: 50%; /* Ensure responsive width */
-    float: left; /* Align the image to the left */
-    
-    padding: 20px 40px 0px 0px;
-}
-
-
-.first-para h3 {
-    font-size: 23px;
-    margin-top: 20px; /* Reduced top margin */
-    margin-bottom: 20px; /* Added bottom margin */
-    /* padding: 5px; */
-    font-weight: 500;
-}
-
-.first-para p {
-    /* font-weight: 450; */
-    margin-bottom: 20px; /* Added bottom margin for spacing between paragraphs */
+    height: auto;
 }
 
 .second-para{
-    padding-bottom: 30px;
-    padding-top: 15px;
-}
-.second-para img{
-    width: 50%; /* Ensure responsive width */
-    float: right; /* Align the image to the left */
-    
-    padding: 0px 0px 0px 40px;
+    padding-top: 10px;
 }
 
 .fa-external-link {
@@ -1238,12 +1212,14 @@ body,
 /* Policy brief section */
 
 .policy-container {
-    max-width: 900px;
+
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", system-ui;
 }
 
 .policy-container h1 {
@@ -1310,21 +1286,26 @@ body,
 
 /* Dissemination section */
 /* Base Styles */
-body {
-    font-family: Arial, sans-serif;
+/* body {
+    
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-}
+} */
 
 .dissemination-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", system-ui;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .dissemination-title {
@@ -1332,7 +1313,7 @@ body {
     font-weight: bold;
     color: #3826ac;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .dissemination-subtitle {
@@ -1379,7 +1360,7 @@ body {
 objectives-list li:hover,
 .methods-list li:hover,
 .audience-list li:hover {
-    color: #666;
+    /* color: #666; */
     cursor: default;
 }
 
