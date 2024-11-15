@@ -650,10 +650,10 @@ body,
 .container {
     max-width: 1180px; /* Adjust max-width for better responsiveness */
     margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding inside the container */
+    padding: 25px;  
     text-align: justify;
     font-family: "Open Sans", sans-serif;
-
+    padding-top: 40px;
 }
 
 .carousel img {
@@ -701,6 +701,7 @@ body,
     font-size: 16px;
     line-height: 1.5;
   }
+  
   .data-links {
     display: flex;                 /* Enable flexbox for the container */
     flex-direction: column;       /* Stack the heading above the dl elements */
