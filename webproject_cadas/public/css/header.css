@@ -944,59 +944,101 @@ body,
 
 /* Gallery section  */
 
-.gallery-page {
-    padding: 20px;
-}
-
-.gallery-list {
+/* Gallery, Git, and PI Visit Layout */
+.gallery-container {
     display: flex;
-    flex-direction:column; /* Change to column layout */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    gap: 40px;  /* Add space between sections */
+    margin: 20px;  /* Margin around the entire container */
 }
 
-.gallery-item {
-    background-color: #f8f9fa; /* Light background for the gallery item */
-    border-radius: 5px; /* Rounded corners */
-    margin-bottom: 20px;
-     /* Space below each gallery item */
-    width: 90%; /* Adjust width for each gallery item */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    overflow: hidden; /* Ensure content doesn't overflow */
+/* Centralize section titles */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;  /* Space between header and images */
 }
 
-
-
-.gallery-title {
-    font-size: 1.25rem; /* Adjust title size */
-    text-align: center; /* Center the title */
-    padding: 15px; 
-}
-
-.images-container {
-    display: flex; /* Arrange images in a row */
-    justify-content: center; 
+/* Gallery Styles */
+.gallery {
+    position: relative;
+    width: 100%;
     overflow: hidden;
-    
-}
-.images-container img {
-    width: 35%; /* Allow image to use its natural width */
-    padding: 10px; /* Space between images */
-    border-radius: 5px; /* Rounded corners for images */
-    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;  /* Space between gallery and next section */
 }
 
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
+.gallery-slider img {
+    width: calc(50% - 10px);  /* Show 3 images at a time with margin */
+    margin-right: 15px;  /* Space between images */
+    object-fit: cover;
+    height: 450px;
+}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .gallery-item {
-        width: 90%; /* Wider items on smaller screens */
+/* Static Git Section */
+.git, .pi-visit {
+    margin-top: 10px;
+}
+
+/* Image Section Styles */
+.img-section {
+    /* margin-top: 10px; */
+    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
+    margin:0 30px 0 30px;
+
+}
+
+.img-section img {
+    width: calc(50% - 10px);  /* Set image size with margin */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .img-section img {
+        width: calc(48% - 10px);  /* Two images per row */
     }
 }
 
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%; /* Full width on extra small screens */
+@media screen and (max-width: 768px) {
+    .img-section img {
+        width: 100%;  /* One image per row */
+        height: auto;  /* Adjust height to maintain aspect ratio */
+    }
+
+    .gallery-slider img {
+        height: 250px;  /* Slightly smaller gallery images on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-container {
+        margin: 10px;  /* Reduced margin for smaller screens */
+    }
+
+    .section-title {
+        font-size: 18px;  /* Smaller text for smaller screens */
+    }
+
+    .img-section {
+        flex-direction: column;  /* Stack images vertically */
+    }
+
+    .img-section img {
+        width: 100%;  /* One image per row */
+        height: auto;  /* Adjust height to maintain aspect ratio */
     }
 }
 
