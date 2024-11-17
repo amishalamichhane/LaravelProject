@@ -909,34 +909,35 @@ body,
 
 /* Capacity building Section */
 
-.container_capacitybuilding {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack sections vertically */
-    margin: 0 auto;
-    width: 70%;
-    padding: 50px;
-    
+/* Styling for the image gallery */
+.cursor-gallery {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; /* Adds gap to the left of the images */
 }
 
-.capacity-section {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between text and image */
-    align-items: flex-start; /* Align items at the start */
-    gap : 35px;
+.cursor-gallery img {
+    width: 100%;
+    height: auto;
+    display: none; /* Images are hidden by default */
+    transition: opacity 1s ease-in-out;
 }
 
-.text-section {
-    text-align: left; /* Align text to the left */
-    flex: 1; /* Allow the text section to take up available space */
-    text-align: justify;
-    
+.cursor-gallery img:first-child {
+    display: block; /* First image is displayed by default */
 }
 
-.capacity-image {
-    max-width: 450px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
-    
+/* Ensures that images have rounded corners */
+.cursor-gallery img.rounded {
+    border-radius: 8px;
 }
+
+
 
 /* End of Capacity building Section */
 
