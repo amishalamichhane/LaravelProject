@@ -32,8 +32,8 @@
             <div class="w-100 w-lg-50 text-center" style="margin-top: 20px;">
                 <!-- Gallery of images with auto-cursor -->
                 <div class="cursor-gallery">
-                    <img src="{{ asset('img/git.jpg') }}" alt="GIT Training 1" class="img-fluid rounded">
-                    <img src="{{ asset('img/git1.jpg') }}" alt="GIT Training 2" class="img-fluid rounded">
+                    <img src="{{ asset('img/git.JPG') }}" alt="GIT Training 1" class="img-fluid rounded">
+                    <img src="{{ asset('img/git1.JPG') }}" alt="GIT Training 2" class="img-fluid rounded">
                 </div>
             </div>
         </div>

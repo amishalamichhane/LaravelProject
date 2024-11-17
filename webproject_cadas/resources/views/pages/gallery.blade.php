@@ -10,8 +10,8 @@
                 <img src="/img/DSC00144.JPG" alt="Image 2">
                 <img src="/img/DSC02223.JPG" alt="Image 3">
                 <img src="/img/DSC02224.JPG" alt="Image 4">
-                <img src="/img/git.jpg" alt="Image 5">
-                <img src="/img/git1.jpg" alt="Image 6">
+                <img src="/img/git.JPG" alt="Image 5">
+                <img src="/img/git1.JPG" alt="Image 6">
                 <img src="/img/nagarpalika.JPG" alt="Image 7">
             </div>
         </div>
@@ -20,8 +20,8 @@
         <div class="git">
             <h2 class="section-title">Git Images</h2>
             <div class="img-section">
-                <img src="/img/git.jpg" alt="Git Image 1">
-                <img src="/img/git1.jpg" alt="Git Image 2">
+                <img src="/img/git.JPG" alt="Git Image 1">
+                <img src="/img/git1.JPG" alt="Git Image 2">
             </div>
         </div>
 
