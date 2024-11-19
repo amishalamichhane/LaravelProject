@@ -6,10 +6,10 @@
         <div class="gallery">
             <h2 class="section-title">Gallery</h2>
             <div class="gallery-slider">
-                <img src="/img/DSC00110.JPG" alt="Image 1">
                 <img src="/img/DSC00144.JPG" alt="Image 2">
                 <img src="/img/DSC02223.JPG" alt="Image 3">
                 <img src="/img/DSC02224.JPG" alt="Image 4">
+                <img src="/img/DSC00110.JPG" alt="Image 1">
                 <img src="/img/git.JPG" alt="Image 5">
                 <img src="/img/git1.JPG" alt="Image 6">
                 <img src="/img/nagarpalika.JPG" alt="Image 7">
