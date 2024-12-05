@@ -7,7 +7,7 @@
             <div class="container-txt1">
                 <h4>Dirgha Jibi Ghimire</h4>
                 <p>Principal Investigator</p>
-                <a href="https://thesanfordschool.asu.edu/">University of Michigan</a>
+                <a href="https://thesanfordschool.asu.edu/" target="_blank">University of Michigan</a>
             </div>
         </div>
 
