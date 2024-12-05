@@ -926,6 +926,7 @@ body,
     height: auto;
     display: none; /* Images are hidden by default */
     transition: opacity 1s ease-in-out;
+    
 }
 
 .cursor-gallery img:first-child {
@@ -1585,6 +1586,10 @@ footer {
     color: rgb(228, 223, 223); /* Same text color as the rest of the footer */
     padding: 10px;
     font-family: "Open Sans", system-ui;
+}
+
+.mid a{
+    color: rgb(228, 223, 223);
 }
 
 /* Horizontal rule styles */
