@@ -4,9 +4,9 @@
     <div class="container py-5">
         <h1 class="text-center mb-4">Capacity Building</h1>
         <p>
-            Capacity building within the FAMELO project was pivotal for enhancing the skills and competencies of research
-            staff engaged in data collection and analysis. This multifaceted initiative ensured local researchers were
-            well-equipped to execute the study efficiently while maintaining high standards of research quality.
+            Capacity building in the FAMELO project was essential for strengthening the skills and expertise of research
+            staff involved in data collection and analysis. This initiative ensured that local researchers were
+            well-prepared to conduct the study effectively while upholding high research standards.
         </p>
 
         <!-- General Interviewing Technique (GIT) Training -->
@@ -17,12 +17,13 @@
                     The General Interviewing Technique (GIT) Training served as the cornerstone of the project’s
                     capacity-building efforts. This foundational program equipped research staff with essential skills for
                     effective interviewing. Participants mastered strategies for:
-                </p>
                 <ul>
                     <li>Establishing rapport with respondents,</li>
                     <li>Asking open-ended questions, </li>
                     <li>Employing active listening techniques.</li>
                 </ul>
+                </p>
+
                 <p>
                     These competencies were instrumental in ensuring high-quality data collection, particularly in
                     navigating the complexities of engaging with diverse and sensitive populations.
