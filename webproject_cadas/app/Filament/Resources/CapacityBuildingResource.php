@@ -3,20 +3,17 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CapacityBuildingResource\Pages;
-use App\Filament\Resources\CapacityBuildingResource\RelationManagers;
 use App\Models\CapacityBuilding;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\TextColumn;
+use Illuminate\Http\Request;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\ImageColumn;
-use Illuminate\Http\Request;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor; // Import TinyEditor
 
 class CapacityBuildingResource extends Resource
 {
@@ -28,20 +25,24 @@ class CapacityBuildingResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('section_title')->required(),
-                Textarea::make('section_content')->required(),
-                Forms\Components\TextInput::make('slug')
-                    ->required(),
-                Forms\Components\FileUpload::make('image_urls') // For uploading images
-                    ->multiple() // Allow multiple uploads
-                    ->label('Upload Images')
-                    ->disk('public') // Ensure the disk is configured in config/filesystems.php
-                    ->directory('capacity_building') // Set the directory where files should be uploaded
-                    ->required() // Optional: make the upload required
-                    ->maxFiles(5) // Limit the number of files (optional)
-                    ->acceptedFileTypes(['img/jpeg', 'img/png', 'img/jpg']) // Limit file types
-                    ->maxSize(1024 * 1024 * 5) // Limit file size to 5MB
-                    ->placeholder('Choose images'),
+                // Section Title (Text Input)
+                TextInput::make('section_title')
+                    ->required()
+                    ->label('Section Title')
+                    ->maxLength(255),
+
+                // Section Content (Using TinyEditor for Rich Text Editing)
+                TinyEditor::make('section_content') // Using TinyEditor for rich text
+                    ->required()
+                    ->label('Section Content')
+                    ->columnSpan('full') // Makes it span across the entire width of the form
+                    ->maxLength(1000),
+
+                // Slug (Text Input)
+                TextInput::make('slug')
+                    ->required()
+                    ->label('Slug')
+                    ->maxLength(255),
             ]);
     }
 
@@ -49,15 +50,18 @@ class CapacityBuildingResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('section_title')->sortable(),
-                TextColumn::make('section_content')->limit(50),
-                ImageColumn::make('image_urls')
-                    ->label('Images')
-                    ->url(fn($record) => json_decode($record->image_urls)[0] ?? null) // Get the first image URL
-                    ->limit(1), // Limit to one image or adjust as needed
+                // Section Title (Text Column)
+                TextColumn::make('section_title')
+                    ->sortable()
+                    ->label('Title'),
+
+                // Section Content (Preview in table - shortened)
+                TextColumn::make('section_content')
+                    ->limit(50)
+                    ->label('Content'),
             ])
             ->filters([
-                //
+                // You can add any filters here
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
@@ -69,13 +73,6 @@ class CapacityBuildingResource extends Resource
             ]);
     }
 
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
-    }
-
     public static function getPages(): array
     {
         return [
@@ -85,29 +82,21 @@ class CapacityBuildingResource extends Resource
         ];
     }
 
-    // Custom store method to handle the file uploads
+    // Custom store method for saving records (no image upload)
     protected function store(Request $request): void
     {
+        // Validate incoming request data
         $data = $request->validate([
             'section_title' => 'required|string|max:255',
-            'image_urls' => 'required|array',
-            'image_urls.*' => 'image|mimes:jpeg,png,jpg|max:2048',
-            'section_content' => 'required|string',
+            'section_content' => 'required|string|max:1000', // Validate section content
+            'slug' => 'required|string|unique:capacity_buildings,slug|max:255', // Ensure unique slug
         ]);
 
-        $imageUrls = [];
-
-        if ($request->hasFile('image_urls')) {
-            foreach ($request->file('image_urls') as $file) {
-                $path = $file->store('capacity_building', 'public');
-                $imageUrls[] = $path;
-            }
-        }
-
+        // Create a new record in the database
         CapacityBuilding::create([
             'section_title' => $data['section_title'],
-            'image_urls' => json_encode($imageUrls),
             'section_content' => $data['section_content'],
+            'slug' => $data['slug'],
         ]);
     }
 }
